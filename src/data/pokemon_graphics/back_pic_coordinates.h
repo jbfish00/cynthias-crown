@@ -2060,6 +2060,26 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(32, 56),
         .y_offset = 7,
     },
+    [SPECIES_SHINX] =
+    {
+        .size = MON_COORDS_SIZE(48, 40),
+        .y_offset = 12,
+    },
+    [SPECIES_AXEW] =
+    {
+        .size = MON_COORDS_SIZE(40, 40),
+        .y_offset = 12,
+    },
+    [SPECIES_HONEDGE] =
+    {
+        .size = MON_COORDS_SIZE(40, 48),
+        .y_offset = 8,
+    },
+    [SPECIES_GALARIAN_ZIGZAGOON] =
+    {
+        .size = MON_COORDS_SIZE(56, 32),
+        .y_offset = 16,
+    },
     [SPECIES_EGG] =
     {
         .size = MON_COORDS_SIZE(24, 48),

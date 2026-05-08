@@ -410,7 +410,9 @@ static const u16 sTMSpritePaletteOffsetByType[NUMBER_OF_MON_TYPES] = {
     [TYPE_PSYCHIC]  = 0x0d0,
     [TYPE_STEEL]    = 0x0e0,
     [TYPE_DARK]     = 0x0f0,
-    [TYPE_DRAGON]   = 0x100
+    [TYPE_DRAGON]   = 0x100,
+    [TYPE_MYSTERY]  = 0x000,
+    [TYPE_FAIRY]    = 0x000
 };
 
 void InitTMCase(u8 type, void (* exitCallback)(void), bool8 allowSelectClose)

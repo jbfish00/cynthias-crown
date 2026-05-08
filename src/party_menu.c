@@ -1057,6 +1057,17 @@ static u8 GetPartyBoxPaletteFlags(u8 slot, u8 animNum)
     }
     if (gPartyMenu.action == PARTY_ACTION_SOFTBOILED && slot == gPartyMenu.slotId )
         palFlags |= PARTY_PAL_TO_SOFTBOIL;
+    // Gray out off-type mons visually (monotype challenge)
+    if (FlagGet(FLAG_CHOSE_PLAYER_TYPE) && !(palFlags & PARTY_PAL_FAINTED))
+    {
+        u16 s = GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES);
+        if (s != SPECIES_NONE && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
+        {
+            u16 chosenType = VarGet(VAR_CHOSEN_TYPE);
+            if (gSpeciesInfo[s].types[0] != chosenType && gSpeciesInfo[s].types[1] != chosenType)
+                palFlags |= PARTY_PAL_FAINTED;
+        }
+    }
     return palFlags;
 }
 
@@ -5964,6 +5975,33 @@ static bool8 TrySwitchInPokemon(void)
         GetMonNickname(&gPlayerParty[GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[currBattler])], gStringVar1);
         StringExpandPlaceholders(gStringVar4, gText_PkmnCantSwitchOut);
         return FALSE;
+    }
+    // Monotype challenge: block off-type switches (softlock-safe)
+    if (FlagGet(FLAG_CHOSE_PLAYER_TYPE))
+    {
+        u16 chosenType = VarGet(VAR_CHOSEN_TYPE);
+        u8 i, validTypeCount = 0;
+        for (i = 0; i < PARTY_SIZE; i++)
+        {
+            u16 s = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES);
+            if (s == SPECIES_NONE || GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+                continue;
+            if (GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
+                continue;
+            if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
+                validTypeCount++;
+        }
+        if (validTypeCount > 0)
+        {
+            u16 slotSpecies = GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES);
+            if (gSpeciesInfo[slotSpecies].types[0] != chosenType
+             && gSpeciesInfo[slotSpecies].types[1] != chosenType)
+            {
+                GetMonNickname(&gPlayerParty[slot], gStringVar1);
+                StringExpandPlaceholders(gStringVar4, gText_PkmnWrongType);
+                return FALSE;
+            }
+        }
     }
     gSelectedMonPartyId = GetPartyIdFromBattleSlot(slot);
     gPartyMenuUseExitCallback = TRUE;

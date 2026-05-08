@@ -387,6 +387,7 @@ extern const u8 gText_CantSwitchWithAlly[];
 extern const u8 gText_PkmnHasNoEnergy[];
 extern const u8 gText_PkmnAlreadyInBattle[];
 extern const u8 gText_EggCantBattle[];
+extern const u8 gText_PkmnWrongType[];
 extern const u8 gText_PkmnAlreadySelected[];
 extern const u8 gText_PkmnCantSwitchOut[];
 

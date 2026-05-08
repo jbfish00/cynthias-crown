@@ -2718,3 +2718,27 @@ const u8 gDeoxysPokedexText[] = _(
     "altering its appearance.");
 
 const u8 gDeoxysPokedexTextUnused[] = _("");
+
+const u8 gShinxPokedexText[] = _(
+    "The light emanating from its body can\n"
+    "be seen over great distances. It roars\n"
+    "to warn off those who approach.");
+const u8 gShinxPokedexTextUnused[] = _("");
+
+const u8 gAxewPokedexText[] = _(
+    "They mark their territory by leaving\n"
+    "gashes in trees with their tusks. If\n"
+    "a tusk breaks, a new one grows.");
+const u8 gAxewPokedexTextUnused[] = _("");
+
+const u8 gHonedgePokedexText[] = _(
+    "It attaches itself to someone and wraps\n"
+    "its ribbon around their arm. It absorbs\n"
+    "the holder's life energy to survive.");
+const u8 gHonedgePokedexTextUnused[] = _("");
+
+const u8 gGalarianZigzagoonPokedexText[] = _(
+    "It is thought to be the oldest form\n"
+    "of Zigzagoon. The relaxed Zigzagoon of\n"
+    "Galar owe much to this ancestor.");
+const u8 gGalarianZigzagoonPokedexTextUnused[] = _("");

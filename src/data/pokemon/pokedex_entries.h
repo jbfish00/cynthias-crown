@@ -5030,4 +5030,58 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 337,
         .trainerOffset = 2,
     },
+
+    // === Cynthia's Crown custom species ===
+
+    [NATIONAL_DEX_SHINX] =
+    {
+        .categoryName = _("Flash"),
+        .height = 5,
+        .weight = 95,
+        .description = gShinxPokedexText,
+        .unusedDescription = gShinxPokedexTextUnused,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_AXEW] =
+    {
+        .categoryName = _("Tusk"),
+        .height = 6,
+        .weight = 180,
+        .description = gAxewPokedexText,
+        .unusedDescription = gAxewPokedexTextUnused,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_HONEDGE] =
+    {
+        .categoryName = _("Sword"),
+        .height = 8,
+        .weight = 20,
+        .description = gHonedgePokedexText,
+        .unusedDescription = gHonedgePokedexTextUnused,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_GALARIAN_ZIGZAGOON] =
+    {
+        .categoryName = _("Tiny Raccoon"),
+        .height = 4,
+        .weight = 175,
+        .description = gGalarianZigzagoonPokedexText,
+        .unusedDescription = gGalarianZigzagoonPokedexTextUnused,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

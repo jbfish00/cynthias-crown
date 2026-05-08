@@ -5705,3 +5705,44 @@ static const u16 sChimechoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_PSYCHIC),
     LEVEL_UP_END
 };
+
+// === Cynthia's Crown custom species learnsets ===
+
+static const u16 sShinxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(9, MOVE_CHARGE),
+    LEVEL_UP_MOVE(13, MOVE_BITE),
+    LEVEL_UP_MOVE(17, MOVE_SPARK),
+    LEVEL_UP_MOVE(23, MOVE_CRUNCH),
+    LEVEL_UP_END
+};
+
+static const u16 sAxewLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE(5, MOVE_LEER),
+    LEVEL_UP_MOVE(9, MOVE_DRAGON_RAGE),
+    LEVEL_UP_MOVE(13, MOVE_SLASH),
+    LEVEL_UP_MOVE(17, MOVE_DRAGON_CLAW),
+    LEVEL_UP_END
+};
+
+static const u16 sHonedgeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(1, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(5, MOVE_FURY_CUTTER),
+    LEVEL_UP_MOVE(9, MOVE_METAL_SOUND),
+    LEVEL_UP_MOVE(13, MOVE_SLASH),
+    LEVEL_UP_MOVE(17, MOVE_IRON_DEFENSE),
+    LEVEL_UP_END
+};
+
+static const u16 sGalarianZigzagoonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_GROWL),
+    LEVEL_UP_MOVE(1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(5, MOVE_HEADBUTT),
+    LEVEL_UP_MOVE(9, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE(13, MOVE_LEER),
+    LEVEL_UP_MOVE(17, MOVE_SLASH),
+    LEVEL_UP_END
+};

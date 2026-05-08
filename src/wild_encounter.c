@@ -270,23 +270,44 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
 {
     u8 slot = 0;
     u8 level;
+    u8 slotCount = LAND_WILD_COUNT;
+    u8 matchingSlots[12];
+    u8 matchCount = 0;
+    u8 i;
+
     switch (area)
     {
     case WILD_AREA_LAND:
         slot = ChooseWildMonIndex_Land();
+        slotCount = LAND_WILD_COUNT;
         break;
     case WILD_AREA_WATER:
         slot = ChooseWildMonIndex_WaterRock();
+        slotCount = WATER_WILD_COUNT;
         break;
     case WILD_AREA_ROCKS:
         slot = ChooseWildMonIndex_WaterRock();
+        slotCount = ROCK_WILD_COUNT;
         break;
     }
+
+    // Monotype challenge: bias toward chosen type
+    if (FlagGet(FLAG_CHOSE_PLAYER_TYPE))
+    {
+        u16 chosenType = VarGet(VAR_CHOSEN_TYPE);
+        for (i = 0; i < slotCount; i++)
+        {
+            u16 s = info->wildPokemon[i].species;
+            if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
+                matchingSlots[matchCount++] = i;
+        }
+        if (matchCount > 0)
+            slot = matchingSlots[Random() % matchCount];
+    }
+
     level = ChooseWildMonLevel(&info->wildPokemon[slot]);
     if (flags == WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(level))
-    {
         return FALSE;
-    }
     GenerateWildMon(info->wildPokemon[slot].species, level, slot);
     return TRUE;
 }
@@ -294,7 +315,25 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
 static u16 GenerateFishingEncounter(const struct WildPokemonInfo * info, u8 rod)
 {
     u8 slot = ChooseWildMonIndex_Fishing(rod);
-    u8 level = ChooseWildMonLevel(&info->wildPokemon[slot]);
+    u8 level;
+    u8 matchingSlots[FISH_WILD_COUNT];
+    u8 matchCount = 0;
+    u8 i;
+
+    if (FlagGet(FLAG_CHOSE_PLAYER_TYPE))
+    {
+        u16 chosenType = VarGet(VAR_CHOSEN_TYPE);
+        for (i = 0; i < FISH_WILD_COUNT; i++)
+        {
+            u16 s = info->wildPokemon[i].species;
+            if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
+                matchingSlots[matchCount++] = i;
+        }
+        if (matchCount > 0)
+            slot = matchingSlots[Random() % matchCount];
+    }
+
+    level = ChooseWildMonLevel(&info->wildPokemon[slot]);
     GenerateWildMon(info->wildPokemon[slot].species, level, slot);
     return info->wildPokemon[slot].species;
 }

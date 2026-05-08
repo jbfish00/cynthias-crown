@@ -16,6 +16,11 @@ PalletTown_PlayersHouse_2F_OnWarp::
 	.2byte 0
 
 PalletTown_PlayersHouse_2F_FirstWarpIn::
+	goto_if_set FLAG_CHOSE_PLAYER_TYPE, PalletTown_PlayersHouse_2F_FirstWarpIn_Normal
+	warp MAP_TYPE_SHRINE, 5, 6
+	end
+
+PalletTown_PlayersHouse_2F_FirstWarpIn_Normal::
 	turnobject LOCALID_PLAYER, DIR_NORTH
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PLAYERS_HOUSE_2F, 1
 	end

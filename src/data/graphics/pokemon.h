@@ -2721,6 +2721,34 @@ const u32 gMonShinyPalette_Chimecho[] = INCBIN_U32("graphics/pokemon/chimecho/sh
 const u8 gMonIcon_Chimecho[] = INCBIN_U8("graphics/pokemon/chimecho/icon.4bpp");
 const u8 gMonFootprint_Chimecho[] = INCBIN_U8("graphics/pokemon/chimecho/footprint.1bpp");
 
+const u32 gMonFrontPic_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/front.4bpp.lz");
+const u32 gMonPalette_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/normal.gbapal.lz");
+const u32 gMonBackPic_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/back.4bpp.lz");
+const u32 gMonShinyPalette_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/shiny.gbapal.lz");
+const u8 gMonIcon_Shinx[] = INCBIN_U8("graphics/pokemon/shinx/icon.4bpp");
+const u8 gMonFootprint_Shinx[] = INCBIN_U8("graphics/pokemon/shinx/footprint.1bpp");
+
+const u32 gMonFrontPic_Axew[] = INCBIN_U32("graphics/pokemon/axew/front.4bpp.lz");
+const u32 gMonPalette_Axew[] = INCBIN_U32("graphics/pokemon/axew/normal.gbapal.lz");
+const u32 gMonBackPic_Axew[] = INCBIN_U32("graphics/pokemon/axew/back.4bpp.lz");
+const u32 gMonShinyPalette_Axew[] = INCBIN_U32("graphics/pokemon/axew/shiny.gbapal.lz");
+const u8 gMonIcon_Axew[] = INCBIN_U8("graphics/pokemon/axew/icon.4bpp");
+const u8 gMonFootprint_Axew[] = INCBIN_U8("graphics/pokemon/axew/footprint.1bpp");
+
+const u32 gMonFrontPic_Honedge[] = INCBIN_U32("graphics/pokemon/honedge/front.4bpp.lz");
+const u32 gMonPalette_Honedge[] = INCBIN_U32("graphics/pokemon/honedge/normal.gbapal.lz");
+const u32 gMonBackPic_Honedge[] = INCBIN_U32("graphics/pokemon/honedge/back.4bpp.lz");
+const u32 gMonShinyPalette_Honedge[] = INCBIN_U32("graphics/pokemon/honedge/shiny.gbapal.lz");
+const u8 gMonIcon_Honedge[] = INCBIN_U8("graphics/pokemon/honedge/icon.4bpp");
+const u8 gMonFootprint_Honedge[] = INCBIN_U8("graphics/pokemon/honedge/footprint.1bpp");
+
+const u32 gMonFrontPic_GalarianZigzagoon[] = INCBIN_U32("graphics/pokemon/galarian_zigzagoon/front.4bpp.lz");
+const u32 gMonPalette_GalarianZigzagoon[] = INCBIN_U32("graphics/pokemon/galarian_zigzagoon/normal.gbapal.lz");
+const u32 gMonBackPic_GalarianZigzagoon[] = INCBIN_U32("graphics/pokemon/galarian_zigzagoon/back.4bpp.lz");
+const u32 gMonShinyPalette_GalarianZigzagoon[] = INCBIN_U32("graphics/pokemon/galarian_zigzagoon/shiny.gbapal.lz");
+const u8 gMonIcon_GalarianZigzagoon[] = INCBIN_U8("graphics/pokemon/galarian_zigzagoon/icon.4bpp");
+const u8 gMonFootprint_GalarianZigzagoon[] = INCBIN_U8("graphics/pokemon/galarian_zigzagoon/footprint.1bpp");
+
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 

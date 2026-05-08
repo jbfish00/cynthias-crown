@@ -247,7 +247,7 @@ static const struct WindowTemplate sWindowTemplate_TypeNames = {
     .baseBlock = 0x001
 };
 
-static const struct ListMenuItem sListMenuItems_TypeNames[NUMBER_OF_MON_TYPES] = {
+static const struct ListMenuItem sListMenuItems_TypeNames[] = {
     { gTypeNames[TYPE_NORMAL],   TYPE_NORMAL         },
     { gTypeNames[TYPE_FIRE],     TYPE_FIRE           },
     { gTypeNames[TYPE_WATER],    TYPE_WATER          },
@@ -265,6 +265,7 @@ static const struct ListMenuItem sListMenuItems_TypeNames[NUMBER_OF_MON_TYPES] =
     { gTypeNames[TYPE_DRAGON],   TYPE_DRAGON         },
     { gTypeNames[TYPE_STEEL],    TYPE_STEEL          },
     { gTypeNames[TYPE_DARK],     TYPE_DARK           },
+    { gTypeNames[TYPE_FAIRY],    TYPE_FAIRY          },
     { gText_UR_Exit,             NUMBER_OF_MON_TYPES }
 };
 
@@ -272,7 +273,7 @@ static const struct ListMenuTemplate sListMenuTemplate_TypeNames = {
     .items = sListMenuItems_TypeNames,
     .moveCursorFunc = ListMenuDefaultCursorMoveFunc,
     .itemPrintFunc = NULL,
-    .totalItems = NUMBER_OF_MON_TYPES,
+    .totalItems = ARRAY_COUNT(sListMenuItems_TypeNames),
     .maxShowed = 6,
     .windowId = 0,
     .header_X = 0,

@@ -502,6 +502,111 @@ static const struct MenuAction sMultichoiceList_Exit[] = {
     { gOtherText_Exit }
 };
 
+// === Cynthia's Crown: Type Selection Multichoice Lists ===
+
+static const u8 sCCTypeNormal[]     = _("Normal");
+static const u8 sCCTypeFighting[]   = _("Fighting");
+static const u8 sCCTypeFlying[]     = _("Flying");
+static const u8 sCCTypePoison[]     = _("Poison");
+static const u8 sCCTypeGround[]     = _("Ground");
+static const u8 sCCTypeRock[]       = _("Rock");
+static const u8 sCCTypeBug[]        = _("Bug");
+static const u8 sCCTypeGhost[]      = _("Ghost");
+static const u8 sCCTypeSteel[]      = _("Steel");
+static const u8 sCCTypeFire[]       = _("Fire");
+static const u8 sCCTypeWater[]      = _("Water");
+static const u8 sCCTypeGrass[]      = _("Grass");
+static const u8 sCCTypeElectric[]   = _("Electric");
+static const u8 sCCTypePsychic[]    = _("Psychic");
+static const u8 sCCTypeIce[]        = _("Ice");
+static const u8 sCCTypeDragon[]     = _("Dragon");
+static const u8 sCCTypeDark[]       = _("Dark");
+static const u8 sCCTypeFairy[]      = _("Fairy");
+
+// Species name strings for sub-choice menus
+static const u8 sCCNidoranM[]       = _("Nidoran♂");
+static const u8 sCCNidoranF[]       = _("Nidoran♀");
+static const u8 sCCPidgey[]         = _("Pidgey");
+static const u8 sCCSpearow[]        = _("Spearow");
+static const u8 sCCDoduo[]          = _("Doduo");
+static const u8 sCCPinsir[]         = _("Pinsir");
+static const u8 sCCScyther[]        = _("Scyther");
+static const u8 sCCHeracross[]      = _("Heracross");
+static const u8 sCCOmanyte[]        = _("Omanyte");
+static const u8 sCCKabuto[]         = _("Kabuto");
+static const u8 sCCAerodactyl[]     = _("Aerodactyl");
+static const u8 sCCCharmander[]     = _("Charmander");
+static const u8 sCCCyndaquil[]      = _("Cyndaquil");
+static const u8 sCCTorchic[]        = _("Torchic");
+static const u8 sCCSquirtle[]       = _("Squirtle");
+static const u8 sCCTotodile[]       = _("Totodile");
+static const u8 sCCMudkip[]         = _("Mudkip");
+static const u8 sCCBulbasaur[]      = _("Bulbasaur");
+static const u8 sCCChikorita[]      = _("Chikorita");
+static const u8 sCCTreecko[]        = _("Treecko");
+
+static const struct MenuAction sMultichoiceList_TypeSelection[] = {
+    { sCCTypeNormal   },
+    { sCCTypeFighting },
+    { sCCTypeFlying   },
+    { sCCTypePoison   },
+    { sCCTypeGround   },
+    { sCCTypeRock     },
+    { sCCTypeBug      },
+    { sCCTypeGhost    },
+    { sCCTypeSteel    },
+    { sCCTypeFire     },
+    { sCCTypeWater    },
+    { sCCTypeGrass    },
+    { sCCTypeElectric },
+    { sCCTypePsychic  },
+    { sCCTypeIce      },
+    { sCCTypeDragon   },
+    { sCCTypeDark     },
+    { sCCTypeFairy    },
+};
+
+static const struct MenuAction sMultichoiceList_NidoranChoice[] = {
+    { sCCNidoranM },
+    { sCCNidoranF },
+};
+
+static const struct MenuAction sMultichoiceList_FlyingChoice[] = {
+    { sCCPidgey   },
+    { sCCSpearow  },
+    { sCCDoduo    },
+};
+
+static const struct MenuAction sMultichoiceList_BugChoice[] = {
+    { sCCPinsir    },
+    { sCCScyther   },
+    { sCCHeracross },
+};
+
+static const struct MenuAction sMultichoiceList_RockChoice[] = {
+    { sCCOmanyte   },
+    { sCCKabuto    },
+    { sCCAerodactyl },
+};
+
+static const struct MenuAction sMultichoiceList_FireChoice[] = {
+    { sCCCharmander },
+    { sCCCyndaquil  },
+    { sCCTorchic    },
+};
+
+static const struct MenuAction sMultichoiceList_WaterChoice[] = {
+    { sCCSquirtle  },
+    { sCCTotodile  },
+    { sCCMudkip    },
+};
+
+static const struct MenuAction sMultichoiceList_GrassChoice[] = {
+    { sCCBulbasaur },
+    { sCCChikorita },
+    { sCCTreecko   },
+};
+
 static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_YES_NO]                                     = MULTICHOICE(sMultichoiceList_YesNo),
     [MULTICHOICE_EEVEELUTIONS]                               = MULTICHOICE(sMultichoiceList_Eeveelutions),
@@ -568,6 +673,15 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_62]                                         = MULTICHOICE(sMultichoiceList_62),
     [MULTICHOICE_JOIN_OR_LEAD]                               = MULTICHOICE(sMultichoiceList_JoinOrLead),
     [MULTICHOICE_TRAINER_TOWER_MODE]                         = MULTICHOICE(sMultichoiceList_TrainerTowerMode),
+    // Cynthia's Crown type selection
+    [MULTICHOICE_TYPE_SELECTION]                             = MULTICHOICE(sMultichoiceList_TypeSelection),
+    [MULTICHOICE_NIDORAN_CHOICE]                             = MULTICHOICE(sMultichoiceList_NidoranChoice),
+    [MULTICHOICE_FLYING_CHOICE]                              = MULTICHOICE(sMultichoiceList_FlyingChoice),
+    [MULTICHOICE_BUG_CHOICE]                                 = MULTICHOICE(sMultichoiceList_BugChoice),
+    [MULTICHOICE_ROCK_CHOICE]                                = MULTICHOICE(sMultichoiceList_RockChoice),
+    [MULTICHOICE_FIRE_CHOICE]                                = MULTICHOICE(sMultichoiceList_FireChoice),
+    [MULTICHOICE_WATER_CHOICE]                               = MULTICHOICE(sMultichoiceList_WaterChoice),
+    [MULTICHOICE_GRASS_CHOICE]                               = MULTICHOICE(sMultichoiceList_GrassChoice),
 };
 
 // From Cool to Berries goes unused

@@ -70,6 +70,16 @@
 #define MULTICHOICE_JOIN_OR_LEAD                               63
 #define MULTICHOICE_TRAINER_TOWER_MODE                         64
 
+// Cynthia's Crown type selection menus
+#define MULTICHOICE_TYPE_SELECTION                             65
+#define MULTICHOICE_NIDORAN_CHOICE                             66
+#define MULTICHOICE_FLYING_CHOICE                              67
+#define MULTICHOICE_BUG_CHOICE                                 68
+#define MULTICHOICE_ROCK_CHOICE                                69
+#define MULTICHOICE_FIRE_CHOICE                                70
+#define MULTICHOICE_WATER_CHOICE                               71
+#define MULTICHOICE_GRASS_CHOICE                               72
+
 #define MULTICHOICE_NONE                                      255
 
 #define LISTMENU_BADGES                    0

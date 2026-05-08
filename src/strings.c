@@ -259,6 +259,7 @@ const u8 gText_PkmnAlreadySelected[] = _("{STR_VAR_1} has already been\nselected
 const u8 gText_PkmnHasNoEnergy[] = _("{STR_VAR_1} has no energy\nleft to battle!{PAUSE_UNTIL_PRESS}");
 const u8 gText_CantSwitchWithAlly[] = _("You can't switch {STR_VAR_1}'s\nPOKéMON with one of yours!{PAUSE_UNTIL_PRESS}");
 const u8 gText_EggCantBattle[] = _("An EGG can't battle!{PAUSE_UNTIL_PRESS}");
+const u8 gText_PkmnWrongType[] = _("{STR_VAR_1} doesn't match\nyour type!{PAUSE_UNTIL_PRESS}");
 const u8 gText_CantUseUntilNewBadge[] = _("This can't be used until a new\nBADGE is obtained.{PAUSE_UNTIL_PRESS}");
 const u8 gText_NoMoreThanThreeMayEnter[] = _("No more than three POKéMON\nmay enter.{PAUSE_UNTIL_PRESS}");
 const u8 gText_NoMoreThanTwoMayEnter[] = _("No more than two POKéMON\nmay enter.{PAUSE_UNTIL_PRESS}");

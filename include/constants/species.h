@@ -418,7 +418,11 @@
 #define SPECIES_JIRACHI 409
 #define SPECIES_DEOXYS 410
 #define SPECIES_CHIMECHO 411
-#define SPECIES_EGG 412
+#define SPECIES_SHINX              412
+#define SPECIES_AXEW               413
+#define SPECIES_HONEDGE            414
+#define SPECIES_GALARIAN_ZIGZAGOON 415
+#define SPECIES_EGG                416
 
 #define NUM_SPECIES SPECIES_EGG
 

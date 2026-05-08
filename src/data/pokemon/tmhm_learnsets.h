@@ -9385,4 +9385,62 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(HM05_FLASH)),
 
+    // Cynthia's Crown custom species — minimal TM sets
+    [SPECIES_SHINX]               = TMHM_LEARNSET(TMHM(TM06_TOXIC)
+                                                 | TMHM(TM10_HIDDEN_POWER)
+                                                 | TMHM(TM17_PROTECT)
+                                                 | TMHM(TM21_FRUSTRATION)
+                                                 | TMHM(TM24_THUNDERBOLT)
+                                                 | TMHM(TM25_THUNDER)
+                                                 | TMHM(TM27_RETURN)
+                                                 | TMHM(TM34_SHOCK_WAVE)
+                                                 | TMHM(TM42_FACADE)
+                                                 | TMHM(TM43_SECRET_POWER)
+                                                 | TMHM(TM44_REST)
+                                                 | TMHM(TM45_ATTRACT)),
+
+    [SPECIES_AXEW]                = TMHM_LEARNSET(TMHM(TM02_DRAGON_CLAW)
+                                                 | TMHM(TM06_TOXIC)
+                                                 | TMHM(TM10_HIDDEN_POWER)
+                                                 | TMHM(TM17_PROTECT)
+                                                 | TMHM(TM21_FRUSTRATION)
+                                                 | TMHM(TM27_RETURN)
+                                                 | TMHM(TM31_BRICK_BREAK)
+                                                 | TMHM(TM40_AERIAL_ACE)
+                                                 | TMHM(TM42_FACADE)
+                                                 | TMHM(TM43_SECRET_POWER)
+                                                 | TMHM(TM44_REST)
+                                                 | TMHM(TM45_ATTRACT)),
+
+    [SPECIES_HONEDGE]             = TMHM_LEARNSET(TMHM(TM06_TOXIC)
+                                                 | TMHM(TM10_HIDDEN_POWER)
+                                                 | TMHM(TM17_PROTECT)
+                                                 | TMHM(TM21_FRUSTRATION)
+                                                 | TMHM(TM27_RETURN)
+                                                 | TMHM(TM30_SHADOW_BALL)
+                                                 | TMHM(TM32_DOUBLE_TEAM)
+                                                 | TMHM(TM42_FACADE)
+                                                 | TMHM(TM43_SECRET_POWER)
+                                                 | TMHM(TM44_REST)
+                                                 | TMHM(HM01_CUT)),
+
+    [SPECIES_GALARIAN_ZIGZAGOON]  = TMHM_LEARNSET(TMHM(TM06_TOXIC)
+                                                 | TMHM(TM10_HIDDEN_POWER)
+                                                 | TMHM(TM11_SUNNY_DAY)
+                                                 | TMHM(TM12_TAUNT)
+                                                 | TMHM(TM17_PROTECT)
+                                                 | TMHM(TM18_RAIN_DANCE)
+                                                 | TMHM(TM21_FRUSTRATION)
+                                                 | TMHM(TM27_RETURN)
+                                                 | TMHM(TM28_DIG)
+                                                 | TMHM(TM30_SHADOW_BALL)
+                                                 | TMHM(TM32_DOUBLE_TEAM)
+                                                 | TMHM(TM41_TORMENT)
+                                                 | TMHM(TM42_FACADE)
+                                                 | TMHM(TM43_SECRET_POWER)
+                                                 | TMHM(TM44_REST)
+                                                 | TMHM(TM45_ATTRACT)
+                                                 | TMHM(HM01_CUT)
+                                                 | TMHM(HM06_ROCK_SMASH)),
+
 };

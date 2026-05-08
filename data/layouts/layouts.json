@@ -26,6 +26,18 @@
       "blockdata_filepath": "data/layouts/PalletTown_PlayersHouse_2F/map.bin"
     },
     {
+      "id": "LAYOUT_TYPE_SHRINE",
+      "name": "TypeShrine_Layout",
+      "width": 12,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding1",
+      "border_filepath": "data/layouts/TypeShrine/border.bin",
+      "blockdata_filepath": "data/layouts/TypeShrine/map.bin"
+    },
+    {
       "id": "LAYOUT_PALLET_TOWN_RIVALS_HOUSE",
       "name": "PalletTown_RivalsHouse_Layout",
       "width": 13,

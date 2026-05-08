@@ -62,4 +62,8 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_JIRACHI] = 12,
     [SPECIES_DEOXYS] = 8,
     [SPECIES_CHIMECHO] = 12,
+    [SPECIES_SHINX] = 0,
+    [SPECIES_AXEW] = 0,
+    [SPECIES_HONEDGE] = 8,
+    [SPECIES_GALARIAN_ZIGZAGOON] = 0,
 };
