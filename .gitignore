@@ -66,3 +66,7 @@ build-cmake-*/
 .cache/
 CMakeLists.txt
 compile_commands.json
+
+# Cynthia's Crown
+hack/assets/_scratch/
+*.sav
