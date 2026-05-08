@@ -20,16 +20,16 @@ Any Pokémon (or any member of its evolution line) that **learns a signature mov
 | Poison   | Sludge Bomb, Gunk Shot, Toxic                      |
 | Ground   | Earthquake, Earth Power, High Horsepower           |
 | Flying   | Hurricane, Brave Bird, Air Slash                   |
-| Psychic  | Psychic, Psyshock, Future Sight                    |
-| Bug      | Bug Buzz, X-Scissor, Megahorn                      |
+| Psychic  | Psychic, Psyshock, Zen Headbutt                    |
+| Bug      | Bug Buzz, X-Scissor, Signal Beam                      |
 | Rock     | Stone Edge, Rock Slide, Power Gem                  |
 | Ghost    | Shadow Ball, Shadow Claw, Hex                      |
-| Dragon   | Draco Meteor, Dragon Pulse, Outrage                |
+| Dragon   | Draco Meteor, Dragon Claw, Outrage                |
 | Dark     | Dark Pulse, Crunch, Foul Play                      |
 | Steel    | Iron Head, Flash Cannon, Meteor Mash               |
 | Fairy    | Moonblast, Dazzling Gleam, Play Rough              |
 
-> **Open question for Step 3 design**: do we check learnability at *current level*, *full level-up tree*, or *level-up + TM/HM*? Recommendation: full level-up tree — keeps the gimmick generous and forward-compatible with reordered movesets.
+> Check learnability at *full level-up tree*
 
 ## Reward for dedication
 
@@ -45,12 +45,12 @@ Player picks type *first*, then receives the type's assigned starter:
 | Electric | Shinx                                         |
 | Ice      | Swinub                                        |
 | Fighting | Mankey                                        |
-| Poison   | Nidoran ♂ / ♀ (player picks gender)          |
+| Poison   | Nidoran ♂ / ♀ (player picks gender)           |
 | Ground   | Trapinch                                      |
-| Flying   | (regional bird — TBD: Pidgey / Starly / Fletchling) |
+| Flying   | Pidgey / Starly / Fletchling / Rookidee       |
 | Psychic  | Abra (knows Confusion at start)               |
 | Bug      | Pinsir, Scyther, or Heracross (player picks)  |
-| Rock     | Any fossil mon (Omanyte / Kabuto / Aerodactyl) |
+| Rock     | Any fossil mon across generation              |
 | Ghost    | Gastly                                        |
 | Dragon   | Axew                                          |
 | Dark     | Galarian Zigzagoon                            |
