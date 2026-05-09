@@ -1523,6 +1523,82 @@
 #define FLAG_0x8FE                                                  (SYS_FLAGS + 0xFE)
 #define FLAG_0x8FF                                                  (SYS_FLAGS + 0xFF)
 
+// Legendary dungeon flags (Step 5)
+// Reuses existing unused SYS_FLAGS slots (FLAG_0x8** placeholders) to avoid shifting save data.
+#define FLAG_LEGENDARY_ARTICUNO_BATTLED                             FLAG_0x809
+#define FLAG_LEGENDARY_ARTICUNO_CAUGHT                              FLAG_0x80A
+#define FLAG_LEGENDARY_ZAPDOS_BATTLED                               FLAG_0x80B
+#define FLAG_LEGENDARY_ZAPDOS_CAUGHT                                FLAG_0x80C
+#define FLAG_LEGENDARY_MOLTRES_BATTLED                              FLAG_0x80D
+#define FLAG_LEGENDARY_MOLTRES_CAUGHT                               FLAG_0x80E
+#define FLAG_LEGENDARY_MEWTWO_BATTLED                               FLAG_0x80F
+#define FLAG_LEGENDARY_MEWTWO_CAUGHT                                FLAG_0x810
+#define FLAG_LEGENDARY_MEW_BATTLED                                  FLAG_0x811
+#define FLAG_LEGENDARY_MEW_CAUGHT                                   FLAG_0x812
+
+#define FLAG_LEGENDARY_RAIKOU_BATTLED                               FLAG_0x8C4
+#define FLAG_LEGENDARY_RAIKOU_CAUGHT                                FLAG_0x8C5
+#define FLAG_LEGENDARY_ENTEI_BATTLED                                FLAG_0x8C6
+#define FLAG_LEGENDARY_ENTEI_CAUGHT                                 FLAG_0x8C7
+#define FLAG_LEGENDARY_SUICUNE_BATTLED                              FLAG_0x8C8
+#define FLAG_LEGENDARY_SUICUNE_CAUGHT                               FLAG_0x8C9
+#define FLAG_LEGENDARY_LUGIA_BATTLED                                FLAG_0x8CA
+#define FLAG_LEGENDARY_LUGIA_CAUGHT                                 FLAG_0x8CB
+#define FLAG_LEGENDARY_HO_OH_BATTLED                                FLAG_0x8CC
+#define FLAG_LEGENDARY_HO_OH_CAUGHT                                 FLAG_0x8CD
+#define FLAG_LEGENDARY_CELEBI_BATTLED                               FLAG_0x8CE
+#define FLAG_LEGENDARY_CELEBI_CAUGHT                                FLAG_0x8CF
+
+#define FLAG_LEGENDARY_REGIROCK_BATTLED                             FLAG_0x8D0
+#define FLAG_LEGENDARY_REGIROCK_CAUGHT                              FLAG_0x8D1
+#define FLAG_LEGENDARY_REGICE_BATTLED                               FLAG_0x8D2
+#define FLAG_LEGENDARY_REGICE_CAUGHT                                FLAG_0x8D3
+#define FLAG_LEGENDARY_REGISTEEL_BATTLED                            FLAG_0x8D4
+#define FLAG_LEGENDARY_REGISTEEL_CAUGHT                             FLAG_0x8D5
+#define FLAG_LEGENDARY_LATIAS_BATTLED                               FLAG_0x8D6
+#define FLAG_LEGENDARY_LATIAS_CAUGHT                                FLAG_0x8D7
+#define FLAG_LEGENDARY_LATIOS_BATTLED                               FLAG_0x8D8
+#define FLAG_LEGENDARY_LATIOS_CAUGHT                                FLAG_0x8D9
+#define FLAG_LEGENDARY_KYOGRE_BATTLED                               FLAG_0x8DA
+#define FLAG_LEGENDARY_KYOGRE_CAUGHT                                FLAG_0x8DB
+#define FLAG_LEGENDARY_GROUDON_BATTLED                              FLAG_0x8DC
+#define FLAG_LEGENDARY_GROUDON_CAUGHT                               FLAG_0x8DD
+#define FLAG_LEGENDARY_RAYQUAZA_BATTLED                             FLAG_0x8DE
+#define FLAG_LEGENDARY_RAYQUAZA_CAUGHT                              FLAG_0x8DF
+#define FLAG_LEGENDARY_JIRACHI_BATTLED                              FLAG_0x8E0
+#define FLAG_LEGENDARY_JIRACHI_CAUGHT                               FLAG_0x8E1
+#define FLAG_LEGENDARY_DEOXYS_BATTLED                               FLAG_0x8E2
+#define FLAG_LEGENDARY_DEOXYS_CAUGHT                                FLAG_0x8E3
+
+#define FLAG_LEGENDARY_UXIE_BATTLED                                 FLAG_0x8E4
+#define FLAG_LEGENDARY_UXIE_CAUGHT                                  FLAG_0x8E5
+#define FLAG_LEGENDARY_MESPRIT_BATTLED                              FLAG_0x8E6
+#define FLAG_LEGENDARY_MESPRIT_CAUGHT                               FLAG_0x8E7
+#define FLAG_LEGENDARY_AZELF_BATTLED                                FLAG_0x8E8
+#define FLAG_LEGENDARY_AZELF_CAUGHT                                 FLAG_0x8E9
+#define FLAG_LEGENDARY_DIALGA_BATTLED                               FLAG_0x8EA
+#define FLAG_LEGENDARY_DIALGA_CAUGHT                                FLAG_0x8EB
+#define FLAG_LEGENDARY_PALKIA_BATTLED                               FLAG_0x8EC
+#define FLAG_LEGENDARY_PALKIA_CAUGHT                                FLAG_0x8ED
+#define FLAG_LEGENDARY_HEATRAN_BATTLED                              FLAG_0x8EE
+#define FLAG_LEGENDARY_HEATRAN_CAUGHT                               FLAG_0x8EF
+#define FLAG_LEGENDARY_REGIGIGAS_BATTLED                            FLAG_0x8F0
+#define FLAG_LEGENDARY_REGIGIGAS_CAUGHT                             FLAG_0x8F1
+#define FLAG_LEGENDARY_GIRATINA_BATTLED                             FLAG_0x8F2
+#define FLAG_LEGENDARY_GIRATINA_CAUGHT                              FLAG_0x8F3
+#define FLAG_LEGENDARY_CRESSELIA_BATTLED                            FLAG_0x8F4
+#define FLAG_LEGENDARY_CRESSELIA_CAUGHT                             FLAG_0x8F5
+#define FLAG_LEGENDARY_PHIONE_BATTLED                               FLAG_0x8F6
+#define FLAG_LEGENDARY_PHIONE_CAUGHT                                FLAG_0x8F7
+#define FLAG_LEGENDARY_MANAPHY_BATTLED                              FLAG_0x8F8
+#define FLAG_LEGENDARY_MANAPHY_CAUGHT                               FLAG_0x8F9
+#define FLAG_LEGENDARY_SHAYMIN_BATTLED                              FLAG_0x8FA
+#define FLAG_LEGENDARY_SHAYMIN_CAUGHT                               FLAG_0x8FB
+#define FLAG_LEGENDARY_ARCEUS_BATTLED                               FLAG_0x8FC
+#define FLAG_LEGENDARY_ARCEUS_CAUGHT                                FLAG_0x8FD
+#define FLAG_LEGENDARY_DARKRAI_BATTLED                              FLAG_0x8FE
+#define FLAG_LEGENDARY_DARKRAI_CAUGHT                               FLAG_0x8FF
+
 #define FLAGS_COUNT (FLAG_0x8FF + 1)
 
 // Special Flags (Stored in EWRAM (sSpecialFlags, not in the SaveBlock)

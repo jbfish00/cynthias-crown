@@ -393,11 +393,8 @@ enum {
     NATIONAL_DEX_RAYQUAZA,
     NATIONAL_DEX_JIRACHI,
     NATIONAL_DEX_DEOXYS,
-    // Cynthia's Crown custom species
-    NATIONAL_DEX_SHINX,
-    NATIONAL_DEX_AXEW,
-    NATIONAL_DEX_HONEDGE,
-    NATIONAL_DEX_GALARIAN_ZIGZAGOON,
+    // Cynthia's Crown custom species (explicit National Dex numbers)
+#include "../../build/step5_national_dex.inc"
     // Old Unown
     NATIONAL_DEX_OLD_UNOWN_B,
     NATIONAL_DEX_OLD_UNOWN_C,
@@ -428,7 +425,7 @@ enum {
 
 #define KANTO_DEX_COUNT     NATIONAL_DEX_MEW
 #define JOHTO_DEX_COUNT     NATIONAL_DEX_CELEBI
-#define NATIONAL_DEX_COUNT  NATIONAL_DEX_DEOXYS
+#define NATIONAL_DEX_COUNT  493
 
 // Hoenn Pokedex order
 enum {

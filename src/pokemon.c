@@ -929,10 +929,7 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(JIRACHI),
     SPECIES_TO_NATIONAL(DEOXYS),
     SPECIES_TO_NATIONAL(CHIMECHO),
-    SPECIES_TO_NATIONAL(SHINX),
-    SPECIES_TO_NATIONAL(AXEW),
-    SPECIES_TO_NATIONAL(HONEDGE),
-    SPECIES_TO_NATIONAL(GALARIAN_ZIGZAGOON),
+#include "../build/step5_species_to_national.inc"
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -5238,7 +5235,13 @@ u16 HoennToNationalOrder(u16 hoennNum)
 u16 SpeciesToCryId(u16 species)
 {
     if (species < SPECIES_OLD_UNOWN_B - 1)
+    {
+        // Cynthia's Crown: species beyond the vanilla cry table should not index past
+        // the original FireRed cry bank layout. Reuse an existing cry as a safe fallback.
+        if (species >= SPECIES_SHINX)
+            return SPECIES_PIKACHU;
         return species;
+    }
 
     if (species <= SPECIES_OLD_UNOWN_Z - 1)
         return SPECIES_UNOWN - 1;

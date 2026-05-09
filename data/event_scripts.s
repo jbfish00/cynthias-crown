@@ -1304,6 +1304,7 @@ EventScript_BufferPutAwayPocketBerryPouch::
 
 	.include "data/scripts/seagallop.inc"
 	.include "data/scripts/static_pokemon.inc"
+	.include "data/scripts/legendary_respawn.inc"
 
 EventScript_TryDarkenRuins::
 	goto_if_set FLAG_SYS_UNLOCKED_TANOBY_RUINS, EventScript_Return
