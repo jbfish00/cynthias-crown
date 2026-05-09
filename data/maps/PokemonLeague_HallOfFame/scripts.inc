@@ -36,10 +36,10 @@ PokemonLeague_HallOfFame_EventScript_EnterRoom::
 	setvar VAR_TEMP_1, 1
 	call EventScript_SetDefeatedEliteFourFlagsVars
 	setrespawn HEAL_LOCATION_PALLET_TOWN
-	call LegendaryRespawnScript
 	fadescreenspeed FADE_TO_BLACK, 24
 	special EnterHallOfFame
 	waitstate
+	call LegendaryRespawnScript
 	releaseall
 	end
 

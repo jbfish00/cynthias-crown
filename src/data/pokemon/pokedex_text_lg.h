@@ -2733,3 +2733,990 @@ const u8 gGalarianZigzagoonPokedexText[] = _(
     "of Zigzagoon. The relaxed Zigzagoon of\n"
     "Galar owe much to this ancestor.");
 const u8 gGalarianZigzagoonPokedexTextUnused[] = _("");
+
+// === Cynthia's Crown Step 5 Pokedex Texts ===
+
+const u8 gLUXIOPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gLUXIOPokedexTextUnused[] = _("");
+
+const u8 gLUXRAYPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gLUXRAYPokedexTextUnused[] = _("");
+
+const u8 gFRAXUREPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFRAXUREPokedexTextUnused[] = _("");
+
+const u8 gHAXORUSPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHAXORUSPokedexTextUnused[] = _("");
+
+const u8 gDOUBLADEPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDOUBLADEPokedexTextUnused[] = _("");
+
+const u8 gAEGISLASHPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gAEGISLASHPokedexTextUnused[] = _("");
+
+const u8 gGALARIANLINOONEPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGALARIANLINOONEPokedexTextUnused[] = _("");
+
+const u8 gOBSTAGOONPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gOBSTAGOONPokedexTextUnused[] = _("");
+
+const u8 gSTARLYPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSTARLYPokedexTextUnused[] = _("");
+
+const u8 gSTARAVIAPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSTARAVIAPokedexTextUnused[] = _("");
+
+const u8 gSTARAPTORPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSTARAPTORPokedexTextUnused[] = _("");
+
+const u8 gMUNCHLAXPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMUNCHLAXPokedexTextUnused[] = _("");
+
+const u8 gPORYGONZPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPORYGONZPokedexTextUnused[] = _("");
+
+const u8 gHISUIANZORUAPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHISUIANZORUAPokedexTextUnused[] = _("");
+
+const u8 gHISUIANZOROARKPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHISUIANZOROARKPokedexTextUnused[] = _("");
+
+const u8 gFLETCHLINGPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFLETCHLINGPokedexTextUnused[] = _("");
+
+const u8 gFLETCHINDERPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFLETCHINDERPokedexTextUnused[] = _("");
+
+const u8 gTALONFLAMEPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTALONFLAMEPokedexTextUnused[] = _("");
+
+const u8 gURSALUNAPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gURSALUNAPokedexTextUnused[] = _("");
+
+const u8 gSALANDITPokedexText[] = _(
+    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSALANDITPokedexTextUnused[] = _("");
+
+const u8 gSALAZZLEPokedexText[] = _(
+    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSALAZZLEPokedexTextUnused[] = _("");
+
+const u8 gLITWICKPokedexText[] = _(
+    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gLITWICKPokedexTextUnused[] = _("");
+
+const u8 gLAMPENTPokedexText[] = _(
+    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gLAMPENTPokedexTextUnused[] = _("");
+
+const u8 gCHANDELUREPokedexText[] = _(
+    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gCHANDELUREPokedexTextUnused[] = _("");
+
+const u8 gCHIMCHARPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gCHIMCHARPokedexTextUnused[] = _("");
+
+const u8 gMONFERNOPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMONFERNOPokedexTextUnused[] = _("");
+
+const u8 gINFERNAPEPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gINFERNAPEPokedexTextUnused[] = _("");
+
+const u8 gPIPLUPPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPIPLUPPokedexTextUnused[] = _("");
+
+const u8 gPRINPLUPPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPRINPLUPPokedexTextUnused[] = _("");
+
+const u8 gEMPOLEONPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gEMPOLEONPokedexTextUnused[] = _("");
+
+const u8 gBUIZELPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gBUIZELPokedexTextUnused[] = _("");
+
+const u8 gFLOATZELPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFLOATZELPokedexTextUnused[] = _("");
+
+const u8 gMAGMORTARPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMAGMORTARPokedexTextUnused[] = _("");
+
+const u8 gELECTIVIREPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gELECTIVIREPokedexTextUnused[] = _("");
+
+const u8 gROTOMPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROTOMPokedexTextUnused[] = _("");
+
+const u8 gROTOMHEATPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROTOMHEATPokedexTextUnused[] = _("");
+
+const u8 gROTOMWASHPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROTOMWASHPokedexTextUnused[] = _("");
+
+const u8 gROTOMFROSTPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROTOMFROSTPokedexTextUnused[] = _("");
+
+const u8 gROTOMFANPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROTOMFANPokedexTextUnused[] = _("");
+
+const u8 gROTOMMOWPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROTOMMOWPokedexTextUnused[] = _("");
+
+const u8 gTOXELPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTOXELPokedexTextUnused[] = _("");
+
+const u8 gTOXTRICITYPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTOXTRICITYPokedexTextUnused[] = _("");
+
+const u8 gTYNAMOPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTYNAMOPokedexTextUnused[] = _("");
+
+const u8 gEELEKTRIKPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gEELEKTRIKPokedexTextUnused[] = _("");
+
+const u8 gEELEKTROSSPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gEELEKTROSSPokedexTextUnused[] = _("");
+
+const u8 gROSERADEPokedexText[] = _(
+    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROSERADEPokedexTextUnused[] = _("");
+
+const u8 gTANGROWTHPokedexText[] = _(
+    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTANGROWTHPokedexTextUnused[] = _("");
+
+const u8 gLEAFEONPokedexText[] = _(
+    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gLEAFEONPokedexTextUnused[] = _("");
+
+const u8 gGLACEONPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGLACEONPokedexTextUnused[] = _("");
+
+const u8 gSYLVEONPokedexText[] = _(
+    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSYLVEONPokedexTextUnused[] = _("");
+
+const u8 gFERROSEEDPokedexText[] = _(
+    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFERROSEEDPokedexTextUnused[] = _("");
+
+const u8 gFERROTHORNPokedexText[] = _(
+    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFERROTHORNPokedexTextUnused[] = _("");
+
+const u8 gPUMPKABOOPokedexText[] = _(
+    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPUMPKABOOPokedexTextUnused[] = _("");
+
+const u8 gGOURGEISTPokedexText[] = _(
+    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGOURGEISTPokedexTextUnused[] = _("");
+
+const u8 gPHANTUMPPokedexText[] = _(
+    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPHANTUMPPokedexTextUnused[] = _("");
+
+const u8 gTREVENANTPokedexText[] = _(
+    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTREVENANTPokedexTextUnused[] = _("");
+
+const u8 gGALARIANMRMIMEPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGALARIANMRMIMEPokedexTextUnused[] = _("");
+
+const u8 gMRRIMEPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMRRIMEPokedexTextUnused[] = _("");
+
+const u8 gMAMOSWINEPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMAMOSWINEPokedexTextUnused[] = _("");
+
+const u8 gFROSLASSPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFROSLASSPokedexTextUnused[] = _("");
+
+const u8 gWEAVILEPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gWEAVILEPokedexTextUnused[] = _("");
+
+const u8 gGALARIANDARUMAKAPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGALARIANDARUMAKAPokedexTextUnused[] = _("");
+
+const u8 gGALARIANDARMANITANPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGALARIANDARMANITANPokedexTextUnused[] = _("");
+
+const u8 gANNIHILAPEPokedexText[] = _(
+    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gANNIHILAPEPokedexTextUnused[] = _("");
+
+const u8 gGALARIANFARFETCHDPokedexText[] = _(
+    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGALARIANFARFETCHDPokedexTextUnused[] = _("");
+
+const u8 gSIRFETCHDPokedexText[] = _(
+    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSIRFETCHDPokedexTextUnused[] = _("");
+
+const u8 gPANCHAMPokedexText[] = _(
+    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPANCHAMPokedexTextUnused[] = _("");
+
+const u8 gPANGOROPokedexText[] = _(
+    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPANGOROPokedexTextUnused[] = _("");
+
+const u8 gCROAGUNKPokedexText[] = _(
+    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gCROAGUNKPokedexTextUnused[] = _("");
+
+const u8 gTOXICROAKPokedexText[] = _(
+    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTOXICROAKPokedexTextUnused[] = _("");
+
+const u8 gRIOLUPokedexText[] = _(
+    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gRIOLUPokedexTextUnused[] = _("");
+
+const u8 gLUCARIOPokedexText[] = _(
+    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gLUCARIOPokedexTextUnused[] = _("");
+
+const u8 gSCRAGGYPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSCRAGGYPokedexTextUnused[] = _("");
+
+const u8 gSCRAFTYPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSCRAFTYPokedexTextUnused[] = _("");
+
+const u8 gSKRELPPokedexText[] = _(
+    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSKRELPPokedexTextUnused[] = _("");
+
+const u8 gDRAGALGEPokedexText[] = _(
+    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDRAGALGEPokedexTextUnused[] = _("");
+
+const u8 gGIBLEPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGIBLEPokedexTextUnused[] = _("");
+
+const u8 gGABITEPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGABITEPokedexTextUnused[] = _("");
+
+const u8 gGARCHOMPPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGARCHOMPPokedexTextUnused[] = _("");
+
+const u8 gGLISCORPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGLISCORPokedexTextUnused[] = _("");
+
+const u8 gRHYPERIORPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gRHYPERIORPokedexTextUnused[] = _("");
+
+const u8 gDRILBURPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDRILBURPokedexTextUnused[] = _("");
+
+const u8 gEXCADRILLPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gEXCADRILLPokedexTextUnused[] = _("");
+
+const u8 gSANDILEPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSANDILEPokedexTextUnused[] = _("");
+
+const u8 gKROKOROKPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gKROKOROKPokedexTextUnused[] = _("");
+
+const u8 gKROOKODILEPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gKROOKODILEPokedexTextUnused[] = _("");
+
+const u8 gGOLETTPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGOLETTPokedexTextUnused[] = _("");
+
+const u8 gGOLURKPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGOLURKPokedexTextUnused[] = _("");
+
+const u8 gHONCHKROWPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHONCHKROWPokedexTextUnused[] = _("");
+
+const u8 gTOGEKISSPokedexText[] = _(
+    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTOGEKISSPokedexTextUnused[] = _("");
+
+const u8 gYANMEGAPokedexText[] = _(
+    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gYANMEGAPokedexTextUnused[] = _("");
+
+const u8 gHAWLUCHAPokedexText[] = _(
+    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHAWLUCHAPokedexTextUnused[] = _("");
+
+const u8 gROOKIDEEPokedexText[] = _(
+    "A Flying-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROOKIDEEPokedexTextUnused[] = _("");
+
+const u8 gCORVISQUIREPokedexText[] = _(
+    "A Flying-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gCORVISQUIREPokedexTextUnused[] = _("");
+
+const u8 gCORVIKNIGHTPokedexText[] = _(
+    "A Flying-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gCORVIKNIGHTPokedexTextUnused[] = _("");
+
+const u8 gGALLADEPokedexText[] = _(
+    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGALLADEPokedexTextUnused[] = _("");
+
+const u8 gINKAYPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gINKAYPokedexTextUnused[] = _("");
+
+const u8 gMALAMARPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMALAMARPokedexTextUnused[] = _("");
+
+const u8 gLARVESTAPokedexText[] = _(
+    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gLARVESTAPokedexTextUnused[] = _("");
+
+const u8 gVOLCARONAPokedexText[] = _(
+    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gVOLCARONAPokedexTextUnused[] = _("");
+
+const u8 gGRUBBINPokedexText[] = _(
+    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGRUBBINPokedexTextUnused[] = _("");
+
+const u8 gCHARJABUGPokedexText[] = _(
+    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gCHARJABUGPokedexTextUnused[] = _("");
+
+const u8 gVIKAVOLTPokedexText[] = _(
+    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gVIKAVOLTPokedexTextUnused[] = _("");
+
+const u8 gSIZZLIPEDEPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSIZZLIPEDEPokedexTextUnused[] = _("");
+
+const u8 gCENTISKORCHPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gCENTISKORCHPokedexTextUnused[] = _("");
+
+const u8 gKLEAVORPokedexText[] = _(
+    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gKLEAVORPokedexTextUnused[] = _("");
+
+const u8 gHISUIANGROWLITHEPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHISUIANGROWLITHEPokedexTextUnused[] = _("");
+
+const u8 gHISUIANARCANINEPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHISUIANARCANINEPokedexTextUnused[] = _("");
+
+const u8 gALOLANGEODUDEPokedexText[] = _(
+    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANGEODUDEPokedexTextUnused[] = _("");
+
+const u8 gALOLANGRAVELERPokedexText[] = _(
+    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANGRAVELERPokedexTextUnused[] = _("");
+
+const u8 gALOLANGOLEMPokedexText[] = _(
+    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANGOLEMPokedexTextUnused[] = _("");
+
+const u8 gPROBOPASSPokedexText[] = _(
+    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPROBOPASSPokedexTextUnused[] = _("");
+
+const u8 gROCKRUFFPokedexText[] = _(
+    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gROCKRUFFPokedexTextUnused[] = _("");
+
+const u8 gLYCANROCPokedexText[] = _(
+    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gLYCANROCPokedexTextUnused[] = _("");
+
+const u8 gDREEPYPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDREEPYPokedexTextUnused[] = _("");
+
+const u8 gDRAKLOAKPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDRAKLOAKPokedexTextUnused[] = _("");
+
+const u8 gDRAGAPULTPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDRAGAPULTPokedexTextUnused[] = _("");
+
+const u8 gBASCULINPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gBASCULINPokedexTextUnused[] = _("");
+
+const u8 gBASCULEGIONPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gBASCULEGIONPokedexTextUnused[] = _("");
+
+const u8 gALOLANEXEGGUTORPokedexText[] = _(
+    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANEXEGGUTORPokedexTextUnused[] = _("");
+
+const u8 gDEINOPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDEINOPokedexTextUnused[] = _("");
+
+const u8 gZWEILOUSPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gZWEILOUSPokedexTextUnused[] = _("");
+
+const u8 gHYDREIGONPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHYDREIGONPokedexTextUnused[] = _("");
+
+const u8 gGOOMYPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGOOMYPokedexTextUnused[] = _("");
+
+const u8 gSLIGGOOPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSLIGGOOPokedexTextUnused[] = _("");
+
+const u8 gGOODRAPokedexText[] = _(
+    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGOODRAPokedexTextUnused[] = _("");
+
+const u8 gDARKRAIPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDARKRAIPokedexTextUnused[] = _("");
+
+const u8 gZORUAPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gZORUAPokedexTextUnused[] = _("");
+
+const u8 gZOROARKPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gZOROARKPokedexTextUnused[] = _("");
+
+const u8 gPAWNIARDPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPAWNIARDPokedexTextUnused[] = _("");
+
+const u8 gBISHARPPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gBISHARPPokedexTextUnused[] = _("");
+
+const u8 gKINGAMBITPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gKINGAMBITPokedexTextUnused[] = _("");
+
+const u8 gBRONZORPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gBRONZORPokedexTextUnused[] = _("");
+
+const u8 gBRONZONGPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gBRONZONGPokedexTextUnused[] = _("");
+
+const u8 gGALARIANMEOWTHPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGALARIANMEOWTHPokedexTextUnused[] = _("");
+
+const u8 gPERRSERKERPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPERRSERKERPokedexTextUnused[] = _("");
+
+const u8 gALOLANMEOWTHPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANMEOWTHPokedexTextUnused[] = _("");
+
+const u8 gALOLANPERSIANPokedexText[] = _(
+    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANPERSIANPokedexTextUnused[] = _("");
+
+const u8 gDURALUDONPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDURALUDONPokedexTextUnused[] = _("");
+
+const u8 gARCHALUDONPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gARCHALUDONPokedexTextUnused[] = _("");
+
+const u8 gTINKATINKPokedexText[] = _(
+    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTINKATINKPokedexTextUnused[] = _("");
+
+const u8 gTINKATUFFPokedexText[] = _(
+    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTINKATUFFPokedexTextUnused[] = _("");
+
+const u8 gTINKATONPokedexText[] = _(
+    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gTINKATONPokedexTextUnused[] = _("");
+
+const u8 gALOLANDIGLETTPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANDIGLETTPokedexTextUnused[] = _("");
+
+const u8 gALOLANDUGTRIOPokedexText[] = _(
+    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANDUGTRIOPokedexTextUnused[] = _("");
+
+const u8 gMAGNEZONEPokedexText[] = _(
+    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMAGNEZONEPokedexTextUnused[] = _("");
+
+const u8 gFLABEBEPokedexText[] = _(
+    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFLABEBEPokedexTextUnused[] = _("");
+
+const u8 gFLOETTEPokedexText[] = _(
+    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFLOETTEPokedexTextUnused[] = _("");
+
+const u8 gFLORGESPokedexText[] = _(
+    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gFLORGESPokedexTextUnused[] = _("");
+
+const u8 gALOLANVULPIXPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANVULPIXPokedexTextUnused[] = _("");
+
+const u8 gALOLANNINETALESPokedexText[] = _(
+    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gALOLANNINETALESPokedexTextUnused[] = _("");
+
+const u8 gUXIEPokedexText[] = _(
+    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gUXIEPokedexTextUnused[] = _("");
+
+const u8 gMESPRITPokedexText[] = _(
+    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMESPRITPokedexTextUnused[] = _("");
+
+const u8 gAZELFPokedexText[] = _(
+    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gAZELFPokedexTextUnused[] = _("");
+
+const u8 gDIALGAPokedexText[] = _(
+    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gDIALGAPokedexTextUnused[] = _("");
+
+const u8 gPALKIAPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPALKIAPokedexTextUnused[] = _("");
+
+const u8 gHEATRANPokedexText[] = _(
+    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gHEATRANPokedexTextUnused[] = _("");
+
+const u8 gREGIGIGASPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gREGIGIGASPokedexTextUnused[] = _("");
+
+const u8 gGIRATINAPokedexText[] = _(
+    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gGIRATINAPokedexTextUnused[] = _("");
+
+const u8 gCRESSELIAPokedexText[] = _(
+    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gCRESSELIAPokedexTextUnused[] = _("");
+
+const u8 gPHIONEPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gPHIONEPokedexTextUnused[] = _("");
+
+const u8 gMANAPHYPokedexText[] = _(
+    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gMANAPHYPokedexTextUnused[] = _("");
+
+const u8 gSHAYMINPokedexText[] = _(
+    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gSHAYMINPokedexTextUnused[] = _("");
+
+const u8 gARCEUSPokedexText[] = _(
+    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
+    "$");
+
+const u8 gARCEUSPokedexTextUnused[] = _("");
+
