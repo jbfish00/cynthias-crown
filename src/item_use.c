@@ -65,6 +65,8 @@ static void Task_UsedBlackWhiteFlute(u8 taskId);
 static void ItemUseOnFieldCB_EscapeRope(u8 taskId);
 static void UseTownMapFromBag(void);
 static void Task_UseTownMapFromField(u8 taskId);
+static void UseFlyWingFromBag(void);
+static void Task_UseFlyWingFromField(u8 taskId);
 static void UseFameCheckerFromBag(void);
 static void Task_UseFameCheckerFromField(u8 taskId);
 static void Task_BattleUse_StatBooster_DelayAndPrint(u8 taskId);
@@ -673,6 +675,42 @@ static void Task_UseTownMapFromField(u8 taskId)
         CleanupOverworldWindowsAndTilemaps();
         SetFieldCallback2ForItemUse();
         InitRegionMapWithExitCB(REGIONMAP_TYPE_NORMAL, CB2_ReturnToField);
+        DestroyTask(taskId);
+    }
+}
+
+void FieldUseFunc_FlyWing(u8 taskId)
+{
+    if (!FlagGet(FLAG_BADGE02_GET))
+    {
+        PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
+        return;
+    }
+    if (gTasks[taskId].data[3] == 0)
+    {
+        ItemMenu_SetExitCallback(UseFlyWingFromBag);
+        ItemMenu_StartFadeToExitCallback(taskId);
+    }
+    else
+    {
+        StopPokemonLeagueLightingEffectTask();
+        FadeScreen(FADE_TO_BLACK, 0);
+        gTasks[taskId].func = Task_UseFlyWingFromField;
+    }
+}
+
+static void UseFlyWingFromBag(void)
+{
+    CB2_OpenFlyMap();
+}
+
+static void Task_UseFlyWingFromField(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        CleanupOverworldWindowsAndTilemaps();
+        SetFieldCallback2ForItemUse();
+        CB2_OpenFlyMap();
         DestroyTask(taskId);
     }
 }
