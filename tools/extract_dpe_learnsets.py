@@ -85,6 +85,52 @@ DECISIONS: dict[str, str] = {
 
     # HisuianArcanine (DPE has level-0 and level-1 entries, both earlier than FR=34)
     "HisuianArcanine:MOVE_EXTREME_SPEED":    "D",   # FR=34, DPE=0/1
+
+    # GalarianMeowth (newly mapped from MeowthG)
+    "GalarianMeowth:MOVE_FAKE_OUT":          "D",   # FR=8,  DPE=1
+    "GalarianMeowth:MOVE_METAL_CLAW":        "D",   # FR=20, DPE=16
+    "GalarianMeowth:MOVE_SWAGGER":           "D",   # FR=35, DPE=24
+    "GalarianMeowth:MOVE_SLASH":             "D",   # FR=40, DPE=36
+
+    # GalarianFarfetchd (newly mapped from FarfetchdG)
+    "GalarianFarfetchd:MOVE_PECK":           "D",   # FR=17, DPE=1
+    "GalarianFarfetchd:MOVE_DETECT":         "D",   # FR=41, DPE=25
+
+    # GalarianDarumaka (newly mapped from DarumakaG)
+    "GalarianDarumaka:MOVE_POWDER_SNOW":     "D",   # FR=5,  DPE=1
+
+    # AlolanMeowth (newly mapped from MeowthA)
+    "AlolanMeowth:MOVE_BITE":                "D",   # FR=8,  DPE=6
+
+    # AlolanDiglett (newly mapped from DiglettA)
+    "AlolanDiglett:MOVE_SAND_ATTACK":        "D",   # FR=4,  DPE=1
+    "AlolanDiglett:MOVE_METAL_CLAW":         "D",   # FR=24, DPE=1
+    "AlolanDiglett:MOVE_MUD_SLAP":           "D",   # FR=14, DPE=10
+    "AlolanDiglett:MOVE_MAGNITUDE":          "D",   # FR=19, DPE=14
+    "AlolanDiglett:MOVE_DIG":               "D",   # FR=39, DPE=31
+    "AlolanDiglett:MOVE_EARTHQUAKE":         "D",   # FR=44, DPE=39
+
+    # AlolanDugtrio (newly mapped from DugtrioA)
+    "AlolanDugtrio:MOVE_FISSURE":            "D",   # FR=57, DPE=53
+
+    # AlolanGeodude (newly mapped from GeodudeA)
+    "AlolanGeodude:MOVE_SPARK":              "D",   # FR=17, DPE=12
+    "AlolanGeodude:MOVE_SELF_DESTRUCT":      "D",   # FR=38, DPE=24
+    "AlolanGeodude:MOVE_EXPLOSION":          "D",   # FR=55, DPE=36
+
+    # AlolanGraveler (newly mapped from GravelerA)
+    "AlolanGraveler:MOVE_SPARK":             "D",   # FR=17, DPE=12
+    "AlolanGraveler:MOVE_SELF_DESTRUCT":     "D",   # FR=38, DPE=24
+    "AlolanGraveler:MOVE_EXPLOSION":         "D",   # FR=60, DPE=44
+
+    # AlolanVulpix (newly mapped from VulpixA)
+    "AlolanVulpix:MOVE_CONFUSE_RAY":         "D",   # FR=20, DPE=12
+    "AlolanVulpix:MOVE_ICY_WIND":            "D",   # FR=16, DPE=15
+    "AlolanVulpix:MOVE_MIST":               "D",   # FR=24, DPE=20
+    "AlolanVulpix:MOVE_BLIZZARD":            "D",   # FR=44, DPE=42
+
+    # AlolanExeggutor (newly mapped from ExeggutorA)
+    "AlolanExeggutor:MOVE_EGG_BOMB":         "D",   # FR=41, DPE=27
 }
 
 FR_MOVES_H    = "include/constants/moves.h"
@@ -227,8 +273,8 @@ SPECIES_TO_DPE = {
     "Sliggoo":            "Sliggoo",
     "Goodra":             "Goodra",
     "Ursaluna":           "Ursaluna",
-    "Basculin":           "BasculinRed",
-    "Basculegion":        "BasculegionM",
+    "Basculin":           "Basculin",
+    "Basculegion":        "Basculegion",
     # Gen 8
     "Rookidee":           "Rookidee",
     "Corvisquire":        "Corvisquire",
@@ -251,22 +297,22 @@ SPECIES_TO_DPE = {
     # Galarian forms
     "GalarianZigzagoon":  "ZigzagoonG",
     "GalarianLinoone":    "LinooneG",
-    "GalarianMeowth":     "GalarianMeowth",
+    "GalarianMeowth":     "MeowthG",
     "GalarianMrMime":     "MrMime",           # no GalarianMrMime in DPE → use base
-    "GalarianFarfetchd":  "GalarianFarfetchd",
-    "GalarianDarumaka":   "GalarianDarumaka",
-    "GalarianDarmanitan": "GalarianDarmanitan",
+    "GalarianFarfetchd":  "FarfetchdG",
+    "GalarianDarumaka":   "DarumakaG",
+    "GalarianDarmanitan": "DarmanitanG",
     # Alolan forms
-    "AlolanMeowth":       "AlolanMeowth",
-    "AlolanPersian":      "AlolanPersian",
-    "AlolanDiglett":      "AlolanDiglett",
-    "AlolanDugtrio":      "AlolanDugtrio",
-    "AlolanGeodude":      "AlolanGeodude",
-    "AlolanGraveler":     "AlolanGraveler",
-    "AlolanGolem":        "AlolanGolem",
-    "AlolanVulpix":       "AlolanVulpix",
-    "AlolanNinetales":    "AlolanNinetales",
-    "AlolanExeggutor":    "AlolanExeggutor",
+    "AlolanMeowth":       "MeowthA",
+    "AlolanPersian":      "PersianA",
+    "AlolanDiglett":      "DiglettA",
+    "AlolanDugtrio":      "DugtrioA",
+    "AlolanGeodude":      "GeodudeA",
+    "AlolanGraveler":     "GravelerA",
+    "AlolanGolem":        "GolemA",
+    "AlolanVulpix":       "VulpixA",
+    "AlolanNinetales":    "NinetalesA",
+    "AlolanExeggutor":    "ExeggutorA",
     # Hisuian forms
     "HisuianZorua":       "ZoruaH",
     "HisuianZoroark":     "ZoroarkH",
