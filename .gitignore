@@ -9,9 +9,11 @@
 *.elf
 *.exe
 *.fwjpnfont
+!data/*.gba
 *.sgm
 *.sa1
 *.sg1
+*.gbapal
 *.hwjpnfont
 *.i
 *.idb
