@@ -411,6 +411,10 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_JIRACHI] = _("JIRACHI"),
     [SPECIES_DEOXYS] = _("DEOXYS"),
     [SPECIES_CHIMECHO] = _("CHIMECHO"),
+    [SPECIES_SHINX]              = _("SHINX"),
+    [SPECIES_AXEW]               = _("AXEW"),
+    [SPECIES_HONEDGE]            = _("HONEDGE"),
+    [SPECIES_GALARIAN_ZIGZAGOON] = _("G-ZIGZAGOO"),
 
 #include "../../../build/step5_species_names.inc"
 };

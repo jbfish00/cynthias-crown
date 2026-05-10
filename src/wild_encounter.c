@@ -17,7 +17,24 @@
 #include "constants/abilities.h"
 #include "constants/items.h"
 
+extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
+
 #define MAX_ENCOUNTER_RATE 1600
+
+static u8 GetMinWildLevel(u16 species)
+{
+    u16 i, j;
+    for (i = 1; i < NUM_SPECIES; i++)
+    {
+        for (j = 0; j < EVOS_PER_MON; j++)
+        {
+            if (gEvolutionTable[i][j].method == EVO_LEVEL
+             && gEvolutionTable[i][j].targetSpecies == species)
+                return (u8)gEvolutionTable[i][j].param;
+        }
+    }
+    return 1;
+}
 
 #define HEADER_NONE 0xFFFF
 
@@ -295,7 +312,7 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
         break;
     }
 
-    if (FlagGet(FLAG_CHOSE_PLAYER_TYPE))
+    if (FlagGet(FLAG_CHOSE_PLAYER_TYPE) && (Random() & 1))
     {
         chosenType = VarGet(VAR_CHOSEN_TYPE);
         matchCount = 0;
@@ -313,8 +330,13 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
         {
             globalCount = 0;
             for (s = 1; s < NUM_SPECIES; s++)
+            {
                 if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
-                    globalCount++;
+                {
+                    if (GetMinWildLevel(s) <= info->wildPokemon[slot].maxLevel)
+                        globalCount++;
+                }
+            }
             if (globalCount > 0)
             {
                 pick = Random() % globalCount;
@@ -323,14 +345,22 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
                 {
                     if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
                     {
-                        if (globalCount == pick)
-                            break;
-                        globalCount++;
+                        if (GetMinWildLevel(s) <= info->wildPokemon[slot].maxLevel)
+                        {
+                            if (globalCount == pick)
+                                break;
+                            globalCount++;
+                        }
                     }
                 }
                 level = ChooseWildMonLevel(&info->wildPokemon[slot]);
                 if (flags == WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(level))
                     return FALSE;
+                {
+                    u8 minViable = GetMinWildLevel(s);
+                    if (level < minViable)
+                        level = minViable;
+                }
                 GenerateWildMon(s, level, slot);
                 return TRUE;
             }
@@ -340,6 +370,11 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
     level = ChooseWildMonLevel(&info->wildPokemon[slot]);
     if (flags == WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(level))
         return FALSE;
+    {
+        u8 minViable = GetMinWildLevel(info->wildPokemon[slot].species);
+        if (level < minViable)
+            level = minViable;
+    }
     GenerateWildMon(info->wildPokemon[slot].species, level, slot);
     return TRUE;
 }
@@ -356,7 +391,7 @@ static u16 GenerateFishingEncounter(const struct WildPokemonInfo * info, u8 rod)
     u16 s;
     u16 chosenType;
 
-    if (FlagGet(FLAG_CHOSE_PLAYER_TYPE))
+    if (FlagGet(FLAG_CHOSE_PLAYER_TYPE) && (Random() & 1))
     {
         chosenType = VarGet(VAR_CHOSEN_TYPE);
         for (i = 0; i < FISH_WILD_COUNT; i++)
@@ -373,8 +408,13 @@ static u16 GenerateFishingEncounter(const struct WildPokemonInfo * info, u8 rod)
         {
             globalCount = 0;
             for (s = 1; s < NUM_SPECIES; s++)
+            {
                 if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
-                    globalCount++;
+                {
+                    if (GetMinWildLevel(s) <= info->wildPokemon[slot].maxLevel)
+                        globalCount++;
+                }
+            }
             if (globalCount > 0)
             {
                 pick = Random() % globalCount;
@@ -383,12 +423,20 @@ static u16 GenerateFishingEncounter(const struct WildPokemonInfo * info, u8 rod)
                 {
                     if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
                     {
-                        if (globalCount == pick)
-                            break;
-                        globalCount++;
+                        if (GetMinWildLevel(s) <= info->wildPokemon[slot].maxLevel)
+                        {
+                            if (globalCount == pick)
+                                break;
+                            globalCount++;
+                        }
                     }
                 }
                 level = ChooseWildMonLevel(&info->wildPokemon[slot]);
+                {
+                    u8 minViable = GetMinWildLevel(s);
+                    if (level < minViable)
+                        level = minViable;
+                }
                 GenerateWildMon(s, level, slot);
                 return s;
             }
@@ -396,6 +444,11 @@ static u16 GenerateFishingEncounter(const struct WildPokemonInfo * info, u8 rod)
     }
 
     level = ChooseWildMonLevel(&info->wildPokemon[slot]);
+    {
+        u8 minViable = GetMinWildLevel(info->wildPokemon[slot].species);
+        if (level < minViable)
+            level = minViable;
+    }
     GenerateWildMon(info->wildPokemon[slot].species, level, slot);
     return info->wildPokemon[slot].species;
 }
