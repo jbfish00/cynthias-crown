@@ -220,7 +220,7 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene::
 
 PalletTown_ProfessorOaksLab_EventScript_TypeLoop::
 	multichoice 0, 0, MULTICHOICE_TYPE_SELECTION, FALSE
-	setvar VAR_CHOSEN_TYPE, VAR_RESULT
+	copyvar VAR_CHOSEN_TYPE, VAR_RESULT
 	goto_if_lt VAR_CHOSEN_TYPE, 9, OaksLab_TypeIndexOk
 	addvar VAR_CHOSEN_TYPE, 1
 OaksLab_TypeIndexOk::
@@ -1374,7 +1374,7 @@ OaksLab_GiveFighting::
 
 OaksLab_GiveFlying::
 	multichoice 0, 0, MULTICHOICE_OAKSLAB_FLYING_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveFlying_Pidgey
 	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveFlying_Hoothoot
 	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveFlying_Taillow
@@ -1416,7 +1416,7 @@ OaksLab_GiveGround::
 
 OaksLab_GiveRock::
 	multichoice 0, 0, MULTICHOICE_OAKSLAB_ROCK_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveRock_Omanyte
 	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveRock_Kabuto
 	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveRock_Lileep
@@ -1473,7 +1473,7 @@ OaksLab_GiveSteel::
 
 OaksLab_GiveFire::
 	multichoice 0, 0, MULTICHOICE_OAKSLAB_FIRE_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveFire_Charmander
 	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveFire_Cyndaquil
 	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveFire_Torchic
@@ -1520,7 +1520,7 @@ OaksLab_GiveFire_Scorbunny::
 
 OaksLab_GiveWater::
 	multichoice 0, 0, MULTICHOICE_OAKSLAB_WATER_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveWater_Squirtle
 	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveWater_Totodile
 	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveWater_Mudkip
@@ -1567,7 +1567,7 @@ OaksLab_GiveWater_Sobble::
 
 OaksLab_GiveGrass::
 	multichoice 0, 0, MULTICHOICE_OAKSLAB_GRASS_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveGrass_Bulbasaur
 	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveGrass_Chikorita
 	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveGrass_Treecko

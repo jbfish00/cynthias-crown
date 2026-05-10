@@ -30,6 +30,8 @@ static void DrawVerticalMultichoiceMenu(u8 left, u8 top, u8 mcId, u8 ignoreBpres
 static u8 GetMCWindowHeight(u8 count);
 static void CreateMCMenuInputHandlerTask(u8 ignoreBpress, u8 count, u8 windowId, u8 mcId);
 static void Task_MultichoiceMenu_HandleInput(u8 taskId);
+static void HandleLargeMultichoiceInput(u8 taskId);
+static void ScrollMCMenuToPos(u8 taskId);
 static void MultiChoicePrintHelpDescription(u8 mcId);
 static void Task_YesNoMenu_HandleInput(u8 taskId);
 static void Hask_MultichoiceGridMenu_HandleInput(u8 taskId);
@@ -945,13 +947,17 @@ static void DrawVerticalMultichoiceMenu(u8 left, u8 top, u8 mcId, u8 ignoreBpres
         height = GetMCWindowHeight(count);
         windowId = CreateWindowFromRect(left, top, width, height);
         SetStdWindowBorderStyle(windowId, FALSE);
-        if (mcId == MULTICHOICE_GAME_CORNER_TMPRIZES
-         || mcId == MULTICHOICE_BIKE_SHOP
-         || mcId == MULTICHOICE_GAME_CORNER_BATTLE_ITEM_PRIZES)
-            MultichoiceList_PrintItems(windowId, FONT_NORMAL, 8, 2, 14, count, list, 0, 2);
-        else
-            MultichoiceList_PrintItems(windowId, FONT_NORMAL, 8, 2, 14, count, list, 0, 2);
-        Menu_InitCursor(windowId, FONT_NORMAL, 0, 2, 14, count, initPos);
+        {
+            u8 visibleCount = count > 8 ? 8 : count;
+            u8 clampedInitPos = (count > 8 && initPos > 7) ? 0 : initPos;
+            if (mcId == MULTICHOICE_GAME_CORNER_TMPRIZES
+             || mcId == MULTICHOICE_BIKE_SHOP
+             || mcId == MULTICHOICE_GAME_CORNER_BATTLE_ITEM_PRIZES)
+                MultichoiceList_PrintItems(windowId, FONT_NORMAL, 8, 2, 14, visibleCount, list, 0, 2);
+            else
+                MultichoiceList_PrintItems(windowId, FONT_NORMAL, 8, 2, 14, visibleCount, list, 0, 2);
+            Menu_InitCursor(windowId, FONT_NORMAL, 0, 2, 14, visibleCount, clampedInitPos);
+        }
         CreateMCMenuInputHandlerTask(ignoreBpress, count, windowId, mcId);
         ScheduleBgCopyTilemapToVram(0);
     }
@@ -985,10 +991,13 @@ static u8 GetMCWindowHeight(u8 count)
 }
 
 #define tTimer         data[2]
+#define tScrollOffset  data[3]
 #define tIgnoreBPress  data[4]
 #define tWrapAround    data[5]
 #define tWindowId      data[6]
 #define tMultichoiceId data[7]
+#define tTotalCount    data[8]
+#define tAbsPos        data[9]
 
 static void CreateMCMenuInputHandlerTask(u8 ignoreBpress, u8 count, u8 windowId, u8 mcId)
 {
@@ -1008,6 +1017,7 @@ static void CreateMCMenuInputHandlerTask(u8 ignoreBpress, u8 count, u8 windowId,
         gTasks[taskId].tWrapAround = FALSE;
     gTasks[taskId].tWindowId = windowId;
     gTasks[taskId].tMultichoiceId = mcId;
+    gTasks[taskId].tTotalCount = count;
     MultiChoicePrintHelpDescription(mcId);
 }
 
@@ -1021,6 +1031,11 @@ static void Task_MultichoiceMenu_HandleInput(u8 taskId)
             sDelay--;
         else
         {
+            if (tTotalCount > 8)
+            {
+                HandleLargeMultichoiceInput(taskId);
+                return;
+            }
             if (tWrapAround == FALSE)
                 input = Menu_ProcessInputNoWrapAround();
             else
@@ -1045,6 +1060,82 @@ static void Task_MultichoiceMenu_HandleInput(u8 taskId)
             DestroyTask(taskId);
             ScriptContext_Enable();
         }
+    }
+}
+
+static void ScrollMCMenuToPos(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    s16 absPos = tAbsPos;
+    s16 totalCount = tTotalCount;
+    s16 scrollOffset = tScrollOffset;
+    u8 visibleCount;
+    u8 localPos;
+    const struct MenuAction *list = sMultichoiceLists[tMultichoiceId].list;
+    u8 windowId = tWindowId;
+
+    if (absPos < scrollOffset)
+        scrollOffset = absPos;
+    else if (absPos > scrollOffset + 7)
+        scrollOffset = absPos - 7;
+
+    tScrollOffset = scrollOffset;
+    visibleCount = (u8)(totalCount - scrollOffset);
+    if (visibleCount > 8)
+        visibleCount = 8;
+    localPos = (u8)(absPos - scrollOffset);
+
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(1));
+    MultichoiceList_PrintItems(windowId, FONT_NORMAL, 8, 2, 14, visibleCount, list + scrollOffset, 0, 2);
+    Menu_InitCursor(windowId, FONT_NORMAL, 0, 2, 14, visibleCount, localPos);
+}
+
+static void HandleLargeMultichoiceInput(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    s16 absPos = tAbsPos;
+    s16 totalCount = tTotalCount;
+
+    if (JOY_NEW(A_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        gSpecialVar_Result = (u16)absPos;
+        DestroyScriptMenuWindow(tWindowId);
+        DestroyTask(taskId);
+        ScriptContext_Enable();
+        return;
+    }
+    if (JOY_NEW(B_BUTTON))
+    {
+        if (!tIgnoreBPress)
+        {
+            PlaySE(SE_SELECT);
+            gSpecialVar_Result = SCR_MENU_CANCEL;
+            DestroyScriptMenuWindow(tWindowId);
+            DestroyTask(taskId);
+            ScriptContext_Enable();
+        }
+        return;
+    }
+    if (JOY_NEW(DPAD_DOWN))
+    {
+        PlaySE(SE_SELECT);
+        absPos++;
+        if (absPos >= totalCount)
+            absPos = 0;
+        tAbsPos = absPos;
+        MultiChoicePrintHelpDescription(tMultichoiceId);
+        ScrollMCMenuToPos(taskId);
+    }
+    else if (JOY_NEW(DPAD_UP))
+    {
+        PlaySE(SE_SELECT);
+        absPos--;
+        if (absPos < 0)
+            absPos = totalCount - 1;
+        tAbsPos = absPos;
+        MultiChoicePrintHelpDescription(tMultichoiceId);
+        ScrollMCMenuToPos(taskId);
     }
 }
 

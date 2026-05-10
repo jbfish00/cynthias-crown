@@ -23,7 +23,7 @@ TypeShrine_EventScript_StartScene::
 
 TypeShrine_EventScript_TypeSelectionLoop::
 	multichoice 0, 0, MULTICHOICE_TYPE_SELECTION, FALSE
-	setvar VAR_CHOSEN_TYPE, VAR_RESULT
+	copyvar VAR_CHOSEN_TYPE, VAR_RESULT
 	call TypeShrine_EventScript_ShowTypeDescription
 	msgbox TypeShrine_Text_ConfirmChoice, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, TypeShrine_EventScript_TypeSelectionLoop
@@ -224,7 +224,7 @@ TypeShrine_EventScript_GiveNidoranM::
 TypeShrine_EventScript_GiveFlying::
 	msgbox TypeShrine_Text_FlyingChoose, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTICHOICE_FLYING_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, TypeShrine_EventScript_GivePidgey
 	goto_if_eq VAR_CHOSEN_STARTER, 1, TypeShrine_EventScript_GiveSpearow
 	givemon SPECIES_DODUO, 5
@@ -241,7 +241,7 @@ TypeShrine_EventScript_GiveSpearow::
 TypeShrine_EventScript_GiveBug::
 	msgbox TypeShrine_Text_BugChoose, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTICHOICE_BUG_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, TypeShrine_EventScript_GivePinsir
 	goto_if_eq VAR_CHOSEN_STARTER, 1, TypeShrine_EventScript_GiveScyther
 	givemon SPECIES_HERACROSS, 5
@@ -258,7 +258,7 @@ TypeShrine_EventScript_GiveScyther::
 TypeShrine_EventScript_GiveRock::
 	msgbox TypeShrine_Text_RockChoose, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTICHOICE_ROCK_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, TypeShrine_EventScript_GiveOmanyte
 	goto_if_eq VAR_CHOSEN_STARTER, 1, TypeShrine_EventScript_GiveKabuto
 	givemon SPECIES_AERODACTYL, 5
@@ -275,7 +275,7 @@ TypeShrine_EventScript_GiveKabuto::
 TypeShrine_EventScript_GiveFire::
 	msgbox TypeShrine_Text_FireChoose, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTICHOICE_FIRE_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, TypeShrine_EventScript_GiveCharmander
 	goto_if_eq VAR_CHOSEN_STARTER, 1, TypeShrine_EventScript_GiveCyndaquil
 	givemon SPECIES_TORCHIC, 5
@@ -292,7 +292,7 @@ TypeShrine_EventScript_GiveCyndaquil::
 TypeShrine_EventScript_GiveWater::
 	msgbox TypeShrine_Text_WaterChoose, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTICHOICE_WATER_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, TypeShrine_EventScript_GiveSquirtle
 	goto_if_eq VAR_CHOSEN_STARTER, 1, TypeShrine_EventScript_GiveTotodile
 	givemon SPECIES_MUDKIP, 5
@@ -309,7 +309,7 @@ TypeShrine_EventScript_GiveTotodile::
 TypeShrine_EventScript_GiveGrass::
 	msgbox TypeShrine_Text_GrassChoose, MSGBOX_DEFAULT
 	multichoice 0, 0, MULTICHOICE_GRASS_CHOICE, FALSE
-	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	copyvar VAR_CHOSEN_STARTER, VAR_RESULT
 	goto_if_eq VAR_CHOSEN_STARTER, 0, TypeShrine_EventScript_GiveBulbasaur
 	goto_if_eq VAR_CHOSEN_STARTER, 1, TypeShrine_EventScript_GiveChikorita
 	givemon SPECIES_TREECKO, 5
