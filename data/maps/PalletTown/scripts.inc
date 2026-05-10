@@ -387,7 +387,8 @@ PalletTown_Movement_SignLadyMoveOutOfWayLeft::
 	step_end
 
 PalletTown_EventScript_FatMan::
-	msgbox PalletTown_Text_CanStoreItemsAndMonsInPC, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_PALLET_FATMAN, PalletTown_Text_FatManChallenge, PalletTown_Text_FatManDefeat
+	msgbox PalletTown_Text_CanStoreItemsAndMonsInPC, MSGBOX_AUTOCLOSE
 	end
 
 PalletTown_EventScript_OaksLabSign::

@@ -65,3 +65,12 @@ PalletTown_Text_OakYouEnjoyingTraveling::
     .string "Good for you, good for you.\n"
     .string "Hohoho.$"
 
+PalletTown_Text_FatManChallenge:
+    .string "I store POKeMON in the PC\n"
+    .string "and battle with the rest!\p"
+    .string "Let's see what you've got!$"
+
+PalletTown_Text_FatManDefeat:
+    .string "Incredible... I need to\n"
+    .string "reorganize my boxes.$"
+

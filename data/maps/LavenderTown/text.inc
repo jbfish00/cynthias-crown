@@ -38,3 +38,20 @@ LavenderTown_Text_PokemonTowerSign::
     .string "POKéMON TOWER\n"
     .string "Becalm the Spirits of POKéMON$"
 
+LavenderTown_Text_WorkerMChallenge:
+    .string "This town is home to restless\n"
+    .string "spirits. Are you brave enough\p"
+    .string "to face them... and me?$"
+
+LavenderTown_Text_WorkerMDefeat:
+    .string "Even the ghosts would be\n"
+    .string "impressed by that...$"
+
+LavenderTown_Text_BoyChallenge:
+    .string "Ghosts are my favorite!\n"
+    .string "Battle me if you dare!$"
+
+LavenderTown_Text_BoyDefeat:
+    .string "My ghosts aren't scary\n"
+    .string "enough yet, I guess...$"
+

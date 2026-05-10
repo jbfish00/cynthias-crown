@@ -1316,6 +1316,9 @@
 #define FLAG_0x4FE               0x4FE
 #define FLAG_0x4FF               0x4FF
 
+#define FLAG_HIDE_CYNTHIA_AT_SHRINE  FLAG_0x4FE
+#define FLAG_DEFEATED_CYNTHIA        FLAG_0x4FF
+
 #define TRAINER_FLAGS_START      (FLAG_0x4FF + 1)
 #define TRAINER_FLAGS_END        (TRAINER_FLAGS_START + MAX_TRAINERS_COUNT - 1) // 0x7FF
 

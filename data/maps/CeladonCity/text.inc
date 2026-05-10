@@ -112,3 +112,19 @@ CeladonCity_Text_SomeoneStoleSilphScope::
     .string "But I lost sight of him!\n"
     .string "Where'd he go?$"
 
+CeladonCity_Text_OldMan2Challenge:
+    .string "I may have lost at the slots,\n"
+    .string "but I never lose a battle!$"
+
+CeladonCity_Text_OldMan2Defeat:
+    .string "What?! Today is just not\n"
+    .string "my day, is it...$"
+
+CeladonCity_Text_BoyChallenge:
+    .string "I've been training while\n"
+    .string "drinking tea. Battle me!$"
+
+CeladonCity_Text_BoyDefeat:
+    .string "I need more practice...\n"
+    .string "and more tea.$"
+

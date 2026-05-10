@@ -74,7 +74,8 @@ ViridianCity_EventScript_GymDoor::
 	end
 
 ViridianCity_EventScript_Boy::
-	msgbox ViridianCity_Text_CanCarryMonsAnywhere, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_VIRIDIAN_BOY, ViridianCity_Text_BoyChallenge, ViridianCity_Text_BoyDefeat
+	msgbox ViridianCity_Text_CanCarryMonsAnywhere, MSGBOX_AUTOCLOSE
 	end
 
 @ Other old man, not the tutorial old man
@@ -148,6 +149,7 @@ ViridianCity_EventScript_TutorialNotReady::
 	end
 
 ViridianCity_EventScript_Youngster::
+	trainerbattle_single TRAINER_NPC_VIRIDIAN_YOUNGSTER, ViridianCity_Text_YoungsterChallenge, ViridianCity_Text_YoungsterDefeat
 	lock
 	faceplayer
 	msgbox ViridianCity_Text_WantToKnowAboutCaterpillarMons, MSGBOX_YESNO

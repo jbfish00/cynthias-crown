@@ -333,7 +333,8 @@ CinnabarIsland_EventScript_Woman::
 	end
 
 CinnabarIsland_EventScript_OldMan::
-	msgbox CinnabarIsland_Text_ScientistsExperimentInMansion, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_CINNABAR_OLDMAN, CinnabarIsland_Text_OldManChallenge, CinnabarIsland_Text_OldManDefeat
+	msgbox CinnabarIsland_Text_ScientistsExperimentInMansion, MSGBOX_AUTOCLOSE
 	end
 
 CinnabarIsland_EventScript_IslandSign::

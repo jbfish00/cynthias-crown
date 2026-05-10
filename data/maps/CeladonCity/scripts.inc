@@ -21,7 +21,8 @@ CeladonCity_EventScript_Woman::
 	end
 
 CeladonCity_EventScript_OldMan2::
-	msgbox CeladonCity_Text_BlewItAllAtSlots, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_CELADON_OLDMAN, CeladonCity_Text_OldMan2Challenge, CeladonCity_Text_OldMan2Defeat
+	msgbox CeladonCity_Text_BlewItAllAtSlots, MSGBOX_AUTOCLOSE
 	end
 
 CeladonCity_EventScript_SoftboiledTutor::
@@ -60,7 +61,8 @@ CeladonCity_EventScript_RocketGrunt2::
 	end
 
 CeladonCity_EventScript_Boy::
-	msgbox CeladonCity_Text_ScaldedTongueOnTea, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_CELADON_BOY, CeladonCity_Text_BoyChallenge, CeladonCity_Text_BoyDefeat
+	msgbox CeladonCity_Text_ScaldedTongueOnTea, MSGBOX_AUTOCLOSE
 	end
 
 CeladonCity_EventScript_SilphCoScientist::

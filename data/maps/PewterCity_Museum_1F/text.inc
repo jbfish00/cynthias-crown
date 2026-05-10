@@ -85,3 +85,12 @@ PewterCity_Museum_1F_Text_KabutopsFossil::
     .string "KABUTOPS Fossil\n"
     .string "A primitive and rare POKéMON.$"
 
+PewterCity_Museum_1F_Text_ScientistChallenge:
+    .string "These fossils inspired me to\n"
+    .string "raise ancient POKeMON!\p"
+    .string "Let's battle!$"
+
+PewterCity_Museum_1F_Text_ScientistDefeat:
+    .string "Extraordinary! You are a\n"
+    .string "true fossil of talent!$"
+

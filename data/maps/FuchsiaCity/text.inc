@@ -110,3 +110,12 @@ FuchsiaCity_Text_MyFatherIsGymLeader::
     .string "I'm training to use POISON POKéMON\n"
     .string "as well as my father.$"
 
+FuchsiaCity_Text_OldManChallenge:
+    .string "The Safari Zone has made me\n"
+    .string "an expert at handling wild\p"
+    .string "and exotic POKeMON. Face me!$"
+
+FuchsiaCity_Text_OldManDefeat:
+    .string "Remarkable... You're as\n"
+    .string "wild as the Safari Zone!$"
+

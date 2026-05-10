@@ -747,12 +747,22 @@
 #define TRAINER_CHAMPION_REMATCH_CHARMANDER      741
 #define TRAINER_CUE_BALL_PAXTON                  742
 #define TRAINER_CYNTHIA                          743
+#define TRAINER_NPC_PALLET_FATMAN                744
+#define TRAINER_NPC_VIRIDIAN_YOUNGSTER           745
+#define TRAINER_NPC_VIRIDIAN_BOY                 746
+#define TRAINER_NPC_PEWTER_SCIENTIST             747
+#define TRAINER_NPC_LAVENDER_WORKERM             748
+#define TRAINER_NPC_LAVENDER_BOY                 749
+#define TRAINER_NPC_VERMILION_WOMAN              750
+#define TRAINER_NPC_VERMILION_SAILOR             751
+#define TRAINER_NPC_CELADON_OLDMAN               752
+#define TRAINER_NPC_CELADON_BOY                  753
+#define TRAINER_NPC_FUCHSIA_OLDMAN               754
+#define TRAINER_NPC_SAFFRON_BOY                  755
+#define TRAINER_NPC_SAFFRON_MAN                  756
+#define TRAINER_NPC_CINNABAR_OLDMAN              757
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is
-//       only space for 25 additional trainers before trainer flag space overflows.
-//       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
-
-#define NUM_TRAINERS                             744
-#define MAX_TRAINERS_COUNT                       768
+#define NUM_TRAINERS                             758
+#define MAX_TRAINERS_COUNT                       896
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

@@ -123,3 +123,17 @@ ViridianCity_Text_GymSign::
 ViridianCity_Text_GymDoorsAreLocked::
     .string "VIRIDIAN GYM's doors are locked…$"
 
+ViridianCity_Text_YoungsterChallenge:
+    .string "I know all about Bug POKeMON!\n"
+    .string "Wanna battle?$"
+
+ViridianCity_Text_YoungsterDefeat:
+    .string "Wow, you really know your\n"
+    .string "stuff! Amazing!$"
+
+ViridianCity_Text_BoyChallenge:
+    .string "Hey! I wanna try battling!$"
+
+ViridianCity_Text_BoyDefeat:
+    .string "Aw man... I'll train more!$"
+

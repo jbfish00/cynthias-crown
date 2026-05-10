@@ -1,6 +1,16 @@
 TypeShrine_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, TypeShrine_OnTransition
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, TypeShrine_OnWarp
 	.byte 0
+
+TypeShrine_OnTransition::
+	goto_if_set FLAG_SYS_GAME_CLEAR, TypeShrine_EventScript_RevealCynthia
+	setflag FLAG_HIDE_CYNTHIA_AT_SHRINE
+	end
+
+TypeShrine_EventScript_RevealCynthia::
+	clearflag FLAG_HIDE_CYNTHIA_AT_SHRINE
+	end
 
 TypeShrine_OnWarp::
 	map_script_2 VAR_TYPE_SHRINE_SCENE, 0, TypeShrine_EventScript_StartScene
@@ -24,6 +34,22 @@ TypeShrine_EventScript_ShrineKeeper::
 	faceplayer
 	msgbox TypeShrine_Text_YouHaveChosen, MSGBOX_DEFAULT
 	release
+	end
+
+TypeShrine_EventScript_Cynthia::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_CYNTHIA, TypeShrine_EventScript_CynthiaRematch
+	msgbox TypeShrine_Text_CynthiaIntro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_CYNTHIA, TypeShrine_Text_CynthiaPrebattle, TypeShrine_Text_CynthiaDefeat
+	setflag FLAG_DEFEATED_CYNTHIA
+	msgbox TypeShrine_Text_CynthiaPostBattle2, MSGBOX_DEFAULT
+	giveitem ITEM_MASTER_BALL, 1
+	release
+	end
+
+TypeShrine_EventScript_CynthiaRematch::
+	msgbox TypeShrine_Text_CynthiaRematch, MSGBOX_NPC
 	end
 
 TypeShrine_EventScript_ShowTypeDescription::

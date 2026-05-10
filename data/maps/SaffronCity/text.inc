@@ -113,3 +113,20 @@ SaffronCity_Text_HowCanClubNotRecognizeLance::
     .string "He's cool, and yet passionate!\l"
     .string "He's the greatest, LANCE!$"
 
+SaffronCity_Text_BoyChallenge:
+    .string "I flew all the way here\n"
+    .string "just to find a good battle!$"
+
+SaffronCity_Text_BoyDefeat:
+    .string "Wow... I'll have to fly even\n"
+    .string "further to find more practice!$"
+
+SaffronCity_Text_ManChallenge:
+    .string "TEAM ROCKET fled this city,\n"
+    .string "but I'm still here.\p"
+    .string "Show me what you've got!$"
+
+SaffronCity_Text_ManDefeat:
+    .string "You're far stronger than\n"
+    .string "any ROCKET grunt...$"
+

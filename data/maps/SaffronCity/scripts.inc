@@ -67,7 +67,8 @@ SaffronCity_EventScript_Lass::
 	end
 
 SaffronCity_EventScript_Boy::
-	msgbox SaffronCity_Text_FlewHereOnPidgeot, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_SAFFRON_BOY, SaffronCity_Text_BoyChallenge, SaffronCity_Text_BoyDefeat
+	msgbox SaffronCity_Text_FlewHereOnPidgeot, MSGBOX_AUTOCLOSE
 	end
 
 SaffronCity_EventScript_Pidgeot::
@@ -81,7 +82,8 @@ SaffronCity_EventScript_Pidgeot::
 	end
 
 SaffronCity_EventScript_Man::
-	msgbox SaffronCity_Text_SawRocketBossEscaping, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_SAFFRON_MAN, SaffronCity_Text_ManChallenge, SaffronCity_Text_ManDefeat
+	msgbox SaffronCity_Text_SawRocketBossEscaping, MSGBOX_AUTOCLOSE
 	end
 
 SaffronCity_EventScript_CitySign::

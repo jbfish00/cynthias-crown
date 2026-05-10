@@ -168,3 +168,33 @@ TypeShrine_Text_GrassChoose:
     .string "Three seeds grow for\n"
     .string "the Grass type.\p"
     .string "Which will be your partner?$"
+
+TypeShrine_Text_CynthiaIntro:
+    .string "So, you've become Champion.\n"
+    .string "Impressive.\p"
+    .string "I am CYNTHIA. Champion of\n"
+    .string "the SINNOH region.\p"
+    .string "I came here seeking the\n"
+    .string "strongest trainer in KANTO.\p"
+    .string "It seems I've found them.$"
+
+TypeShrine_Text_CynthiaPrebattle:
+    .string "Show me the power you used\n"
+    .string "to claim KANTO's crown!$"
+
+TypeShrine_Text_CynthiaDefeat:
+    .string "Extraordinary... You truly\n"
+    .string "are worthy of the crown.$"
+
+TypeShrine_Text_CynthiaPostBattle2:
+    .string "Magnificent. Your bond with\n"
+    .string "your POKéMON is genuine.\p"
+    .string "Take this. A token of\n"
+    .string "respect from one Champion\p"
+    .string "to another.$"
+
+TypeShrine_Text_CynthiaRematch:
+    .string "Our battle was everything\n"
+    .string "I hoped it would be.\p"
+    .string "Whenever you wish to battle\n"
+    .string "again, I will be here.$"

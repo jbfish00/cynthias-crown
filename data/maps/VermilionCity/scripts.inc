@@ -30,7 +30,8 @@ VermilionCity_EventScript_HideOaksAide::
 	return
 
 VermilionCity_EventScript_Woman::
-	msgbox VermilionCity_Text_GrimerMultipliesInSludge, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_VERMILION_WOMAN, VermilionCity_Text_WomanChallenge, VermilionCity_Text_WomanDefeat
+	msgbox VermilionCity_Text_GrimerMultipliesInSludge, MSGBOX_AUTOCLOSE
 	end
 
 VermilionCity_EventScript_OldMan1::
@@ -216,7 +217,8 @@ VermilionCity_EventScript_CheckSeagallopPresentTrigger::
 	end
 
 VermilionCity_EventScript_Sailor::
-	msgbox VermilionCity_Text_SSAnneVisitsOnceAYear, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_VERMILION_SAILOR, VermilionCity_Text_SailorChallenge, VermilionCity_Text_SailorDefeat
+	msgbox VermilionCity_Text_SSAnneVisitsOnceAYear, MSGBOX_AUTOCLOSE
 	end
 
 VermilionCity_EventScript_OaksAide::

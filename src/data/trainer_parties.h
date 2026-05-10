@@ -11466,3 +11466,78 @@ static const struct TrainerMonItemCustomMoves sParty_Cynthia[] = {
         .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_CRUNCH, MOVE_HYPER_BEAM},
     },
 };
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcPalletFatman[] = {
+    { .iv = 0, .lvl = 5, .species = SPECIES_PORYGON },
+    { .iv = 0, .lvl = 5, .species = SPECIES_VOLTORB },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcViridianYoungster[] = {
+    { .iv = 0, .lvl = 6, .species = SPECIES_CATERPIE },
+    { .iv = 0, .lvl = 6, .species = SPECIES_WEEDLE },
+    { .iv = 0, .lvl = 5, .species = SPECIES_GRUBBIN },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcViridianBoy[] = {
+    { .iv = 0, .lvl = 6, .species = SPECIES_PIDGEY },
+    { .iv = 0, .lvl = 5, .species = SPECIES_SENTRET },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcPewterScientist[] = {
+    { .iv = 0, .lvl = 13, .species = SPECIES_OMANYTE },
+    { .iv = 0, .lvl = 13, .species = SPECIES_KABUTO },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcLavenderWorkerm[] = {
+    { .iv = 0, .lvl = 26, .species = SPECIES_GASTLY },
+    { .iv = 0, .lvl = 24, .species = SPECIES_HAUNTER },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcLavenderBoy[] = {
+    { .iv = 0, .lvl = 25, .species = SPECIES_MISDREAVUS },
+    { .iv = 0, .lvl = 24, .species = SPECIES_PHANTUMP },
+    { .iv = 0, .lvl = 23, .species = SPECIES_SHUPPET },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcVermilionWoman[] = {
+    { .iv = 0, .lvl = 22, .species = SPECIES_GRIMER },
+    { .iv = 0, .lvl = 22, .species = SPECIES_KOFFING },
+    { .iv = 0, .lvl = 21, .species = SPECIES_CROAGUNK },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcVermilionSailor[] = {
+    { .iv = 0, .lvl = 22, .species = SPECIES_TENTACOOL },
+    { .iv = 0, .lvl = 22, .species = SPECIES_FLOATZEL },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcCeladonOldman[] = {
+    { .iv = 0, .lvl = 28, .species = SPECIES_MEOWTH },
+    { .iv = 0, .lvl = 26, .species = SPECIES_ALOLAN_PERSIAN },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcCeladonBoy[] = {
+    { .iv = 0, .lvl = 27, .species = SPECIES_SEEL },
+    { .iv = 0, .lvl = 27, .species = SPECIES_GROWLITHE },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcFuchsiaOldman[] = {
+    { .iv = 0, .lvl = 31, .species = SPECIES_NIDOKING },
+    { .iv = 0, .lvl = 30, .species = SPECIES_TAUROS },
+    { .iv = 0, .lvl = 30, .species = SPECIES_HAWLUCHA },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcSaffronBoy[] = {
+    { .iv = 0, .lvl = 35, .species = SPECIES_PIDGEOT },
+    { .iv = 0, .lvl = 34, .species = SPECIES_STARAPTOR },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcSaffronMan[] = {
+    { .iv = 0, .lvl = 36, .species = SPECIES_SCRAFTY },
+    { .iv = 0, .lvl = 35, .species = SPECIES_PANGORO },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NpcCinnabarOldman[] = {
+    { .iv = 0, .lvl = 42, .species = SPECIES_MUK },
+    { .iv = 0, .lvl = 42, .species = SPECIES_ARCANINE },
+    { .iv = 0, .lvl = 40, .species = SPECIES_MAGMAR },
+};

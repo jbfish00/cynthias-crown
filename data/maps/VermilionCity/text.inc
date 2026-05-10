@@ -129,3 +129,20 @@ VermilionCity_Text_Route2AideHasPackageForYou::
     .string "If you're in the ROUTE 2 area,\n"
     .string "please look for him.$"
 
+VermilionCity_Text_WomanChallenge:
+    .string "This harbor town has a\n"
+    .string "certain... gritty charm.\p"
+    .string "Just like my team!$"
+
+VermilionCity_Text_WomanDefeat:
+    .string "Well, I suppose not everyone\n"
+    .string "appreciates the finer things.$"
+
+VermilionCity_Text_SailorChallenge:
+    .string "Ahoy! A battle on dry land!\n"
+    .string "Don't hold back, landlubber!$"
+
+VermilionCity_Text_SailorDefeat:
+    .string "You fight like a real sailor!\n"
+    .string "I'll drink to that!$"
+

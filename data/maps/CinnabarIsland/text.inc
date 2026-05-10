@@ -73,3 +73,12 @@ CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain::
     .string "VERMILION PORT.\p"
     .string "All right, thanks for your company!$"
 
+CinnabarIsland_Text_OldManChallenge:
+    .string "This island of fire and science\n"
+    .string "has given me a fierce team.\p"
+    .string "Care to test your mettle?$"
+
+CinnabarIsland_Text_OldManDefeat:
+    .string "By MOLTRES... that was\n"
+    .string "extraordinary.$"
+

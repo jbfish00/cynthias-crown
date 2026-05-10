@@ -23,11 +23,13 @@ LavenderTown_EventScript_LittleGirlBelieve::
 	end
 
 LavenderTown_EventScript_WorkerM::
-	msgbox LavenderTown_Text_TownKnownAsMonGraveSite, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_LAVENDER_WORKERM, LavenderTown_Text_WorkerMChallenge, LavenderTown_Text_WorkerMDefeat
+	msgbox LavenderTown_Text_TownKnownAsMonGraveSite, MSGBOX_AUTOCLOSE
 	end
 
 LavenderTown_EventScript_Boy::
-	msgbox LavenderTown_Text_GhostsAppearedInTower, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_LAVENDER_BOY, LavenderTown_Text_BoyChallenge, LavenderTown_Text_BoyDefeat
+	msgbox LavenderTown_Text_GhostsAppearedInTower, MSGBOX_AUTOCLOSE
 	end
 
 LavenderTown_EventScript_TownSign::

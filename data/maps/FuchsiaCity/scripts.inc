@@ -21,7 +21,8 @@ FuchsiaCity_EventScript_LittleBoy::
 	end
 
 FuchsiaCity_EventScript_OldMan::
-	msgbox FuchsiaCity_Text_SafariZoneZooInFront, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_FUCHSIA_OLDMAN, FuchsiaCity_Text_OldManChallenge, FuchsiaCity_Text_OldManDefeat
+	msgbox FuchsiaCity_Text_SafariZoneZooInFront, MSGBOX_AUTOCLOSE
 	end
 
 FuchsiaCity_EventScript_Erik::

@@ -132,7 +132,8 @@ PewterCity_Museum_1F_Movement_ApproachCounterRight::
 	step_end
 
 PewterCity_Museum_1F_EventScript_Scientist2::
-	msgbox PewterCity_Museum_1F_Text_WeHaveTwoFossilsOnExhibit, MSGBOX_NPC
+	trainerbattle_single TRAINER_NPC_PEWTER_SCIENTIST, PewterCity_Museum_1F_Text_ScientistChallenge, PewterCity_Museum_1F_Text_ScientistDefeat
+	msgbox PewterCity_Museum_1F_Text_WeHaveTwoFossilsOnExhibit, MSGBOX_AUTOCLOSE
 	end
 
 PewterCity_Museum_1F_EventScript_OldMan::
