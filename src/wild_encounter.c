@@ -16,6 +16,7 @@
 #include "constants/maps.h"
 #include "constants/abilities.h"
 #include "constants/items.h"
+#include "constants/pokemon.h"
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 
@@ -24,13 +25,20 @@ extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 static u8 GetMinWildLevel(u16 species)
 {
     u16 i, j;
+    u8 method, preEvoMin;
     for (i = 1; i < NUM_SPECIES; i++)
     {
         for (j = 0; j < EVOS_PER_MON; j++)
         {
-            if (gEvolutionTable[i][j].method == EVO_LEVEL
-             && gEvolutionTable[i][j].targetSpecies == species)
+            if (gEvolutionTable[i][j].method == 0
+             || gEvolutionTable[i][j].targetSpecies != species)
+                continue;
+            method = gEvolutionTable[i][j].method;
+            if (method == EVO_LEVEL
+             || (method >= EVO_LEVEL_ATK_GT_DEF && method <= EVO_LEVEL_SHEDINJA))
                 return (u8)gEvolutionTable[i][j].param;
+            preEvoMin = GetMinWildLevel(i);
+            return (preEvoMin > 1) ? preEvoMin : 20;
         }
     }
     return 1;

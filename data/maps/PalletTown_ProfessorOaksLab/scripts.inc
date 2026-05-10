@@ -372,8 +372,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleSquirtleRight::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalBattleSquirtle::
-	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_SQUIRTLE, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
-	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	goto OaksLab_Battle_RivalByType
 	end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleLeft::
@@ -425,8 +424,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleCharmanderRight::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalBattleCharmander::
-	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_CHARMANDER, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
-	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	goto OaksLab_Battle_RivalByType
 	end
 
 PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderLeft::
@@ -481,9 +479,68 @@ PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleBulbasaurRight::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalBattleBulbasaur::
-	trainerbattle_earlyrival TRAINER_RIVAL_OAKS_LAB_BULBASAUR, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
-	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+	goto OaksLab_Battle_RivalByType
 	end
+
+OaksLab_Battle_RivalByType::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   OaksLab_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     OaksLab_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, OaksLab_Battle_Rival_Pidgey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   OaksLab_Battle_Rival_Omanyte
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   OaksLab_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, OaksLab_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   OaksLab_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     OaksLab_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     OaksLab_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      OaksLab_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    OaksLab_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    OaksLab_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      OaksLab_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    OaksLab_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  OaksLab_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    OaksLab_Battle_Rival_Bulbasaur
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   OaksLab_Battle_Rival_Swinub
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    OaksLab_Battle_Rival_Honedge
+
+OaksLab_Battle_Rival_Mankey::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_MANKEY, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Pidgey::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_PIDGEY, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Omanyte::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_OMANYTE, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Trapinch::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_TRAPINCH, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Squirtle::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_SQUIRTLE, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Charmander::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_CHARMANDER, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Zigzagoon::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_ZIGZAGOON, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Bulbasaur::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_BULBASAUR, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Swinub::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_SWINUB, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
+
+OaksLab_Battle_Rival_Honedge::
+	trainerbattle_earlyrival TRAINER_RIVAL_COUNTER_HONEDGE, RIVAL_BATTLE_TUTORIAL, PalletTown_ProfessorOaksLab_Text_RivalDefeat, Text_RivalVictory
+	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurLeft::
 	walk_left
@@ -1676,7 +1733,7 @@ OaksLab_SubChoiceCancel::
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_SetRivalVars::
-	@ Ball ID for animation — based on random ball position (unchanged)
+	@ Ball ID for animation — based on random ball position
 	goto_if_eq PLAYER_STARTER_NUM, 0, OaksLab_SetRivalBall_Charmander
 	goto_if_eq PLAYER_STARTER_NUM, 1, OaksLab_SetRivalBall_Bulbasaur
 	setvar RIVAL_STARTER_ID, LOCALID_SQUIRTLE_BALL
@@ -1688,243 +1745,67 @@ OaksLab_SetRivalBall_Bulbasaur::
 	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
 
 OaksLab_SetRivalSpecies::
-	@ Pick rival species as a counter to the player's chosen type
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   OaksLab_SetRival_Normal
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, OaksLab_SetRival_Fighting
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   OaksLab_SetRival_Flying
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   OaksLab_SetRival_Poison
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   OaksLab_SetRival_Ground
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     OaksLab_SetRival_Rock
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      OaksLab_SetRival_Bug
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    OaksLab_SetRival_Ghost
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    OaksLab_SetRival_Steel
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     OaksLab_SetRival_Fire
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    OaksLab_SetRival_Water
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    OaksLab_SetRival_Grass
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, OaksLab_SetRival_Electric
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  OaksLab_SetRival_Psychic
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      OaksLab_SetRival_Ice
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   OaksLab_SetRival_Dragon
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     OaksLab_SetRival_Dark
-	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    OaksLab_SetRival_Fairy
+	@ Pick fixed counter species to the player's chosen type
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   OaksLab_SetRival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     OaksLab_SetRival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, OaksLab_SetRival_Pidgey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   OaksLab_SetRival_Omanyte
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   OaksLab_SetRival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, OaksLab_SetRival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   OaksLab_SetRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     OaksLab_SetRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     OaksLab_SetRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      OaksLab_SetRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    OaksLab_SetRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    OaksLab_SetRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      OaksLab_SetRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    OaksLab_SetRival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  OaksLab_SetRival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    OaksLab_SetRival_Bulbasaur
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   OaksLab_SetRival_Swinub
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    OaksLab_SetRival_Honedge
 	@ Fallback
 	setvar RIVAL_STARTER_SPECIES, SPECIES_MANKEY
 	return
 
-OaksLab_SetRival_Normal::
-OaksLab_SetRival_Dark::
+OaksLab_SetRival_Mankey::
 	setvar RIVAL_STARTER_SPECIES, SPECIES_MANKEY
 	return
 
-OaksLab_SetRival_Fighting::
-	goto OaksLab_SetRival_RandFlying
+OaksLab_SetRival_Pidgey::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_PIDGEY
+	return
 
-OaksLab_SetRival_Flying::
-	goto OaksLab_SetRival_RandRock
+OaksLab_SetRival_Omanyte::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_OMANYTE
+	return
 
-OaksLab_SetRival_Poison::
-OaksLab_SetRival_Electric::
+OaksLab_SetRival_Trapinch::
 	setvar RIVAL_STARTER_SPECIES, SPECIES_TRAPINCH
 	return
 
-OaksLab_SetRival_Ground::
-OaksLab_SetRival_Rock::
-OaksLab_SetRival_Fire::
-	goto OaksLab_SetRival_RandWater
+OaksLab_SetRival_Squirtle::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
+	return
 
-OaksLab_SetRival_Bug::
-OaksLab_SetRival_Steel::
-OaksLab_SetRival_Grass::
-OaksLab_SetRival_Ice::
-	goto OaksLab_SetRival_RandFire
+OaksLab_SetRival_Charmander::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
+	return
 
-OaksLab_SetRival_Ghost::
-OaksLab_SetRival_Psychic::
+OaksLab_SetRival_Zigzagoon::
 	setvar RIVAL_STARTER_SPECIES, SPECIES_GALARIAN_ZIGZAGOON
 	return
 
-OaksLab_SetRival_Water::
-	goto OaksLab_SetRival_RandGrass
+OaksLab_SetRival_Bulbasaur::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
+	return
 
-OaksLab_SetRival_Dragon::
+OaksLab_SetRival_Swinub::
 	setvar RIVAL_STARTER_SPECIES, SPECIES_SWINUB
 	return
 
-OaksLab_SetRival_Fairy::
+OaksLab_SetRival_Honedge::
 	setvar RIVAL_STARTER_SPECIES, SPECIES_HONEDGE
-	return
-
-OaksLab_SetRival_RandFlying::
-	random 6
-	goto_if_eq VAR_RESULT, 0, OaksLab_SetRival_RandFlying_Pidgey
-	goto_if_eq VAR_RESULT, 1, OaksLab_SetRival_RandFlying_Hoothoot
-	goto_if_eq VAR_RESULT, 2, OaksLab_SetRival_RandFlying_Taillow
-	goto_if_eq VAR_RESULT, 3, OaksLab_SetRival_RandFlying_Starly
-	goto_if_eq VAR_RESULT, 4, OaksLab_SetRival_RandFlying_Fletchling
-	setvar RIVAL_STARTER_SPECIES, SPECIES_ROOKIDEE
-	return
-OaksLab_SetRival_RandFlying_Pidgey::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_PIDGEY
-	return
-OaksLab_SetRival_RandFlying_Hoothoot::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_HOOTHOOT
-	return
-OaksLab_SetRival_RandFlying_Taillow::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_TAILLOW
-	return
-OaksLab_SetRival_RandFlying_Starly::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_STARLY
-	return
-OaksLab_SetRival_RandFlying_Fletchling::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_FLETCHLING
-	return
-
-OaksLab_SetRival_RandRock::
-	random 9
-	goto_if_eq VAR_RESULT, 0, OaksLab_SetRival_RandRock_Omanyte
-	goto_if_eq VAR_RESULT, 1, OaksLab_SetRival_RandRock_Kabuto
-	goto_if_eq VAR_RESULT, 2, OaksLab_SetRival_RandRock_Aerodactyl
-	goto_if_eq VAR_RESULT, 3, OaksLab_SetRival_RandRock_Lileep
-	goto_if_eq VAR_RESULT, 4, OaksLab_SetRival_RandRock_Anorith
-	goto_if_eq VAR_RESULT, 5, OaksLab_SetRival_RandRock_Cranidos
-	goto_if_eq VAR_RESULT, 6, OaksLab_SetRival_RandRock_Shieldon
-	goto_if_eq VAR_RESULT, 7, OaksLab_SetRival_RandRock_Tyrunt
-	setvar RIVAL_STARTER_SPECIES, SPECIES_AMAURA
-	return
-OaksLab_SetRival_RandRock_Omanyte::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_OMANYTE
-	return
-OaksLab_SetRival_RandRock_Kabuto::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_KABUTO
-	return
-OaksLab_SetRival_RandRock_Aerodactyl::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_AERODACTYL
-	return
-OaksLab_SetRival_RandRock_Lileep::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_LILEEP
-	return
-OaksLab_SetRival_RandRock_Anorith::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_ANORITH
-	return
-OaksLab_SetRival_RandRock_Cranidos::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_CRANIDOS
-	return
-OaksLab_SetRival_RandRock_Shieldon::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_SHIELDON
-	return
-OaksLab_SetRival_RandRock_Tyrunt::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_TYRUNT
-	return
-
-OaksLab_SetRival_RandWater::
-	random 9
-	goto_if_eq VAR_RESULT, 0, OaksLab_SetRival_RandWater_Squirtle
-	goto_if_eq VAR_RESULT, 1, OaksLab_SetRival_RandWater_Totodile
-	goto_if_eq VAR_RESULT, 2, OaksLab_SetRival_RandWater_Mudkip
-	goto_if_eq VAR_RESULT, 3, OaksLab_SetRival_RandWater_Piplup
-	goto_if_eq VAR_RESULT, 4, OaksLab_SetRival_RandWater_Oshawott
-	goto_if_eq VAR_RESULT, 5, OaksLab_SetRival_RandWater_Froakie
-	goto_if_eq VAR_RESULT, 6, OaksLab_SetRival_RandWater_Popplio
-	goto_if_eq VAR_RESULT, 7, OaksLab_SetRival_RandWater_Sobble
-	setvar RIVAL_STARTER_SPECIES, SPECIES_QUAXLY
-	return
-OaksLab_SetRival_RandWater_Squirtle::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
-	return
-OaksLab_SetRival_RandWater_Totodile::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_TOTODILE
-	return
-OaksLab_SetRival_RandWater_Mudkip::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_MUDKIP
-	return
-OaksLab_SetRival_RandWater_Piplup::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_PIPLUP
-	return
-OaksLab_SetRival_RandWater_Oshawott::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_OSHAWOTT
-	return
-OaksLab_SetRival_RandWater_Froakie::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_FROAKIE
-	return
-OaksLab_SetRival_RandWater_Popplio::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_POPPLIO
-	return
-OaksLab_SetRival_RandWater_Sobble::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_SOBBLE
-	return
-
-OaksLab_SetRival_RandFire::
-	random 9
-	goto_if_eq VAR_RESULT, 0, OaksLab_SetRival_RandFire_Charmander
-	goto_if_eq VAR_RESULT, 1, OaksLab_SetRival_RandFire_Cyndaquil
-	goto_if_eq VAR_RESULT, 2, OaksLab_SetRival_RandFire_Torchic
-	goto_if_eq VAR_RESULT, 3, OaksLab_SetRival_RandFire_Chimchar
-	goto_if_eq VAR_RESULT, 4, OaksLab_SetRival_RandFire_Tepig
-	goto_if_eq VAR_RESULT, 5, OaksLab_SetRival_RandFire_Fennekin
-	goto_if_eq VAR_RESULT, 6, OaksLab_SetRival_RandFire_Litten
-	goto_if_eq VAR_RESULT, 7, OaksLab_SetRival_RandFire_Scorbunny
-	setvar RIVAL_STARTER_SPECIES, SPECIES_FUECOCO
-	return
-OaksLab_SetRival_RandFire_Charmander::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
-	return
-OaksLab_SetRival_RandFire_Cyndaquil::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_CYNDAQUIL
-	return
-OaksLab_SetRival_RandFire_Torchic::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_TORCHIC
-	return
-OaksLab_SetRival_RandFire_Chimchar::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_CHIMCHAR
-	return
-OaksLab_SetRival_RandFire_Tepig::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_TEPIG
-	return
-OaksLab_SetRival_RandFire_Fennekin::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_FENNEKIN
-	return
-OaksLab_SetRival_RandFire_Litten::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_LITTEN
-	return
-OaksLab_SetRival_RandFire_Scorbunny::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_SCORBUNNY
-	return
-
-OaksLab_SetRival_RandGrass::
-	random 9
-	goto_if_eq VAR_RESULT, 0, OaksLab_SetRival_RandGrass_Bulbasaur
-	goto_if_eq VAR_RESULT, 1, OaksLab_SetRival_RandGrass_Chikorita
-	goto_if_eq VAR_RESULT, 2, OaksLab_SetRival_RandGrass_Treecko
-	goto_if_eq VAR_RESULT, 3, OaksLab_SetRival_RandGrass_Turtwig
-	goto_if_eq VAR_RESULT, 4, OaksLab_SetRival_RandGrass_Snivy
-	goto_if_eq VAR_RESULT, 5, OaksLab_SetRival_RandGrass_Chespin
-	goto_if_eq VAR_RESULT, 6, OaksLab_SetRival_RandGrass_Rowlet
-	goto_if_eq VAR_RESULT, 7, OaksLab_SetRival_RandGrass_Grookey
-	setvar RIVAL_STARTER_SPECIES, SPECIES_SPRIGATITO
-	return
-OaksLab_SetRival_RandGrass_Bulbasaur::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
-	return
-OaksLab_SetRival_RandGrass_Chikorita::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_CHIKORITA
-	return
-OaksLab_SetRival_RandGrass_Treecko::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_TREECKO
-	return
-OaksLab_SetRival_RandGrass_Turtwig::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_TURTWIG
-	return
-OaksLab_SetRival_RandGrass_Snivy::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_SNIVY
-	return
-OaksLab_SetRival_RandGrass_Chespin::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_CHESPIN
-	return
-OaksLab_SetRival_RandGrass_Rowlet::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_ROWLET
-	return
-OaksLab_SetRival_RandGrass_Grookey::
-	setvar RIVAL_STARTER_SPECIES, SPECIES_GROOKEY
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter_Inline::

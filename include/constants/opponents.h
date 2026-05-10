@@ -761,8 +761,18 @@
 #define TRAINER_NPC_SAFFRON_BOY                  755
 #define TRAINER_NPC_SAFFRON_MAN                  756
 #define TRAINER_NPC_CINNABAR_OLDMAN              757
+#define TRAINER_RIVAL_COUNTER_MANKEY             758
+#define TRAINER_RIVAL_COUNTER_PIDGEY             759
+#define TRAINER_RIVAL_COUNTER_OMANYTE            760
+#define TRAINER_RIVAL_COUNTER_TRAPINCH           761
+#define TRAINER_RIVAL_COUNTER_SQUIRTLE           762
+#define TRAINER_RIVAL_COUNTER_CHARMANDER         763
+#define TRAINER_RIVAL_COUNTER_ZIGZAGOON          764
+#define TRAINER_RIVAL_COUNTER_BULBASAUR          765
+#define TRAINER_RIVAL_COUNTER_SWINUB             766
+#define TRAINER_RIVAL_COUNTER_HONEDGE            767
 
-#define NUM_TRAINERS                             758
+#define NUM_TRAINERS                             768
 #define MAX_TRAINERS_COUNT                       896
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

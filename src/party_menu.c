@@ -68,6 +68,9 @@
 #include "constants/quest_log.h"
 #include "constants/songs.h"
 #include "constants/sound.h"
+#include "constants/pokemon.h"
+
+extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 
 #define PARTY_PAL_SELECTED     (1 << 0)
 #define PARTY_PAL_FAINTED      (1 << 1)
@@ -1037,6 +1040,27 @@ void AnimatePartySlot(u8 slot, u8 animNum)
     ScheduleBgCopyTilemapToVram(1);
 }
 
+static bool8 SpeciesOrEvolutionMatchesType(u16 species, u8 chosenType)
+{
+    u8 j;
+    u16 target;
+    if (species == SPECIES_NONE)
+        return FALSE;
+    if (gSpeciesInfo[species].types[0] == chosenType
+     || gSpeciesInfo[species].types[1] == chosenType)
+        return TRUE;
+    for (j = 0; j < EVOS_PER_MON; j++)
+    {
+        if (gEvolutionTable[species][j].method == 0)
+            continue;
+        target = gEvolutionTable[species][j].targetSpecies;
+        if (target != SPECIES_NONE && target != species
+         && SpeciesOrEvolutionMatchesType(target, chosenType))
+            return TRUE;
+    }
+    return FALSE;
+}
+
 static u8 GetPartyBoxPaletteFlags(u8 slot, u8 animNum)
 {
     u8 palFlags = 0;
@@ -1064,7 +1088,7 @@ static u8 GetPartyBoxPaletteFlags(u8 slot, u8 animNum)
         if (s != SPECIES_NONE && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG))
         {
             u16 chosenType = VarGet(VAR_CHOSEN_TYPE);
-            if (gSpeciesInfo[s].types[0] != chosenType && gSpeciesInfo[s].types[1] != chosenType)
+            if (!SpeciesOrEvolutionMatchesType(s, chosenType))
                 palFlags |= PARTY_PAL_FAINTED;
         }
     }
@@ -5988,14 +6012,13 @@ static bool8 TrySwitchInPokemon(void)
                 continue;
             if (GetMonData(&gPlayerParty[i], MON_DATA_HP) == 0)
                 continue;
-            if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
+            if (SpeciesOrEvolutionMatchesType(s, chosenType))
                 validTypeCount++;
         }
         if (validTypeCount > 0)
         {
             u16 slotSpecies = GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES);
-            if (gSpeciesInfo[slotSpecies].types[0] != chosenType
-             && gSpeciesInfo[slotSpecies].types[1] != chosenType)
+            if (!SpeciesOrEvolutionMatchesType(slotSpecies, chosenType))
             {
                 GetMonNickname(&gPlayerParty[slot], gStringVar1);
                 StringExpandPlaceholders(gStringVar4, gText_PkmnWrongType);

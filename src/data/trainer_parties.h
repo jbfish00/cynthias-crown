@@ -4483,6 +4483,96 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalOaksLabCharmander[] 
     },
 };
 
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterMankey[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_MANKEY,
+        .moves = {MOVE_SCRATCH, MOVE_LOW_KICK, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterPidgey[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_PIDGEY,
+        .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterOmanyte[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_OMANYTE,
+        .moves = {MOVE_WATER_GUN, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterTrapinch[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_TRAPINCH,
+        .moves = {MOVE_BITE, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterSquirtle[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_SQUIRTLE,
+        .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterCharmander[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_CHARMANDER,
+        .moves = {MOVE_SCRATCH, MOVE_EMBER, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterZigzagoon[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_GALARIAN_ZIGZAGOON,
+        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterBulbasaur[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_BULBASAUR,
+        .moves = {MOVE_TACKLE, MOVE_VINE_WHIP, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterSwinub[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_SWINUB,
+        .moves = {MOVE_TACKLE, MOVE_POWDER_SNOW, MOVE_NONE, MOVE_NONE},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalCounterHonedge[] = {
+    {
+        .iv = 0,
+        .lvl = 5,
+        .species = SPECIES_HONEDGE,
+        .moves = {MOVE_TACKLE, MOVE_FURY_CUTTER, MOVE_NONE, MOVE_NONE},
+    },
+};
+
 static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22EarlySquirtle[] = {
     {
         .iv = 50,
@@ -6559,7 +6649,7 @@ static const struct TrainerMonItemCustomMoves sParty_LeaderBrock[] = {
         .lvl = 18,
         .species = SPECIES_ONIX,
         .heldItem = ITEM_SITRUS_BERRY,
-        .moves = {MOVE_ROCK_TOMB, MOVE_IRON_TAIL, MOVE_EARTHQUAKE, MOVE_BIND},
+        .moves = {MOVE_ROCK_TOMB, MOVE_IRON_TAIL, MOVE_STOMP, MOVE_BIND},
     },
 };
 
