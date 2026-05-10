@@ -2737,986 +2737,1150 @@ const u8 gGalarianZigzagoonPokedexTextUnused[] = _("");
 // === Cynthia's Crown Step 5 Pokedex Texts ===
 
 const u8 gLUXIOPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Strong electricity flows through the\n"
+    "muscles under its black fur. It stuns\n"
+    "foes with devastating jolts.");
 
 const u8 gLUXIOPokedexTextUnused[] = _("");
 
 const u8 gLUXRAYPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It can see through objects to any\n"
+    "distance. When its eyes glow gold, it\n"
+    "can spot even distant prey.");
 
 const u8 gLUXRAYPokedexTextUnused[] = _("");
 
 const u8 gFRAXUREPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its tusks can cut through most solid\n"
+    "objects. This Pokemon grooms its tusks\n"
+    "after every battle it fights.");
 
 const u8 gFRAXUREPokedexTextUnused[] = _("");
 
 const u8 gHAXORUSPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its steel-hard tusks can destroy\n"
+    "anything. Though fierce in battle, it\n"
+    "is quite tame toward its trainer.");
 
 const u8 gHAXORUSPokedexTextUnused[] = _("");
 
 const u8 gDOUBLADEPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The two swords communicate via\n"
+    "telepathy. They cooperate to confuse\n"
+    "enemies and deal the final blow.");
 
 const u8 gDOUBLADEPokedexTextUnused[] = _("");
 
 const u8 gAEGISLASHPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It absorbs the life force of those\n"
+    "who wield it. Legends claim it once\n"
+    "made kings from chosen ones.");
 
 const u8 gAEGISLASHPokedexTextUnused[] = _("");
 
 const u8 gGALARIANLINOONEPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It darts across the ground at over\n"
+    "60 mph. It startles others by running\n"
+    "toward them at full speed.");
 
 const u8 gGALARIANLINOONEPokedexTextUnused[] = _("");
 
 const u8 gOBSTAGOONPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It evolved from Linoone, hardened\n"
+    "by Galar's harsh environment. It\n"
+    "challenges foes with a daunting roar.");
 
 const u8 gOBSTAGOONPokedexTextUnused[] = _("");
 
 const u8 gSTARLYPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It forms large flocks and is commonly\n"
+    "seen in fields. Small and weak, it\n"
+    "seeks safety in numbers.");
 
 const u8 gSTARLYPokedexTextUnused[] = _("");
 
 const u8 gSTARAVIAPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It inhabits forests and fields.\n"
+    "Aggressive by nature, it quickly\n"
+    "attacks anything entering its territory.");
 
 const u8 gSTARAVIAPokedexTextUnused[] = _("");
 
 const u8 gSTARAPTORPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It develops sharp claws and a bold\n"
+    "attitude. Even when outnumbered, it\n"
+    "shows no fear whatsoever.");
 
 const u8 gSTARAPTORPokedexTextUnused[] = _("");
 
 const u8 gMUNCHLAXPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It swallows whole large amounts of\n"
+    "food without tasting or chewing. It\n"
+    "caches food all over its body.");
 
 const u8 gMUNCHLAXPokedexTextUnused[] = _("");
 
 const u8 gPORYGONZPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Additional programming was installed\n"
+    "to make it more useful. It began\n"
+    "behaving oddly after the upgrade.");
 
 const u8 gPORYGONZPokedexTextUnused[] = _("");
 
 const u8 gHISUIANZORUAPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "A Zorua that could not return home.\n"
+    "Its illusions reflect painful memories\n"
+    "of a sorrowful past.");
 
 const u8 gHISUIANZORUAPokedexTextUnused[] = _("");
 
 const u8 gHISUIANZOROARKPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its fearsome illusions are fueled by\n"
+    "sorrow and rage. Those who see them\n"
+    "are driven half-mad with grief.");
 
 const u8 gHISUIANZOROARKPokedexTextUnused[] = _("");
 
 const u8 gFLETCHLINGPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Despite its mild appearance, it is\n"
+    "quite ferocious. It flies swiftly and\n"
+    "pecks relentlessly at rivals.");
 
 const u8 gFLETCHLINGPokedexTextUnused[] = _("");
 
 const u8 gFLETCHINDERPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The hotter the flame sac, the more\n"
+    "powerfully it can fly. Its swiftness\n"
+    "in battle is unmatched.");
 
 const u8 gFLETCHINDERPokedexTextUnused[] = _("");
 
 const u8 gTALONFLAMEPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It dives at enemies at 310 mph,\n"
+    "raking them with its talons. Its\n"
+    "diving speed outdoes any other bird.");
 
 const u8 gTALONFLAMEPokedexTextUnused[] = _("");
 
 const u8 gURSALUNAPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It plows through snow and ice with\n"
+    "its stout body. Residing in peatlands,\n"
+    "it is rarely encountered.");
 
 const u8 gURSALUNAPokedexTextUnused[] = _("");
 
 const u8 gSALANDITPokedexText[] = _(
-    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It burns its bodily fluids to create\n"
+    "poisonous gas. Males attract females\n"
+    "with pheromones in the smoke.");
 
 const u8 gSALANDITPokedexTextUnused[] = _("");
 
 const u8 gSALAZZLEPokedexText[] = _(
-    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Only females exist, and they command\n"
+    "a harem of male Salandit. It gives\n"
+    "pheromones to confuse opponents.");
 
 const u8 gSALAZZLEPokedexTextUnused[] = _("");
 
 const u8 gLITWICKPokedexText[] = _(
-    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its flame burns weakly. It leads\n"
+    "travelers astray, then consumes the\n"
+    "life force of those who follow.");
 
 const u8 gLITWICKPokedexTextUnused[] = _("");
 
 const u8 gLAMPENTPokedexText[] = _(
-    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "This ominous Pokemon enters towns\n"
+    "near dusk and wanders the streets.\n"
+    "It steals spirits to fuel its fire.");
 
 const u8 gLAMPENTPokedexTextUnused[] = _("");
 
 const u8 gCHANDELUREPokedexText[] = _(
-    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The flames that burn within it\n"
+    "consume the spirit, leaving the body\n"
+    "a hollow shell lacking any will.");
 
 const u8 gCHANDELUREPokedexTextUnused[] = _("");
 
 const u8 gCHIMCHARPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It has a flame sac on its rump that\n"
+    "burns even in rain. It is fearless\n"
+    "and bursting with energy.");
 
 const u8 gCHIMCHARPokedexTextUnused[] = _("");
 
 const u8 gMONFERNOPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It uses ceilings and walls to launch\n"
+    "itself. By enveloping itself in flame,\n"
+    "it protects itself from attacks.");
 
 const u8 gMONFERNOPokedexTextUnused[] = _("");
 
 const u8 gINFERNAPEPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It uses its fire-cloaked fists for\n"
+    "battle. It is a powerful warrior\n"
+    "who will not yield to any enemy.");
 
 const u8 gINFERNAPEPokedexTextUnused[] = _("");
 
 const u8 gPIPLUPPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Because it is very proud, it does not\n"
+    "accept food from people. It tries\n"
+    "to walk upright but often falls.");
 
 const u8 gPIPLUPPokedexTextUnused[] = _("");
 
 const u8 gPRINPLUPPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It lives alone away from others.\n"
+    "Every one of them considers itself\n"
+    "the most important Pokemon of all.");
 
 const u8 gPRINPLUPPokedexTextUnused[] = _("");
 
 const u8 gEMPOLEONPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The three horns extending from its\n"
+    "beak attest to its power. It leads a\n"
+    "colony of Piplup gracefully.");
 
 const u8 gEMPOLEONPokedexTextUnused[] = _("");
 
 const u8 gBUIZELPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It spins its two tails like a\n"
+    "propeller to swim forward at high\n"
+    "speed. Its flotation sac is buoyant.");
 
 const u8 gBUIZELPokedexTextUnused[] = _("");
 
 const u8 gFLOATZELPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It evolved for fast swimming in cold\n"
+    "seas. Its flotation sac inflates to\n"
+    "keep its head above the water.");
 
 const u8 gFLOATZELPokedexTextUnused[] = _("");
 
 const u8 gMAGMORTARPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It launches balls of fire from the\n"
+    "cannonlike holes in its arms. The\n"
+    "balls can reach 3,600 degrees.");
 
 const u8 gMAGMORTARPokedexTextUnused[] = _("");
 
 const u8 gELECTIVIREPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It has no concern for electricity\n"
+    "bills. It generates 20,000 volts with\n"
+    "each of its two tails.");
 
 const u8 gELECTIVIREPokedexTextUnused[] = _("");
 
 const u8 gROTOMPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its body is made of plasma. It\n"
+    "can inhabit electrical appliances and\n"
+    "use them for its own mischief.");
 
 const u8 gROTOMPokedexTextUnused[] = _("");
 
 const u8 gROTOMHEATPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Rotom has possessed an oven. It\n"
+    "heats the air with cooking fire,\n"
+    "burning foes severely.");
 
 const u8 gROTOMHEATPokedexTextUnused[] = _("");
 
 const u8 gROTOMWASHPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Rotom has possessed a washing\n"
+    "machine. The swirling water inside\n"
+    "can catch and drown enemies.");
 
 const u8 gROTOMWASHPokedexTextUnused[] = _("");
 
 const u8 gROTOMFROSTPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Rotom has possessed a refrigerator.\n"
+    "The intense cold it generates can\n"
+    "freeze anything solid in moments.");
 
 const u8 gROTOMFROSTPokedexTextUnused[] = _("");
 
 const u8 gROTOMFANPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Rotom has possessed a fan. Its\n"
+    "spinning blades create powerful\n"
+    "cutting winds that shred enemies.");
 
 const u8 gROTOMFANPokedexTextUnused[] = _("");
 
 const u8 gROTOMMOWPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Rotom has possessed a mower.\n"
+    "The spinning blades below it hack\n"
+    "through grass and flesh alike.");
 
 const u8 gROTOMMOWPokedexTextUnused[] = _("");
 
 const u8 gTOXELPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It stores poison in an internal\n"
+    "sac. By touching foes with its body,\n"
+    "it injects them with small doses.");
 
 const u8 gTOXELPokedexTextUnused[] = _("");
 
 const u8 gTOXTRICITYPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It stimulates its poison glands by\n"
+    "drumming on its chest. This poison\n"
+    "can paralyze its targets.");
 
 const u8 gTOXTRICITYPokedexTextUnused[] = _("");
 
 const u8 gTYNAMOPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "One alone has little power. But if\n"
+    "they gather in large numbers, they\n"
+    "can generate enough light to daze.");
 
 const u8 gTYNAMOPokedexTextUnused[] = _("");
 
 const u8 gEELEKTRIKPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Electricity-generating organs line\n"
+    "its belly. It eats prey in one gulp\n"
+    "and paralyzes it from within.");
 
 const u8 gEELEKTRIKPokedexTextUnused[] = _("");
 
 const u8 gEELEKTROSSPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "They crawl out of the ocean with\n"
+    "their arms. They electrocute their\n"
+    "prey and drag it back to the sea.");
 
 const u8 gEELEKTROSSPokedexTextUnused[] = _("");
 
 const u8 gROSERADEPokedexText[] = _(
-    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Each arm bears a bouquet of flowers.\n"
+    "It lures enemies with alluring aromas,\n"
+    "then strikes with whiplike arms.");
 
 const u8 gROSERADEPokedexTextUnused[] = _("");
 
 const u8 gTANGROWTHPokedexText[] = _(
-    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "In the summer, growth is so excessive\n"
+    "that its arms are shrouded in a mass\n"
+    "of thick, curly vines.");
 
 const u8 gTANGROWTHPokedexTextUnused[] = _("");
 
 const u8 gLEAFEONPokedexText[] = _(
-    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "When it photosynthesizes, it fills\n"
+    "the surrounding area with clean air.\n"
+    "It is always surrounded by nature.");
 
 const u8 gLEAFEONPokedexTextUnused[] = _("");
 
 const u8 gGLACEONPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It can control its body temperature\n"
+    "to freeze the atmosphere and create\n"
+    "diamond-dust flurries of ice.");
 
 const u8 gGLACEONPokedexTextUnused[] = _("");
 
 const u8 gSYLVEONPokedexText[] = _(
-    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It sends a soothing aura from its\n"
+    "feelers to calm fights. It wraps\n"
+    "its ribbons around its trainer's arm.");
 
 const u8 gSYLVEONPokedexTextUnused[] = _("");
 
 const u8 gFERROSEEDPokedexText[] = _(
-    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "When threatened, it attacks by\n"
+    "shooting a barrage of spikes. The\n"
+    "spikes can pierce solid boulders.");
 
 const u8 gFERROSEEDPokedexTextUnused[] = _("");
 
 const u8 gFERROTHORNPokedexText[] = _(
-    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It attaches to cave ceilings and\n"
+    "fires steel spikes at anyone who\n"
+    "disturbs it.");
 
 const u8 gFERROTHORNPokedexTextUnused[] = _("");
 
 const u8 gPUMPKABOOPokedexText[] = _(
-    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The light from its body helps it\n"
+    "find lost spirits to carry on to the\n"
+    "afterlife. It favors dark places.");
 
 const u8 gPUMPKABOOPokedexTextUnused[] = _("");
 
 const u8 gGOURGEISTPokedexText[] = _(
-    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It sings in an eerie voice in the\n"
+    "dark of night. It wraps its arms\n"
+    "around victims and takes their souls.");
 
 const u8 gGOURGEISTPokedexTextUnused[] = _("");
 
 const u8 gPHANTUMPPokedexText[] = _(
-    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "These are created when spirits\n"
+    "possess the stumps of trees. Children\n"
+    "say they hear voices from Phantump.");
 
 const u8 gPHANTUMPPokedexTextUnused[] = _("");
 
 const u8 gTREVENANTPokedexText[] = _(
-    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It can control trees at will.\n"
+    "It traps those who harm the forest\n"
+    "and curses them to wander forever.");
 
 const u8 gTREVENANTPokedexTextUnused[] = _("");
 
 const u8 gGALARIANMRMIMEPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It vigorously mimes cold climates.\n"
+    "This expression of its feelings\n"
+    "generates a chill in the air.");
 
 const u8 gGALARIANMRMIMEPokedexTextUnused[] = _("");
 
 const u8 gMRRIMEPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It is highly skilled at tap dancing.\n"
+    "With a style both elegant and comical,\n"
+    "it draws crowds of admirers.");
 
 const u8 gMRRIMEPokedexTextUnused[] = _("");
 
 const u8 gMAMOSWINEPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its massive twin tusks are made\n"
+    "of ice. A herd of them crushed many\n"
+    "things as they marched long ago.");
 
 const u8 gMAMOSWINEPokedexTextUnused[] = _("");
 
 const u8 gFROSLASSPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It freezes its prey and exhibits\n"
+    "them in its den. Researchers have\n"
+    "found many frozen Pokemon in its lair.");
 
 const u8 gFROSLASSPokedexTextUnused[] = _("");
 
 const u8 gWEAVILEPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It lives in cold regions. It\n"
+    "leaves mysterious messages by cutting\n"
+    "tree trunks with its sharp claws.");
 
 const u8 gWEAVILEPokedexTextUnused[] = _("");
 
 const u8 gGALARIANDARUMAKAPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its flame-filled heart adapted to\n"
+    "icy climes. It hurls tightly packed\n"
+    "balls of snow at its enemies.");
 
 const u8 gGALARIANDARUMAKAPokedexTextUnused[] = _("");
 
 const u8 gGALARIANDARMANITANPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Most of its body is composed of\n"
+    "superheated ice. It charges at foes\n"
+    "with its entire body weight.");
 
 const u8 gGALARIANDARMANITANPokedexTextUnused[] = _("");
 
 const u8 gANNIHILAPEPokedexText[] = _(
-    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "When its anger grew beyond a certain\n"
+    "point, it acquired a power that\n"
+    "transcended the physical realm.");
 
 const u8 gANNIHILAPEPokedexTextUnused[] = _("");
 
 const u8 gGALARIANFARFETCHDPokedexText[] = _(
-    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It is very stubborn. Under the name\n"
+    "of training, it spends all day\n"
+    "whacking boulders with a large leek.");
 
 const u8 gGALARIANFARFETCHDPokedexTextUnused[] = _("");
 
 const u8 gSIRFETCHDPokedexText[] = _(
-    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "After years of training with the\n"
+    "leek stalk it has carried since birth,\n"
+    "it has grown into a brave knight.");
 
 const u8 gSIRFETCHDPokedexTextUnused[] = _("");
 
 const u8 gPANCHAMPokedexText[] = _(
-    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It does its best to look menacing,\n"
+    "but the leaf in its mouth softens\n"
+    "the effect. It tries to look dignified.");
 
 const u8 gPANCHAMPokedexTextUnused[] = _("");
 
 const u8 gPANGOROPokedexText[] = _(
-    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It charges ahead and bashes enemies.\n"
+    "It stands firm once it has decided\n"
+    "its course of action.");
 
 const u8 gPANGOROPokedexTextUnused[] = _("");
 
 const u8 gCROAGUNKPokedexText[] = _(
-    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It mostly avoids attacking on its\n"
+    "own. Its puffed-up cheeks warn prey\n"
+    "of the poison it intends to use.");
 
 const u8 gCROAGUNKPokedexTextUnused[] = _("");
 
 const u8 gTOXICROAKPokedexText[] = _(
-    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its knuckle claws drip with poison.\n"
+    "It uses these claws to fight battles\n"
+    "to settle territorial disputes.");
 
 const u8 gTOXICROAKPokedexTextUnused[] = _("");
 
 const u8 gRIOLUPokedexText[] = _(
-    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The aura from its body can express\n"
+    "its feelings. When in danger, it\n"
+    "can flee at astonishing speed.");
 
 const u8 gRIOLUPokedexTextUnused[] = _("");
 
 const u8 gLUCARIOPokedexText[] = _(
-    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It senses the auras of all things.\n"
+    "It can see the movements of\n"
+    "opponents even in pitch darkness.");
 
 const u8 gLUCARIOPokedexTextUnused[] = _("");
 
 const u8 gSCRAGGYPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its skin is looser than it needs\n"
+    "to be. The excess skin functions\n"
+    "like a protective shield in battle.");
 
 const u8 gSCRAGGYPokedexTextUnused[] = _("");
 
 const u8 gSCRAFTYPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It can pull its elastic skin up\n"
+    "to its neck for protection. It\n"
+    "spits acidic fluid to blind its enemy.");
 
 const u8 gSCRAFTYPokedexTextUnused[] = _("");
 
 const u8 gSKRELPPokedexText[] = _(
-    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It disguises itself as rotten kelp\n"
+    "scattered along the seafloor. Prey\n"
+    "that comes near gets poisoned badly.");
 
 const u8 gSKRELPPokedexTextUnused[] = _("");
 
 const u8 gDRAGALGEPokedexText[] = _(
-    "A Poison-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The poison it spits can eat through\n"
+    "the bottom of a tanker. It guards\n"
+    "its territory with great ferocity.");
 
 const u8 gDRAGALGEPokedexTextUnused[] = _("");
 
 const u8 gGIBLEPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It lives in caves warmed by\n"
+    "geothermal heat. It bites anything\n"
+    "that moves nearby without hesitation.");
 
 const u8 gGIBLEPokedexTextUnused[] = _("");
 
 const u8 gGABITEPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "A ruthless Pokemon, it targets the\n"
+    "young of other species. It hoards\n"
+    "gems and shiny objects in its den.");
 
 const u8 gGABITEPokedexTextUnused[] = _("");
 
 const u8 gGARCHOMPPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It flies at jet-plane speed and\n"
+    "never allows prey to escape. It wraps\n"
+    "foes tightly in its massive wings.");
 
 const u8 gGARCHOMPPokedexTextUnused[] = _("");
 
 const u8 gGLISCORPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It hides under cliffs to ambush\n"
+    "prey. It grips them with its pincers\n"
+    "and drains their energy slowly.");
 
 const u8 gGLISCORPokedexTextUnused[] = _("");
 
 const u8 gRHYPERIORPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It launches boulders from the holes\n"
+    "in its palms. Bores through rock and\n"
+    "hides inside the tunnels it makes.");
 
 const u8 gRHYPERIORPokedexTextUnused[] = _("");
 
 const u8 gDRILBURPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It can dig through the earth at\n"
+    "a speed of 30 mph. It builds nests\n"
+    "by leaving paths of tunnels behind.");
 
 const u8 gDRILBURPokedexTextUnused[] = _("");
 
 const u8 gEXCADRILLPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It can bore through almost anything.\n"
+    "The more energy it expends, the more\n"
+    "powerful its spinning becomes.");
 
 const u8 gEXCADRILLPokedexTextUnused[] = _("");
 
 const u8 gSANDILEPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It lurks just under the desert\n"
+    "surface. The dark membrane over its\n"
+    "eyes shields them from the sun.");
 
 const u8 gSANDILEPokedexTextUnused[] = _("");
 
 const u8 gKROKOROKPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It uses sensors in its nose to aim\n"
+    "accurately and strike prey even in\n"
+    "the total darkness of the night.");
 
 const u8 gKROKOROKPokedexTextUnused[] = _("");
 
 const u8 gKROOKODILEPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It can overpower opponents in almost\n"
+    "any situation. Its jaws can crush\n"
+    "a truck without much effort.");
 
 const u8 gKROOKODILEPokedexTextUnused[] = _("");
 
 const u8 gGOLETTPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The energy that gives Golett life\n"
+    "is a mystery. No one knows what kind\n"
+    "of power resides inside its body.");
 
 const u8 gGOLETTPokedexTextUnused[] = _("");
 
 const u8 gGOLURKPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Golurk was created to protect an\n"
+    "ancient civilization. Its flying\n"
+    "speed across the world is astonishing.");
 
 const u8 gGOLURKPokedexTextUnused[] = _("");
 
 const u8 gHONCHKROWPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Simply by cawing, it can gather\n"
+    "a flock of Murkrow in a dark night\n"
+    "sky. It is called the darkness lord.");
 
 const u8 gHONCHKROWPokedexTextUnused[] = _("");
 
 const u8 gTOGEKISSPokedexText[] = _(
-    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It will never appear before those\n"
+    "who harbor evil thoughts. It bestows\n"
+    "bliss and luck on all who are kind.");
 
 const u8 gTOGEKISSPokedexTextUnused[] = _("");
 
 const u8 gYANMEGAPokedexText[] = _(
-    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "This predatory Pokemon creates\n"
+    "powerful shock waves by beating its\n"
+    "wings. It attacks in flying swarms.");
 
 const u8 gYANMEGAPokedexTextUnused[] = _("");
 
 const u8 gHAWLUCHAPokedexText[] = _(
-    "A Fighting-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Although its body is small, its\n"
+    "kick moves pack incredible power.\n"
+    "It always fights in exciting ways.");
 
 const u8 gHAWLUCHAPokedexTextUnused[] = _("");
 
 const u8 gROOKIDEEPokedexText[] = _(
-    "A Flying-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It will bravely challenge any\n"
+    "opponent regardless of size. It\n"
+    "protects its nest with a fierce cry.");
 
 const u8 gROOKIDEEPokedexTextUnused[] = _("");
 
 const u8 gCORVISQUIREPokedexText[] = _(
-    "A Flying-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It shows no mercy toward its\n"
+    "flock. It has a high level of\n"
+    "intelligence and strong leadership.");
 
 const u8 gCORVISQUIREPokedexTextUnused[] = _("");
 
 const u8 gCORVIKNIGHTPokedexText[] = _(
-    "A Flying-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "With flying skill and high attack\n"
+    "power, it rules the skies. It\n"
+    "dominates weaker Pokemon to build nests.");
 
 const u8 gCORVIKNIGHTPokedexTextUnused[] = _("");
 
 const u8 gGALLADEPokedexText[] = _(
-    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "A master of courtesy and swordsmanship.\n"
+    "It fights by extending the blade on\n"
+    "its elbow to protect others.");
 
 const u8 gGALLADEPokedexTextUnused[] = _("");
 
 const u8 gINKAYPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "By rapidly flashing the spots on\n"
+    "its body, it discharges electricity\n"
+    "and confuses its prey deeply.");
 
 const u8 gINKAYPokedexTextUnused[] = _("");
 
 const u8 gMALAMARPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It hypnotizes opponents by flashing\n"
+    "the light-emitting spots on its body,\n"
+    "then attacks without hesitation.");
 
 const u8 gMALAMARPokedexTextUnused[] = _("");
 
 const u8 gLARVESTAPokedexText[] = _(
-    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It is thought to be born from the\n"
+    "sun. It was used to make the first\n"
+    "silk thousands of years ago.");
 
 const u8 gLARVESTAPokedexTextUnused[] = _("");
 
 const u8 gVOLCARONAPokedexText[] = _(
-    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "When volcanic ash darkened the sky,\n"
+    "it flew through the heavens and its\n"
+    "flames replaced the sun's light.");
 
 const u8 gVOLCARONAPokedexTextUnused[] = _("");
 
 const u8 gGRUBBINPokedexText[] = _(
-    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Using its strong jaw, it can bore\n"
+    "through hard tree trunks. It hides\n"
+    "in leaf litter when threatened.");
 
 const u8 gGRUBBINPokedexTextUnused[] = _("");
 
 const u8 gCHARJABUGPokedexText[] = _(
-    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its sturdy body can withstand\n"
+    "electricity. It stores power by\n"
+    "eating and processing leaves.");
 
 const u8 gCHARJABUGPokedexTextUnused[] = _("");
 
 const u8 gVIKAVOLTPokedexText[] = _(
-    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It zaps prey with electricity\n"
+    "discharged from its front jaws. Its\n"
+    "wings give it remarkable speed.");
 
 const u8 gVIKAVOLTPokedexTextUnused[] = _("");
 
 const u8 gSIZZLIPEDEPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It stores flammable gas from the\n"
+    "food it eats inside its body. When\n"
+    "threatened, it ignites this gas.");
 
 const u8 gSIZZLIPEDEPokedexTextUnused[] = _("");
 
 const u8 gCENTISKORCHPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "When it heats up, its body reaches\n"
+    "more than 1500 degrees. Touching it\n"
+    "causes severe burns immediately.");
 
 const u8 gCENTISKORCHPokedexTextUnused[] = _("");
 
 const u8 gKLEAVORPokedexText[] = _(
-    "A Bug-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Parts of its body have hardened\n"
+    "into stone. If its stone axes smash,\n"
+    "they are reforged by nature itself.");
 
 const u8 gKLEAVORPokedexTextUnused[] = _("");
 
 const u8 gHISUIANGROWLITHEPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its rocky fur is hard enough to\n"
+    "turn away knife blades. It guards\n"
+    "its territory together with partners.");
 
 const u8 gHISUIANGROWLITHEPokedexTextUnused[] = _("");
 
 const u8 gHISUIANARCANINEPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Found throughout ancient Hisui, it\n"
+    "is considered a sacred beast and is\n"
+    "enshrined in regional mythology.");
 
 const u8 gHISUIANARCANINEPokedexTextUnused[] = _("");
 
 const u8 gALOLANGEODUDEPokedexText[] = _(
-    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Electricity runs across its body.\n"
+    "It repels enemies by releasing\n"
+    "electric shocks from its whole form.");
 
 const u8 gALOLANGEODUDEPokedexTextUnused[] = _("");
 
 const u8 gALOLANGRAVELERPokedexText[] = _(
-    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Electricity builds up inside its\n"
+    "granite body. It rolls down rocky\n"
+    "paths scattering sparks as it goes.");
 
 const u8 gALOLANGRAVELERPokedexTextUnused[] = _("");
 
 const u8 gALOLANGOLEMPokedexText[] = _(
-    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It launches electricity from its\n"
+    "body to attack. The electric charge\n"
+    "does not reach inside its hard shell.");
 
 const u8 gALOLANGOLEMPokedexTextUnused[] = _("");
 
 const u8 gPROBOPASSPokedexText[] = _(
-    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It uses its three small noses to\n"
+    "generate powerful magnetic fields.\n"
+    "It can attract and control iron sand.");
 
 const u8 gPROBOPASSPokedexTextUnused[] = _("");
 
 const u8 gROCKRUFFPokedexText[] = _(
-    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It greets its master by rubbing\n"
+    "its neck against them. The rocks\n"
+    "on its neck can be used as weapons.");
 
 const u8 gROCKRUFFPokedexTextUnused[] = _("");
 
 const u8 gLYCANROCPokedexText[] = _(
-    "A Rock-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "When properly raised from a Rockruff,\n"
+    "it becomes a reliable partner that\n"
+    "teaches teamwork and loyalty.");
 
 const u8 gLYCANROCPokedexTextUnused[] = _("");
 
 const u8 gDREEPYPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "If in good shape, it can fly at\n"
+    "over 120 mph. It acts as a target\n"
+    "for Drakloak during battle.");
 
 const u8 gDREEPYPokedexTextUnused[] = _("");
 
 const u8 gDRAKLOAKPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Without a Dreepy to place on its\n"
+    "head, it becomes unstable and rampages\n"
+    "until it finds one to carry.");
 
 const u8 gDRAKLOAKPokedexTextUnused[] = _("");
 
 const u8 gDRAGAPULTPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "When not battling, it strolls with\n"
+    "Dreepy inside its hollow horns. It\n"
+    "is a swift and deadly predator.");
 
 const u8 gDRAGAPULTPokedexTextUnused[] = _("");
 
 const u8 gBASCULINPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Red and blue Basculin are very\n"
+    "aggressive. They are always fighting\n"
+    "each other, so they never intermix.");
 
 const u8 gBASCULINPokedexTextUnused[] = _("");
 
 const u8 gBASCULEGIONPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It is possessed by the souls of\n"
+    "Basculin that perished before reaching\n"
+    "the ocean. A mighty river fish.");
 
 const u8 gBASCULEGIONPokedexTextUnused[] = _("");
 
 const u8 gALOLANEXEGGUTORPokedexText[] = _(
-    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The tropical sun fills it with\n"
+    "energy. Its heads each think\n"
+    "different thoughts and argue a lot.");
 
 const u8 gALOLANEXEGGUTORPokedexTextUnused[] = _("");
 
 const u8 gDEINOPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Because it is blind, it checks\n"
+    "surroundings by biting at everything.\n"
+    "It often ends up hurting itself.");
 
 const u8 gDEINOPokedexTextUnused[] = _("");
 
 const u8 gZWEILOUSPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The two heads are rivals. Each\n"
+    "head eats independently and they\n"
+    "compete fiercely for food each day.");
 
 const u8 gZWEILOUSPokedexTextUnused[] = _("");
 
 const u8 gHYDREIGONPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The three heads consume everything\n"
+    "in their path. The main head does\n"
+    "all the thinking for the three.");
 
 const u8 gHYDREIGONPokedexTextUnused[] = _("");
 
 const u8 gGOOMYPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It is the weakest Dragon-type\n"
+    "Pokemon. Its slimy body repels water\n"
+    "and its mucus can dissolve things.");
 
 const u8 gGOOMYPokedexTextUnused[] = _("");
 
 const u8 gSLIGGOOPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It extends four antennae that detect\n"
+    "smells from miles away. It slips\n"
+    "away from enemies with sticky slime.");
 
 const u8 gSLIGGOOPokedexTextUnused[] = _("");
 
 const u8 gGOODRAPokedexText[] = _(
-    "A Dragon-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "An extremely loving Pokemon. It\n"
+    "clings to its trainer and gives them\n"
+    "a hug, covering them with slime.");
 
 const u8 gGOODRAPokedexTextUnused[] = _("");
 
 const u8 gDARKRAIPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It lures people into darkness and\n"
+    "causes them endless nightmares. Those\n"
+    "near it feel a deep chill.");
 
 const u8 gDARKRAIPokedexTextUnused[] = _("");
 
 const u8 gZORUAPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It hides its true form in illusions.\n"
+    "Apparently, it often transforms into\n"
+    "a human child to mislead others.");
 
 const u8 gZORUAPokedexTextUnused[] = _("");
 
 const u8 gZOROARKPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Each has the power to generate\n"
+    "illusions that trap enemies in a\n"
+    "dream world they cannot escape.");
 
 const u8 gZOROARKPokedexTextUnused[] = _("");
 
 const u8 gPAWNIARDPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Blades cover its body. In battle,\n"
+    "it slashes opponents with these blades\n"
+    "and replaces broken ones if needed.");
 
 const u8 gPAWNIARDPokedexTextUnused[] = _("");
 
 const u8 gBISHARPPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Pawniard obey orders from Bisharp.\n"
+    "It leads them into battle as their\n"
+    "supreme commander on the field.");
 
 const u8 gBISHARPPokedexTextUnused[] = _("");
 
 const u8 gKINGAMBITPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It leads a group of Bisharp. Its\n"
+    "physical strength is extreme enough\n"
+    "to push through thick steel obstacles.");
 
 const u8 gKINGAMBITPokedexTextUnused[] = _("");
 
 const u8 gBRONZORPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Ancient people believed it had\n"
+    "mysterious power and used it for\n"
+    "fortune-telling in many regions.");
 
 const u8 gBRONZORPokedexTextUnused[] = _("");
 
 const u8 gBRONZONGPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It was covered in seawater and\n"
+    "discovered at an archaeological site.\n"
+    "It has a voice that carries far.");
 
 const u8 gBRONZONGPokedexTextUnused[] = _("");
 
 const u8 gGALARIANMEOWTHPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Living with a savage trainer for\n"
+    "years toughened its body and made\n"
+    "it fiercer than ordinary Meowth.");
 
 const u8 gGALARIANMEOWTHPokedexTextUnused[] = _("");
 
 const u8 gPERRSERKERPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It has separated from the group\n"
+    "and gone its own way. The steel\n"
+    "claws on its face are favorite weapons.");
 
 const u8 gPERRSERKERPokedexTextUnused[] = _("");
 
 const u8 gALOLANMEOWTHPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its coat is fine and silky soft.\n"
+    "Rumor has it that this Meowth\n"
+    "lived with a king long, long ago.");
 
 const u8 gALOLANMEOWTHPokedexTextUnused[] = _("");
 
 const u8 gALOLANPERSIANPokedexText[] = _(
-    "A Dark-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The round face is a symbol of\n"
+    "those who spend their days in comfort\n"
+    "and luxury. It is extremely prideful.");
 
 const u8 gALOLANPERSIANPokedexTextUnused[] = _("");
 
 const u8 gDURALUDONPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Its two arms are made of different\n"
+    "types of metal. The strength of the\n"
+    "alloy varies when the two combine.");
 
 const u8 gDURALUDONPokedexTextUnused[] = _("");
 
 const u8 gARCHALUDONPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It has crossed many a suspension\n"
+    "bridge. The components of its body\n"
+    "are stronger than Duraludon's own.");
 
 const u8 gARCHALUDONPokedexTextUnused[] = _("");
 
 const u8 gTINKATINKPokedexText[] = _(
-    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It flings around the hammer it\n"
+    "has made itself. If it breaks its\n"
+    "hammer, it immediately makes a new one.");
 
 const u8 gTINKATINKPokedexTextUnused[] = _("");
 
 const u8 gTINKATUFFPokedexText[] = _(
-    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The hammer it wields is its most\n"
+    "prized possession. It works hard to\n"
+    "polish it every single day.");
 
 const u8 gTINKATUFFPokedexTextUnused[] = _("");
 
 const u8 gTINKATONPokedexText[] = _(
-    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It smashes opponents with its\n"
+    "huge hammer. Its weapon is the\n"
+    "result of gathering material for years.");
 
 const u8 gTINKATONPokedexTextUnused[] = _("");
 
 const u8 gALOLANDIGLETTPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The three hair strands are highly\n"
+    "powerful sensory organs. They detect\n"
+    "nearby vibrations with precision.");
 
 const u8 gALOLANDIGLETTPokedexTextUnused[] = _("");
 
 const u8 gALOLANDUGTRIOPokedexText[] = _(
-    "A Ground-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Three golden hairs move in\n"
+    "synchronized fashion. They are thought\n"
+    "to embody a local mountain god.");
 
 const u8 gALOLANDUGTRIOPokedexTextUnused[] = _("");
 
 const u8 gMAGNEZONEPokedexText[] = _(
-    "A Electric-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Exposure to a special magnetic field\n"
+    "changed the molecular structure of\n"
+    "its internal magnets completely.");
 
 const u8 gMAGNEZONEPokedexTextUnused[] = _("");
 
 const u8 gFLABEBEPokedexText[] = _(
-    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It draws out and controls the\n"
+    "power of flowers. The flower it\n"
+    "holds is most likely part of its body.");
 
 const u8 gFLABEBEPokedexTextUnused[] = _("");
 
 const u8 gFLOETTEPokedexText[] = _(
-    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It flutters around fields of flowers\n"
+    "and cares for the flowers and for\n"
+    "people it considers friends.");
 
 const u8 gFLOETTEPokedexTextUnused[] = _("");
 
 const u8 gFLORGESPokedexText[] = _(
-    "A Fairy-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It claims a flower garden as its\n"
+    "own. The power of the flowers\n"
+    "allows it to manipulate the enemy.");
 
 const u8 gFLORGESPokedexTextUnused[] = _("");
 
 const u8 gALOLANVULPIXPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "A Vulpix exposed to severe cold\n"
+    "over many generations. It summons\n"
+    "blizzards to freeze nearby enemies.");
 
 const u8 gALOLANVULPIXPokedexTextUnused[] = _("");
 
 const u8 gALOLANNINETALESPokedexText[] = _(
-    "A Ice-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It is said to live in perpetual\n"
+    "snow. It creates whirlwinds of\n"
+    "powdery snow, blocking all sight.");
 
 const u8 gALOLANNINETALESPokedexTextUnused[] = _("");
 
 const u8 gUXIEPokedexText[] = _(
-    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It is considered a deity of lakes.\n"
+    "The gaze of its large eyes can\n"
+    "wipe the memories of anyone nearby.");
 
 const u8 gUXIEPokedexTextUnused[] = _("");
 
 const u8 gMESPRITPokedexText[] = _(
-    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It sleeps at the bottom of a lake.\n"
+    "It is said to have taught humans\n"
+    "the joy and sorrow of living.");
 
 const u8 gMESPRITPokedexTextUnused[] = _("");
 
 const u8 gAZELFPokedexText[] = _(
-    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It sleeps at the bottom of a lake\n"
+    "for weeks without surfacing. It is\n"
+    "said to give willpower to all.");
 
 const u8 gAZELFPokedexTextUnused[] = _("");
 
 const u8 gDIALGAPokedexText[] = _(
-    "A Steel-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It has the ability to control\n"
+    "time. It appears in ancient texts\n"
+    "and is said to have shaped time.");
 
 const u8 gDIALGAPokedexTextUnused[] = _("");
 
 const u8 gPALKIAPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It has the ability to warp space.\n"
+    "It lives in a gap in the spatial\n"
+    "dimension parallel to our world.");
 
 const u8 gPALKIAPokedexTextUnused[] = _("");
 
 const u8 gHEATRANPokedexText[] = _(
-    "A Fire-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Boiling blood runs through its\n"
+    "body. It lumbers through the blistering\n"
+    "volcanic environment.");
 
 const u8 gHEATRANPokedexTextUnused[] = _("");
 
 const u8 gREGIGIGASPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "According to legend, it was once\n"
+    "used to tow continents with ropes.\n"
+    "It sleeps in a cave to the north.");
 
 const u8 gREGIGIGASPokedexTextUnused[] = _("");
 
 const u8 gGIRATINAPokedexText[] = _(
-    "A Ghost-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It was banished for its violence.\n"
+    "It lurks in a world on the other\n"
+    "side, silently seeking revenge.");
 
 const u8 gGIRATINAPokedexTextUnused[] = _("");
 
 const u8 gCRESSELIAPokedexText[] = _(
-    "A Psychic-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Fragments of its shining body\n"
+    "cleave the sky on moonless nights.\n"
+    "It appears to bring peaceful dreams.");
 
 const u8 gCRESSELIAPokedexTextUnused[] = _("");
 
 const u8 gPHIONEPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It lives in warm seas. It always\n"
+    "returns to its birthplace no matter\n"
+    "how far away it may have drifted.");
 
 const u8 gPHIONEPokedexTextUnused[] = _("");
 
 const u8 gMANAPHYPokedexText[] = _(
-    "A Water-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "Born on a cold seafloor, it creates\n"
+    "a strong bond with its master as\n"
+    "soon as it hatches from its Egg.");
 
 const u8 gMANAPHYPokedexTextUnused[] = _("");
 
 const u8 gSHAYMINPokedexText[] = _(
-    "A Grass-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "The flowers on its body burst\n"
+    "into bloom if it is lovingly held.\n"
+    "It can walk on snow without sinking.");
 
 const u8 gSHAYMINPokedexTextUnused[] = _("");
 
 const u8 gARCEUSPokedexText[] = _(
-    "A Normal-type Pokemon.\nIts true power remains\nunknown.\n"
-    "$");
+    "It is described in mythology as\n"
+    "the Pokemon that shaped the universe\n"
+    "with its one thousand arms.");
 
 const u8 gARCEUSPokedexTextUnused[] = _("");
 

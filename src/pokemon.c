@@ -5236,10 +5236,13 @@ u16 SpeciesToCryId(u16 species)
 {
     if (species < SPECIES_OLD_UNOWN_B - 1)
     {
-        // Cynthia's Crown: species beyond the vanilla cry table should not index past
-        // the original FireRed cry bank layout. Reuse an existing cry as a safe fallback.
         if (species >= SPECIES_SHINX)
+        {
+            u16 idx = species - STEP5_MON_SPECIES_START;
+            if (idx < ARRAY_COUNT(sStep5SpeciesIdToCryId))
+                return sStep5SpeciesIdToCryId[idx];
             return SPECIES_PIKACHU;
+        }
         return species;
     }
 
