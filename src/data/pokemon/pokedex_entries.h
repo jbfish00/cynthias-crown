@@ -5071,19 +5071,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
-
-    [NATIONAL_DEX_GALARIAN_ZIGZAGOON] =
-    {
-        .categoryName = _("Tiny Raccoon"),
-        .height = 4,
-        .weight = 175,
-        .description = gGalarianZigzagoonPokedexText,
-        .unusedDescription = gGalarianZigzagoonPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
     // === Cynthia's Crown Step 5 Pokedex Entries ===
 
     [NATIONAL_DEX_LUXIO] =
@@ -5164,19 +5151,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_GALARIAN_LINOONE] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gGALARIANLINOONEPokedexText,
-        .unusedDescription = gGALARIANLINOONEPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
     [NATIONAL_DEX_OBSTAGOON] =
     {
         .categoryName = _("Unknown"),
@@ -5249,32 +5223,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .weight = 100,
         .description = gPORYGONZPokedexText,
         .unusedDescription = gPORYGONZPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_HISUIAN_ZORUA] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gHISUIANZORUAPokedexText,
-        .unusedDescription = gHISUIANZORUAPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_HISUIAN_ZOROARK] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gHISUIANZOROARKPokedexText,
-        .unusedDescription = gHISUIANZOROARKPokedexTextUnused,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -5541,71 +5489,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_ROTOM_HEAT] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gROTOMHEATPokedexText,
-        .unusedDescription = gROTOMHEATPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ROTOM_WASH] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gROTOMWASHPokedexText,
-        .unusedDescription = gROTOMWASHPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ROTOM_FROST] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gROTOMFROSTPokedexText,
-        .unusedDescription = gROTOMFROSTPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ROTOM_FAN] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gROTOMFANPokedexText,
-        .unusedDescription = gROTOMFANPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ROTOM_MOW] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gROTOMMOWPokedexText,
-        .unusedDescription = gROTOMMOWPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
     [NATIONAL_DEX_TOXEL] =
     {
         .categoryName = _("Unknown"),
@@ -5814,19 +5697,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_GALARIAN_MR_MIME] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gGALARIANMRMIMEPokedexText,
-        .unusedDescription = gGALARIANMRMIMEPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
     [NATIONAL_DEX_MR_RIME] =
     {
         .categoryName = _("Unknown"),
@@ -5912,19 +5782,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .weight = 100,
         .description = gANNIHILAPEPokedexText,
         .unusedDescription = gANNIHILAPEPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_GALARIAN_FARFETCHD] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gGALARIANFARFETCHDPokedexText,
-        .unusedDescription = gGALARIANFARFETCHDPokedexTextUnused,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -6464,71 +6321,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_HISUIAN_GROWLITHE] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gHISUIANGROWLITHEPokedexText,
-        .unusedDescription = gHISUIANGROWLITHEPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_HISUIAN_ARCANINE] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gHISUIANARCANINEPokedexText,
-        .unusedDescription = gHISUIANARCANINEPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_GEODUDE] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANGEODUDEPokedexText,
-        .unusedDescription = gALOLANGEODUDEPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_GRAVELER] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANGRAVELERPokedexText,
-        .unusedDescription = gALOLANGRAVELERPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_GOLEM] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANGOLEMPokedexText,
-        .unusedDescription = gALOLANGOLEMPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
     [NATIONAL_DEX_PROBOPASS] =
     {
         .categoryName = _("Unknown"),
@@ -6627,19 +6419,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .weight = 100,
         .description = gBASCULEGIONPokedexText,
         .unusedDescription = gBASCULEGIONPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_EXEGGUTOR] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANEXEGGUTORPokedexText,
-        .unusedDescription = gALOLANEXEGGUTORPokedexTextUnused,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -6828,19 +6607,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_GALARIAN_MEOWTH] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gGALARIANMEOWTHPokedexText,
-        .unusedDescription = gGALARIANMEOWTHPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
     [NATIONAL_DEX_PERRSERKER] =
     {
         .categoryName = _("Unknown"),
@@ -6848,32 +6614,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .weight = 100,
         .description = gPERRSERKERPokedexText,
         .unusedDescription = gPERRSERKERPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_MEOWTH] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANMEOWTHPokedexText,
-        .unusedDescription = gALOLANMEOWTHPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_PERSIAN] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANPERSIANPokedexText,
-        .unusedDescription = gALOLANPERSIANPokedexTextUnused,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -6945,32 +6685,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_ALOLAN_DIGLETT] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANDIGLETTPokedexText,
-        .unusedDescription = gALOLANDIGLETTPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_DUGTRIO] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANDUGTRIOPokedexText,
-        .unusedDescription = gALOLANDUGTRIOPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
     [NATIONAL_DEX_MAGNEZONE] =
     {
         .categoryName = _("Unknown"),
@@ -7017,32 +6731,6 @@ const struct PokedexEntry gPokedexEntries[] =
         .weight = 100,
         .description = gFLORGESPokedexText,
         .unusedDescription = gFLORGESPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_VULPIX] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANVULPIXPokedexText,
-        .unusedDescription = gALOLANVULPIXPokedexTextUnused,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-    },
-
-    [NATIONAL_DEX_ALOLAN_NINETALES] =
-    {
-        .categoryName = _("Unknown"),
-        .height = 5,
-        .weight = 100,
-        .description = gALOLANNINETALESPokedexText,
-        .unusedDescription = gALOLANNINETALESPokedexTextUnused,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

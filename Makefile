@@ -81,7 +81,7 @@ ifeq ($(MODERN),0)
   CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -I tools/agbcc/libc/include -I tools/agbcc/ginclude -nostdinc -undef -std=gnu89
   CC1 := tools/agbcc/bin/agbcc$(EXE)
   override CFLAGS += -mthumb-interwork -Wimplicit -Wparentheses -Werror -O$(O_LEVEL) -fhex-asm
-  LIBPATH := -L ../../tools/agbcc/lib
+  LIBPATH := -L ../../tools/agbcc
   LIB := $(LIBPATH) -lgcc -lc
 else
   # Note: The makefile must be set up to not call these if modern == 0
