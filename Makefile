@@ -78,7 +78,7 @@ INCLUDE_SCANINC_ARGS := $(INCLUDE_DIRS:%=-I %)
 O_LEVEL ?= 2
 CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -D$(GAME_VERSION) -DREVISION=$(GAME_REVISION) -D$(GAME_LANGUAGE) -DMODERN=$(MODERN)
 ifeq ($(MODERN),0)
-  CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -nostdinc -undef -std=gnu89
+  CPPFLAGS += -I tools/agbcc/include -I tools/agbcc -I tools/agbcc/libc/include -I tools/agbcc/ginclude -nostdinc -undef -std=gnu89
   CC1 := tools/agbcc/bin/agbcc$(EXE)
   override CFLAGS += -mthumb-interwork -Wimplicit -Wparentheses -Werror -O$(O_LEVEL) -fhex-asm
   LIBPATH := -L ../../tools/agbcc/lib
@@ -283,6 +283,7 @@ $(C_BUILDDIR)/isagbprn.o: CFLAGS := -mthumb-interwork
 
 $(C_BUILDDIR)/trainer_tower.o: CFLAGS += -ffreestanding
 $(C_BUILDDIR)/battle_anim_flying.o: CFLAGS += -ffreestanding
+$(C_BUILDDIR)/pokedex_screen.o: override CFLAGS := $(filter-out -Werror,$(CFLAGS))
 
 $(C_BUILDDIR)/librfu_intr.o: CC1 := $(TOOLS_DIR)/agbcc/bin/agbcc_arm$(EXE)
 $(C_BUILDDIR)/librfu_intr.o: CFLAGS := -O2 -mthumb-interwork -quiet

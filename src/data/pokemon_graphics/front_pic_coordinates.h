@@ -2221,26 +2221,6 @@ const struct MonCoords gMonFrontPicCoords[] =
         .y_offset = 13,
     },
     // === Cynthia's Crown Step 5 species ===
-    [SPECIES_SHINX] =
-    {
-        .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 0,
-    },
-    [SPECIES_AXEW] =
-    {
-        .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 0,
-    },
-    [SPECIES_HONEDGE] =
-    {
-        .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 0,
-    },
-    [SPECIES_GALARIAN_ZIGZAGOON] =
-    {
-        .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 0,
-    },
     [SPECIES_LUXIO] =
     {
         .size = MON_COORDS_SIZE(64, 64),

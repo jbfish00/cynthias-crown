@@ -67,7 +67,6 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_HONEDGE] = 8,
     [SPECIES_GALARIAN_ZIGZAGOON] = 0,
     // === Cynthia's Crown Step 5 species ===
-    [SPECIES_HONEDGE] = 0,
     [SPECIES_LUXIO] = 0,
     [SPECIES_LUXRAY] = 0,
     [SPECIES_FRAXURE] = 0,
