@@ -355,3 +355,15 @@ PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
     .string "ONE ISLAND first…\p"
     .string "Anyways, I'm outta here!$"
 
+PalletTown_ProfessorOaksLab_Text_OakChooseYourType::
+    .string "OAK: {RIVAL}?\n"
+    .string "Let me think…\p"
+    .string "Oh, that's right, I told you to\n"
+    .string "come! Just wait!\p"
+    .string "Here, {PLAYER}.\p"
+    .string "Instead of choosing from POKé BALLS,\n"
+    .string "I've prepared partners for all\n"
+    .string "kinds of TRAINERs!\p"
+    .string "Choose the type of POKéMON\n"
+    .string "you'd like to journey with!$"
+

@@ -215,15 +215,53 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene::
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting
 	closemessage
 	delay 60
-	msgbox PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne
+	msgbox PalletTown_ProfessorOaksLab_Text_OakChooseYourType
 	closemessage
-	delay 30
-	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalReact
-	waitmovement 0
-	msgbox PalletTown_ProfessorOaksLab_Text_RivalNoFairWhatAboutMe
-	msgbox PalletTown_ProfessorOaksLab_Text_OakBePatientRival
-	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2
+
+PalletTown_ProfessorOaksLab_EventScript_TypeLoop::
+	multichoice 0, 0, MULTICHOICE_TYPE_SELECTION, FALSE
+	setvar VAR_CHOSEN_TYPE, VAR_RESULT
+	call TypeShrine_EventScript_ShowTypeDescription
+	msgbox TypeShrine_Text_ConfirmChoice, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_TypeLoop
+
+	call PalletTown_ProfessorOaksLab_EventScript_GiveTypeStarter
+
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic
+	call EventScript_RestorePrevTextColor
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	message PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak
+	waitmessage
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	waitfanfare
+
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, PalletTown_ProfessorOaksLab_EventScript_NicknameStarterInCutscene
+
+PalletTown_ProfessorOaksLab_EventScript_AfterNicknameCutscene::
+	random 3
+	copyvar PLAYER_STARTER_NUM, VAR_RESULT
+	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
+	call PalletTown_ProfessorOaksLab_EventScript_SetRivalVars
+	call PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter_Inline
+	removeobject LOCALID_BULBASAUR_BALL
+	removeobject LOCALID_SQUIRTLE_BALL
+	removeobject LOCALID_CHARMANDER_BALL
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
+	setflag FLAG_CHOSE_PLAYER_TYPE
+	setvar VAR_TYPE_SHRINE_SCENE, 1
+	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3
+	call_if_set FLAG_OPENED_START_MENU, PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene
 	releaseall
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_NicknameStarterInCutscene::
+	setvar VAR_0x8004, 0
+	call EventScript_ChangePokemonNickname
+	goto PalletTown_ProfessorOaksLab_EventScript_AfterNicknameCutscene
 	end
 
 PalletTown_ProfessorOaksLab_Movement_OakEnter::
@@ -1299,3 +1337,164 @@ PalletTown_ProfessorOaksLab_EventScript_RightSignAlt::
 	msgbox PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints
 	releaseall
 	end
+
+PalletTown_ProfessorOaksLab_EventScript_GiveTypeStarter::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   OaksLab_GiveNormal
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, OaksLab_GiveFighting
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   OaksLab_GiveFlying
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   OaksLab_GivePoison
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   OaksLab_GiveGround
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     OaksLab_GiveRock
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      OaksLab_GiveBug
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    OaksLab_GiveGhost
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    OaksLab_GiveSteel
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     OaksLab_GiveFire
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    OaksLab_GiveWater
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    OaksLab_GiveGrass
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, OaksLab_GiveElectric
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  OaksLab_GivePsychic
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      OaksLab_GiveIce
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   OaksLab_GiveDragon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     OaksLab_GiveDark
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    OaksLab_GiveFairy
+	return
+
+OaksLab_GiveNormal::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_PORYGON
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveFighting::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_MANKEY
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveFlying::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_PIDGEY
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GivePoison::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_EKANS
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveGround::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TRAPINCH
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveRock::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_OMANYTE
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveBug::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_HERACROSS
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveGhost::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_GASTLY
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveSteel::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_HONEDGE
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveFire::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CHARMANDER
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveWater::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SQUIRTLE
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveGrass::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveElectric::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SHINX
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GivePsychic::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_ABRA
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveIce::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SWINUB
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveDragon::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_AXEW
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveDark::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_GALARIAN_ZIGZAGOON
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+OaksLab_GiveFairy::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TOGEPI
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+
+PalletTown_ProfessorOaksLab_EventScript_SetRivalVars::
+	goto_if_eq PLAYER_STARTER_NUM, 0, OaksLab_SetRivalCharmander
+	goto_if_eq PLAYER_STARTER_NUM, 1, OaksLab_SetRivalBulbasaur
+	setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
+	setvar RIVAL_STARTER_ID, LOCALID_SQUIRTLE_BALL
+	return
+
+OaksLab_SetRivalCharmander::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
+	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	return
+
+OaksLab_SetRivalBulbasaur::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
+	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
+	return
+
+PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter_Inline::
+	goto_if_eq PLAYER_STARTER_NUM, 0, OaksLab_RivalWalkCharmander
+	goto_if_eq PLAYER_STARTER_NUM, 1, OaksLab_RivalWalkBulbasaur
+	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalWalksToSquirtle
+	waitmovement 0
+	goto OaksLab_RivalPickUpBall
+	end
+
+OaksLab_RivalWalkCharmander::
+	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalWalksToCharmander
+	waitmovement 0
+	goto OaksLab_RivalPickUpBall
+	end
+
+OaksLab_RivalWalkBulbasaur::
+	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur
+	waitmovement 0
+	goto OaksLab_RivalPickUpBall
+	end
+
+OaksLab_RivalPickUpBall::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen
+	removeobject RIVAL_STARTER_ID
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	bufferspeciesname STR_VAR_1, RIVAL_STARTER_SPECIES
+	message PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak
+	waitmessage
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	waitfanfare
+	call EventScript_RestorePrevTextColor
+	return
