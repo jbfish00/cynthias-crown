@@ -79,6 +79,12 @@
 #define MULTICHOICE_FIRE_CHOICE                                70
 #define MULTICHOICE_WATER_CHOICE                               71
 #define MULTICHOICE_GRASS_CHOICE                               72
+// Oak's Lab expanded sub-choice menus (all-gen starters)
+#define MULTICHOICE_OAKSLAB_FLYING_CHOICE                      73
+#define MULTICHOICE_OAKSLAB_ROCK_CHOICE                        74
+#define MULTICHOICE_OAKSLAB_FIRE_CHOICE                        75
+#define MULTICHOICE_OAKSLAB_WATER_CHOICE                       76
+#define MULTICHOICE_OAKSLAB_GRASS_CHOICE                       77
 
 #define MULTICHOICE_NONE                                      255
 

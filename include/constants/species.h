@@ -588,7 +588,71 @@
 #define SPECIES_SHAYMIN               578
 #define SPECIES_ARCEUS                579
 
-#define SPECIES_EGG                580
+// Fire starter evolution lines (Gen 5–9)
+#define SPECIES_TEPIG        580
+#define SPECIES_PIGNITE      581
+#define SPECIES_EMBOAR       582
+#define SPECIES_FENNEKIN     583
+#define SPECIES_BRAIXEN      584
+#define SPECIES_DELPHOX      585
+#define SPECIES_LITTEN       586
+#define SPECIES_TORRACAT     587
+#define SPECIES_INCINEROAR   588
+#define SPECIES_SCORBUNNY    589
+#define SPECIES_RABOOT       590
+#define SPECIES_CINDERACE    591
+#define SPECIES_FUECOCO      592
+#define SPECIES_CROCALOR     593
+#define SPECIES_SKELEDIRGE   594
+
+// Water starter evolution lines (Gen 5–9)
+#define SPECIES_OSHAWOTT     595
+#define SPECIES_DEWOTT       596
+#define SPECIES_SAMUROTT     597
+#define SPECIES_FROAKIE      598
+#define SPECIES_FROGADIER    599
+#define SPECIES_GRENINJA     600
+#define SPECIES_POPPLIO      601
+#define SPECIES_BRIONNE      602
+#define SPECIES_PRIMARINA    603
+#define SPECIES_SOBBLE       604
+#define SPECIES_DRIZZILE     605
+#define SPECIES_INTELEON     606
+#define SPECIES_QUAXLY       607
+#define SPECIES_QUAXWELL     608
+#define SPECIES_QUAQUAVAL    609
+
+// Grass starter evolution lines (Gen 4–9)
+#define SPECIES_TURTWIG      610
+#define SPECIES_GROTLE       611
+#define SPECIES_TORTERRA     612
+#define SPECIES_SNIVY        613
+#define SPECIES_SERVINE      614
+#define SPECIES_SERPERIOR    615
+#define SPECIES_CHESPIN      616
+#define SPECIES_QUILLADIN    617
+#define SPECIES_CHESNAUGHT   618
+#define SPECIES_ROWLET       619
+#define SPECIES_DARTRIX      620
+#define SPECIES_DECIDUEYE    621
+#define SPECIES_GROOKEY      622
+#define SPECIES_THWACKEY     623
+#define SPECIES_RILLABOOM    624
+#define SPECIES_SPRIGATITO   625
+#define SPECIES_FLORAGATO    626
+#define SPECIES_MEOWSCARADA  627
+
+// Rock fossil evolution lines (Gen 4, 6)
+#define SPECIES_CRANIDOS     628
+#define SPECIES_RAMPARDOS    629
+#define SPECIES_SHIELDON     630
+#define SPECIES_BASTIODON    631
+#define SPECIES_TYRUNT       632
+#define SPECIES_TYRANTRUM    633
+#define SPECIES_AMAURA       634
+#define SPECIES_AURORUS      635
+
+#define SPECIES_EGG          636
 
 #define NUM_SPECIES SPECIES_EGG
 

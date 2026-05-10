@@ -367,3 +367,75 @@ PalletTown_ProfessorOaksLab_Text_OakChooseYourType::
     .string "Choose the type of POKéMON\n"
     .string "you'd like to journey with!$"
 
+OaksLab_Text_ConfirmNormal::
+    .string "OAK: Normal type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmFighting::
+    .string "OAK: Fighting type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmFlying::
+    .string "OAK: Flying type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmPoison::
+    .string "OAK: Poison type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmGround::
+    .string "OAK: Ground type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmRock::
+    .string "OAK: Rock type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmBug::
+    .string "OAK: Bug type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmGhost::
+    .string "OAK: Ghost type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmSteel::
+    .string "OAK: Steel type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmFire::
+    .string "OAK: Fire type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmWater::
+    .string "OAK: Water type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmGrass::
+    .string "OAK: Grass type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmElectric::
+    .string "OAK: Electric type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmPsychic::
+    .string "OAK: Psychic type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmIce::
+    .string "OAK: Ice type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmDragon::
+    .string "OAK: Dragon type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmDark::
+    .string "OAK: Dark type!\n"
+    .string "Is this your choice?$"
+
+OaksLab_Text_ConfirmFairy::
+    .string "OAK: Fairy type!\n"
+    .string "Is this your choice?$"
+

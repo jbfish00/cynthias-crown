@@ -221,8 +221,11 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene::
 PalletTown_ProfessorOaksLab_EventScript_TypeLoop::
 	multichoice 0, 0, MULTICHOICE_TYPE_SELECTION, FALSE
 	setvar VAR_CHOSEN_TYPE, VAR_RESULT
+	goto_if_lt VAR_CHOSEN_TYPE, 9, OaksLab_TypeIndexOk
+	addvar VAR_CHOSEN_TYPE, 1
+OaksLab_TypeIndexOk::
 	call TypeShrine_EventScript_ShowTypeDescription
-	msgbox TypeShrine_Text_ConfirmChoice, MSGBOX_YESNO
+	call OaksLab_ShowTypeConfirmation
 	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_TypeLoop
 
 	call PalletTown_ProfessorOaksLab_EventScript_GiveTypeStarter
@@ -1370,7 +1373,34 @@ OaksLab_GiveFighting::
 	return
 
 OaksLab_GiveFlying::
+	multichoice 0, 0, MULTICHOICE_OAKSLAB_FLYING_CHOICE, FALSE
+	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveFlying_Pidgey
+	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveFlying_Hoothoot
+	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveFlying_Taillow
+	goto_if_eq VAR_CHOSEN_STARTER, 3, OaksLab_GiveFlying_Starly
+	goto_if_eq VAR_CHOSEN_STARTER, 4, OaksLab_GiveFlying_Fletchling
+	setvar PLAYER_STARTER_SPECIES, SPECIES_ROOKIDEE
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFlying_Pidgey::
 	setvar PLAYER_STARTER_SPECIES, SPECIES_PIDGEY
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFlying_Hoothoot::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_HOOTHOOT
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFlying_Taillow::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TAILLOW
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFlying_Starly::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_STARLY
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFlying_Fletchling::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_FLETCHLING
 	givemon PLAYER_STARTER_SPECIES, 5
 	return
 
@@ -1385,7 +1415,44 @@ OaksLab_GiveGround::
 	return
 
 OaksLab_GiveRock::
+	multichoice 0, 0, MULTICHOICE_OAKSLAB_ROCK_CHOICE, FALSE
+	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveRock_Omanyte
+	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveRock_Kabuto
+	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveRock_Lileep
+	goto_if_eq VAR_CHOSEN_STARTER, 3, OaksLab_GiveRock_Anorith
+	goto_if_eq VAR_CHOSEN_STARTER, 4, OaksLab_GiveRock_Cranidos
+	goto_if_eq VAR_CHOSEN_STARTER, 5, OaksLab_GiveRock_Shieldon
+	goto_if_eq VAR_CHOSEN_STARTER, 6, OaksLab_GiveRock_Tyrunt
+	setvar PLAYER_STARTER_SPECIES, SPECIES_AMAURA
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveRock_Omanyte::
 	setvar PLAYER_STARTER_SPECIES, SPECIES_OMANYTE
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveRock_Kabuto::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_KABUTO
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveRock_Lileep::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_LILEEP
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveRock_Anorith::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_ANORITH
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveRock_Cranidos::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CRANIDOS
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveRock_Shieldon::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SHIELDON
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveRock_Tyrunt::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TYRUNT
 	givemon PLAYER_STARTER_SPECIES, 5
 	return
 
@@ -1405,17 +1472,143 @@ OaksLab_GiveSteel::
 	return
 
 OaksLab_GiveFire::
+	multichoice 0, 0, MULTICHOICE_OAKSLAB_FIRE_CHOICE, FALSE
+	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveFire_Charmander
+	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveFire_Cyndaquil
+	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveFire_Torchic
+	goto_if_eq VAR_CHOSEN_STARTER, 3, OaksLab_GiveFire_Chimchar
+	goto_if_eq VAR_CHOSEN_STARTER, 4, OaksLab_GiveFire_Tepig
+	goto_if_eq VAR_CHOSEN_STARTER, 5, OaksLab_GiveFire_Fennekin
+	goto_if_eq VAR_CHOSEN_STARTER, 6, OaksLab_GiveFire_Litten
+	goto_if_eq VAR_CHOSEN_STARTER, 7, OaksLab_GiveFire_Scorbunny
+	setvar PLAYER_STARTER_SPECIES, SPECIES_FUECOCO
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFire_Charmander::
 	setvar PLAYER_STARTER_SPECIES, SPECIES_CHARMANDER
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFire_Cyndaquil::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFire_Torchic::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TORCHIC
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFire_Chimchar::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CHIMCHAR
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFire_Tepig::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TEPIG
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFire_Fennekin::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_FENNEKIN
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFire_Litten::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_LITTEN
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveFire_Scorbunny::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SCORBUNNY
 	givemon PLAYER_STARTER_SPECIES, 5
 	return
 
 OaksLab_GiveWater::
+	multichoice 0, 0, MULTICHOICE_OAKSLAB_WATER_CHOICE, FALSE
+	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveWater_Squirtle
+	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveWater_Totodile
+	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveWater_Mudkip
+	goto_if_eq VAR_CHOSEN_STARTER, 3, OaksLab_GiveWater_Piplup
+	goto_if_eq VAR_CHOSEN_STARTER, 4, OaksLab_GiveWater_Oshawott
+	goto_if_eq VAR_CHOSEN_STARTER, 5, OaksLab_GiveWater_Froakie
+	goto_if_eq VAR_CHOSEN_STARTER, 6, OaksLab_GiveWater_Popplio
+	goto_if_eq VAR_CHOSEN_STARTER, 7, OaksLab_GiveWater_Sobble
+	setvar PLAYER_STARTER_SPECIES, SPECIES_QUAXLY
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveWater_Squirtle::
 	setvar PLAYER_STARTER_SPECIES, SPECIES_SQUIRTLE
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveWater_Totodile::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveWater_Mudkip::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_MUDKIP
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveWater_Piplup::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_PIPLUP
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveWater_Oshawott::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_OSHAWOTT
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveWater_Froakie::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_FROAKIE
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveWater_Popplio::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_POPPLIO
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveWater_Sobble::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SOBBLE
 	givemon PLAYER_STARTER_SPECIES, 5
 	return
 
 OaksLab_GiveGrass::
+	multichoice 0, 0, MULTICHOICE_OAKSLAB_GRASS_CHOICE, FALSE
+	setvar VAR_CHOSEN_STARTER, VAR_RESULT
+	goto_if_eq VAR_CHOSEN_STARTER, 0, OaksLab_GiveGrass_Bulbasaur
+	goto_if_eq VAR_CHOSEN_STARTER, 1, OaksLab_GiveGrass_Chikorita
+	goto_if_eq VAR_CHOSEN_STARTER, 2, OaksLab_GiveGrass_Treecko
+	goto_if_eq VAR_CHOSEN_STARTER, 3, OaksLab_GiveGrass_Turtwig
+	goto_if_eq VAR_CHOSEN_STARTER, 4, OaksLab_GiveGrass_Snivy
+	goto_if_eq VAR_CHOSEN_STARTER, 5, OaksLab_GiveGrass_Chespin
+	goto_if_eq VAR_CHOSEN_STARTER, 6, OaksLab_GiveGrass_Rowlet
+	goto_if_eq VAR_CHOSEN_STARTER, 7, OaksLab_GiveGrass_Grookey
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SPRIGATITO
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveGrass_Bulbasaur::
 	setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveGrass_Chikorita::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CHIKORITA
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveGrass_Treecko::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TREECKO
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveGrass_Turtwig::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TURTWIG
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveGrass_Snivy::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SNIVY
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveGrass_Chespin::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CHESPIN
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveGrass_Rowlet::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_ROWLET
+	givemon PLAYER_STARTER_SPECIES, 5
+	return
+OaksLab_GiveGrass_Grookey::
+	setvar PLAYER_STARTER_SPECIES, SPECIES_GROOKEY
 	givemon PLAYER_STARTER_SPECIES, 5
 	return
 
@@ -1497,4 +1690,97 @@ OaksLab_RivalPickUpBall::
 	playfanfare MUS_OBTAIN_KEY_ITEM
 	waitfanfare
 	call EventScript_RestorePrevTextColor
+	return
+
+OaksLab_ShowTypeConfirmation::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   OaksLab_ConfirmNormal
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, OaksLab_ConfirmFighting
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   OaksLab_ConfirmFlying
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   OaksLab_ConfirmPoison
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   OaksLab_ConfirmGround
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     OaksLab_ConfirmRock
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      OaksLab_ConfirmBug
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    OaksLab_ConfirmGhost
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    OaksLab_ConfirmSteel
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     OaksLab_ConfirmFire
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    OaksLab_ConfirmWater
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    OaksLab_ConfirmGrass
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, OaksLab_ConfirmElectric
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  OaksLab_ConfirmPsychic
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      OaksLab_ConfirmIce
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   OaksLab_ConfirmDragon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     OaksLab_ConfirmDark
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    OaksLab_ConfirmFairy
+	return
+
+OaksLab_ConfirmNormal::
+	msgbox OaksLab_Text_ConfirmNormal, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmFighting::
+	msgbox OaksLab_Text_ConfirmFighting, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmFlying::
+	msgbox OaksLab_Text_ConfirmFlying, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmPoison::
+	msgbox OaksLab_Text_ConfirmPoison, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmGround::
+	msgbox OaksLab_Text_ConfirmGround, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmRock::
+	msgbox OaksLab_Text_ConfirmRock, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmBug::
+	msgbox OaksLab_Text_ConfirmBug, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmGhost::
+	msgbox OaksLab_Text_ConfirmGhost, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmSteel::
+	msgbox OaksLab_Text_ConfirmSteel, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmFire::
+	msgbox OaksLab_Text_ConfirmFire, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmWater::
+	msgbox OaksLab_Text_ConfirmWater, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmGrass::
+	msgbox OaksLab_Text_ConfirmGrass, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmElectric::
+	msgbox OaksLab_Text_ConfirmElectric, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmPsychic::
+	msgbox OaksLab_Text_ConfirmPsychic, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmIce::
+	msgbox OaksLab_Text_ConfirmIce, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmDragon::
+	msgbox OaksLab_Text_ConfirmDragon, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmDark::
+	msgbox OaksLab_Text_ConfirmDark, MSGBOX_YESNO
+	return
+
+OaksLab_ConfirmFairy::
+	msgbox OaksLab_Text_ConfirmFairy, MSGBOX_YESNO
 	return

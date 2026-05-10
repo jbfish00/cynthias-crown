@@ -544,6 +544,36 @@ static const u8 sCCMudkip[]         = _("Mudkip");
 static const u8 sCCBulbasaur[]      = _("Bulbasaur");
 static const u8 sCCChikorita[]      = _("Chikorita");
 static const u8 sCCTreecko[]        = _("Treecko");
+// Gen 4+ strings for Oak's Lab expanded menus
+static const u8 sCCChimchar[]       = _("Chimchar");
+static const u8 sCCPiplup[]         = _("Piplup");
+static const u8 sCCHoothoot[]       = _("Hoothoot");
+static const u8 sCCTaillow[]        = _("Taillow");
+static const u8 sCCStarly[]         = _("Starly");
+static const u8 sCCFletchling[]     = _("Fletchling");
+static const u8 sCCRookidee[]       = _("Rookidee");
+static const u8 sCCLileep[]         = _("Lileep");
+static const u8 sCCAnorith[]        = _("Anorith");
+static const u8 sCCCranidos[]       = _("Cranidos");
+static const u8 sCCShieldon[]       = _("Shieldon");
+static const u8 sCCTyrunt[]         = _("Tyrunt");
+static const u8 sCCAmaura[]         = _("Amaura");
+static const u8 sCCTepig[]          = _("Tepig");
+static const u8 sCCFennekin[]       = _("Fennekin");
+static const u8 sCCLitten[]         = _("Litten");
+static const u8 sCCScorbunny[]      = _("Scorbunny");
+static const u8 sCCFuecoco[]        = _("Fuecoco");
+static const u8 sCCOshawott[]       = _("Oshawott");
+static const u8 sCCFroakie[]        = _("Froakie");
+static const u8 sCCPopplio[]        = _("Popplio");
+static const u8 sCCSobble[]         = _("Sobble");
+static const u8 sCCQuaxly[]         = _("Quaxly");
+static const u8 sCCTurtwig[]        = _("Turtwig");
+static const u8 sCCSnivy[]          = _("Snivy");
+static const u8 sCCChespin[]        = _("Chespin");
+static const u8 sCCRowlet[]         = _("Rowlet");
+static const u8 sCCGrookey[]        = _("Grookey");
+static const u8 sCCSprigatito[]     = _("Sprigatito");
 
 static const struct MenuAction sMultichoiceList_TypeSelection[] = {
     { sCCTypeNormal   },
@@ -605,6 +635,63 @@ static const struct MenuAction sMultichoiceList_GrassChoice[] = {
     { sCCBulbasaur },
     { sCCChikorita },
     { sCCTreecko   },
+};
+
+// Oak's Lab expanded sub-choice menus (all-gen starters)
+static const struct MenuAction sMultichoiceList_OaksLabFlyingChoice[] = {
+    { sCCPidgey     },
+    { sCCHoothoot   },
+    { sCCTaillow    },
+    { sCCStarly     },
+    { sCCFletchling },
+    { sCCRookidee   },
+};
+
+static const struct MenuAction sMultichoiceList_OaksLabRockChoice[] = {
+    { sCCOmanyte  },
+    { sCCKabuto   },
+    { sCCLileep   },
+    { sCCAnorith  },
+    { sCCCranidos },
+    { sCCShieldon },
+    { sCCTyrunt   },
+    { sCCAmaura   },
+};
+
+static const struct MenuAction sMultichoiceList_OaksLabFireChoice[] = {
+    { sCCCharmander },
+    { sCCCyndaquil  },
+    { sCCTorchic    },
+    { sCCChimchar   },
+    { sCCTepig      },
+    { sCCFennekin   },
+    { sCCLitten     },
+    { sCCScorbunny  },
+    { sCCFuecoco    },
+};
+
+static const struct MenuAction sMultichoiceList_OaksLabWaterChoice[] = {
+    { sCCSquirtle  },
+    { sCCTotodile  },
+    { sCCMudkip    },
+    { sCCPiplup    },
+    { sCCOshawott  },
+    { sCCFroakie   },
+    { sCCPopplio   },
+    { sCCSobble    },
+    { sCCQuaxly    },
+};
+
+static const struct MenuAction sMultichoiceList_OaksLabGrassChoice[] = {
+    { sCCBulbasaur  },
+    { sCCChikorita  },
+    { sCCTreecko    },
+    { sCCTurtwig    },
+    { sCCSnivy      },
+    { sCCChespin    },
+    { sCCRowlet     },
+    { sCCGrookey    },
+    { sCCSprigatito },
 };
 
 static const struct MultichoiceListStruct sMultichoiceLists[] = {
@@ -682,6 +769,11 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_FIRE_CHOICE]                                = MULTICHOICE(sMultichoiceList_FireChoice),
     [MULTICHOICE_WATER_CHOICE]                               = MULTICHOICE(sMultichoiceList_WaterChoice),
     [MULTICHOICE_GRASS_CHOICE]                               = MULTICHOICE(sMultichoiceList_GrassChoice),
+    [MULTICHOICE_OAKSLAB_FLYING_CHOICE]                      = MULTICHOICE(sMultichoiceList_OaksLabFlyingChoice),
+    [MULTICHOICE_OAKSLAB_ROCK_CHOICE]                        = MULTICHOICE(sMultichoiceList_OaksLabRockChoice),
+    [MULTICHOICE_OAKSLAB_FIRE_CHOICE]                        = MULTICHOICE(sMultichoiceList_OaksLabFireChoice),
+    [MULTICHOICE_OAKSLAB_WATER_CHOICE]                       = MULTICHOICE(sMultichoiceList_OaksLabWaterChoice),
+    [MULTICHOICE_OAKSLAB_GRASS_CHOICE]                       = MULTICHOICE(sMultichoiceList_OaksLabGrassChoice),
 };
 
 // From Cool to Berries goes unused
@@ -888,7 +980,7 @@ static u8 GetMCWindowHeight(u8 count)
     case 8:
         return 14;
     default:
-        return 1;
+        return 14;
     }
 }
 

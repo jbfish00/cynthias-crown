@@ -3884,3 +3884,341 @@ const u8 gARCEUSPokedexText[] = _(
 
 const u8 gARCEUSPokedexTextUnused[] = _("");
 
+
+const u8 gTEPIGPokedexText[] = _(
+    "It has a fiery nose and a curly tail.\n"
+    "When it gets excited, black smoke\n"
+    "billows from its nostrils.");
+const u8 gTEPIGPokedexTextUnused[] = _("");
+
+const u8 gPIGNITEPokedexText[] = _(
+    "When it gets fired up, it can blow\n"
+    "flames from its nose. It is a rough\n"
+    "and tumble fighter.");
+const u8 gPIGNITEPokedexTextUnused[] = _("");
+
+const u8 gEMBOARPokedexText[] = _(
+    "It has mastered fast and powerful\n"
+    "fighting moves. It will take down\n"
+    "any opponent with blazing speed.");
+const u8 gEMBOARPokedexTextUnused[] = _("");
+
+const u8 gFENNEKINPokedexText[] = _(
+    "As it walks, it munches on a twig.\n"
+    "Embers spout from its large ears to\n"
+    "keep the cold air away.");
+const u8 gFENNEKINPokedexTextUnused[] = _("");
+
+const u8 gBRAIXENPokedexText[] = _(
+    "It has a habit of storing branches\n"
+    "between its tail and body. It burns\n"
+    "them to create dazzling fire attacks.");
+const u8 gBRAIXENPokedexTextUnused[] = _("");
+
+const u8 gDELPHOXPokedexText[] = _(
+    "Using a flaming branch, it creates\n"
+    "a fiery vortex and gazes into it\n"
+    "to achieve a focused state of mind.");
+const u8 gDELPHOXPokedexTextUnused[] = _("");
+
+const u8 gLITTENPokedexText[] = _(
+    "While grooming itself, it builds up\n"
+    "flammable fur inside its stomach,\n"
+    "which becomes a source of fire.");
+const u8 gLITTENPokedexTextUnused[] = _("");
+
+const u8 gTORRACATPokedexText[] = _(
+    "A bell-like sac under its chin\n"
+    "amplifies the power of its flame.\n"
+    "It grows stronger with each battle.");
+const u8 gTORRACATPokedexTextUnused[] = _("");
+
+const u8 gINCINEROARPokedexText[] = _(
+    "It taunts its prey, then torments\n"
+    "them further. It finishes the battle\n"
+    "with a dark move called Malicious.");
+const u8 gINCINEROARPokedexTextUnused[] = _("");
+
+const u8 gSCORBUNNYPokedexText[] = _(
+    "It has a sac of flame energy inside\n"
+    "it. As it runs, its warming up body\n"
+    "sets its feet ablaze.");
+const u8 gSCORBUNNYPokedexTextUnused[] = _("");
+
+const u8 gRABOOTPokedexText[] = _(
+    "The dark pads on its feet contain\n"
+    "a flame sac. It can kick things\n"
+    "with incredible heat and force.");
+const u8 gRABOOTPokedexTextUnused[] = _("");
+
+const u8 gCINDERACEPokedexText[] = _(
+    "It juggles its pebble for a while\n"
+    "before kicking it. Once the pebble\n"
+    "ignites, it becomes a blazing ball.");
+const u8 gCINDERACEPokedexTextUnused[] = _("");
+
+const u8 gFUECOCOPokedexText[] = _(
+    "It lies on warm rocks and basks\n"
+    "in the sun. Heat absorbed through\n"
+    "its back is converted to flame.");
+const u8 gFUECOCOPokedexTextUnused[] = _("");
+
+const u8 gCROCALORPokedexText[] = _(
+    "A flame in the shape of a lone skull\n"
+    "floats around it. If it feels excited\n"
+    "or happy, the flame grows larger.");
+const u8 gCROCALORPokedexTextUnused[] = _("");
+
+const u8 gSKELEDIRGEPokedexText[] = _(
+    "The flames on its body are shaped\n"
+    "like a skull. It sings its unique\n"
+    "song and scorches its prey.");
+const u8 gSKELEDIRGEPokedexTextUnused[] = _("");
+
+const u8 gOSHAWOTTPokedexText[] = _(
+    "It fights using the scalchop on its\n"
+    "belly. Grown from a special seashell,\n"
+    "the scalchop is very hard.");
+const u8 gOSHAWOTTPokedexTextUnused[] = _("");
+
+const u8 gDEWOTTPokedexText[] = _(
+    "It spins the two scalchops on its\n"
+    "arms to slice enemies. It regularly\n"
+    "practices its spinning technique.");
+const u8 gDEWOTTPokedexTextUnused[] = _("");
+
+const u8 gSAMUROTTPokedexText[] = _(
+    "It quells any conflict with a glare\n"
+    "and swift slash of its sword-like\n"
+    "seamitar scalchop.");
+const u8 gSAMUROTTPokedexTextUnused[] = _("");
+
+const u8 gFROAKIEPokedexText[] = _(
+    "It secretes flexible bubbles from\n"
+    "its chest and back. The bubbles\n"
+    "reduce the friction of air and water.");
+const u8 gFROAKIEPokedexTextUnused[] = _("");
+
+const u8 gFROGADIERPokedexText[] = _(
+    "It coats itself in many small\n"
+    "bubbles before battle. It can scale\n"
+    "a tower block in under a minute.");
+const u8 gFROGADIERPokedexTextUnused[] = _("");
+
+const u8 gGRENINJAPokedexText[] = _(
+    "It creates throwing stars out of\n"
+    "compressed water. When it spins\n"
+    "them and throws them at full speed\n"
+    "on a target, they can split metal.");
+const u8 gGRENINJAPokedexTextUnused[] = _("");
+
+const u8 gPOPPLIOPokedexText[] = _(
+    "It practices diligently so that it\n"
+    "can learn to make big, perfectly\n"
+    "round balloons out of water.");
+const u8 gPOPPLIOPokedexTextUnused[] = _("");
+
+const u8 gBRIONNEPokedexText[] = _(
+    "This Pokemon can control water\n"
+    "balloons with great skill. It can\n"
+    "knock down pins with them accurately.");
+const u8 gBRIONNEPokedexTextUnused[] = _("");
+
+const u8 gPRIMARINAPokedexText[] = _(
+    "Its beautiful, solitary song is\n"
+    "capable of captivating the hearts\n"
+    "of humans and Pokemon alike.");
+const u8 gPRIMARINAPokedexTextUnused[] = _("");
+
+const u8 gSOBBLEPokedexText[] = _(
+    "When it feels threatened, this\n"
+    "Pokemon secretes a fluid from its\n"
+    "eyes that is as potent as 100 onions.");
+const u8 gSOBBLEPokedexTextUnused[] = _("");
+
+const u8 gDRIZZILEPokedexText[] = _(
+    "A skilled sniper that shoots water\n"
+    "at prey from a distance. The liquid\n"
+    "it secretes can melt even iron.");
+const u8 gDRIZZILEPokedexTextUnused[] = _("");
+
+const u8 gINTELEONPokedexText[] = _(
+    "It has many hidden capabilities,\n"
+    "including shooting water from its\n"
+    "fingertip at mach speed.");
+const u8 gINTELEONPokedexTextUnused[] = _("");
+
+const u8 gQUAXLYPokedexText[] = _(
+    "The strong legs of Quaxly are\n"
+    "always neatly groomed. It combs\n"
+    "its hair with a rich moisturizer.");
+const u8 gQUAXLYPokedexTextUnused[] = _("");
+
+const u8 gQUAXWELLPokedexText[] = _(
+    "Quaxwell trains its legs by wading\n"
+    "against strong river currents. It\n"
+    "can kick repetitively and accurately.");
+const u8 gQUAXWELLPokedexTextUnused[] = _("");
+
+const u8 gQUAQUAVALPokedexText[] = _(
+    "This Pokemon can overwhelm opponents\n"
+    "with its powerful kicks and flamenco\n"
+    "dance moves. It is a fierce battler.");
+const u8 gQUAQUAVALPokedexTextUnused[] = _("");
+
+const u8 gTURTWIGPokedexText[] = _(
+    "It uses photosynthesis to absorb\n"
+    "energy, which forms the shell on\n"
+    "its back. It prefers clean water.");
+const u8 gTURTWIGPokedexTextUnused[] = _("");
+
+const u8 gGROTLEPokedexText[] = _(
+    "It lives near water and always\n"
+    "searches for food on the shore.\n"
+    "Two trees grow on its shell.");
+const u8 gGROTLEPokedexTextUnused[] = _("");
+
+const u8 gTORTERRAPokedexText[] = _(
+    "Small Pokemon can gather food from\n"
+    "the trees on its back. It is large\n"
+    "enough to be an island at sea.");
+const u8 gTORTERRAPokedexTextUnused[] = _("");
+
+const u8 gSNIVYPokedexText[] = _(
+    "It is very intelligent and calm.\n"
+    "Being exposed to lots of sunlight\n"
+    "makes its movements swifter.");
+const u8 gSNIVYPokedexTextUnused[] = _("");
+
+const u8 gSERVINEPokedexText[] = _(
+    "When it moves quickly, it detaches\n"
+    "its tail and uses it as a whip.\n"
+    "The tail grows back rapidly.");
+const u8 gSERVINEPokedexTextUnused[] = _("");
+
+const u8 gSERPERIORPokedexText[] = _(
+    "Via photosynthesis in its body,\n"
+    "it generates energy which allows\n"
+    "it to move with blinding speed.");
+const u8 gSERPERIORPokedexTextUnused[] = _("");
+
+const u8 gCHESPINPokedexText[] = _(
+    "The quills on its head are usually\n"
+    "soft. But when it flexes them,\n"
+    "they become sharp needles.");
+const u8 gCHESPINPokedexTextUnused[] = _("");
+
+const u8 gQUILLADINPokedexText[] = _(
+    "Using the quills on its body,\n"
+    "it can block any physical attack.\n"
+    "It charges to break through foes.");
+const u8 gQUILLADINPokedexTextUnused[] = _("");
+
+const u8 gCHESNAUGHTPokedexText[] = _(
+    "When it takes a defensive posture\n"
+    "with its fists guarding its face,\n"
+    "it could withstand a bomb blast.");
+const u8 gCHESNAUGHTPokedexTextUnused[] = _("");
+
+const u8 gROWLETPokedexText[] = _(
+    "It makes no sound during its\n"
+    "hunting approach. The leaf-blade\n"
+    "feathers it launches fly like blades.");
+const u8 gROWLETPokedexTextUnused[] = _("");
+
+const u8 gDARTRIXPokedexText[] = _(
+    "Highly skilled at shooting blade\n"
+    "quills accurately at its prey.\n"
+    "It conceals itself in the darkness.");
+const u8 gDARTRIXPokedexTextUnused[] = _("");
+
+const u8 gDECIDUEYEPokedexText[] = _(
+    "An archer that never misses.\n"
+    "It can slot an arrow quill into its\n"
+    "targets faster than the eye can see.");
+const u8 gDECIDUEYEPokedexTextUnused[] = _("");
+
+const u8 gGROOKEYPokedexText[] = _(
+    "When it uses its stick to strike\n"
+    "up a beat, the sound waves produced\n"
+    "make the plants around it grow.");
+const u8 gGROOKEYPokedexTextUnused[] = _("");
+
+const u8 gTHWACKEYPokedexText[] = _(
+    "It beats on trees with its two\n"
+    "sticks. The roots of the trees\n"
+    "carry the rhythm to other plants.");
+const u8 gTHWACKEYPokedexTextUnused[] = _("");
+
+const u8 gRILLABOOMPokedexText[] = _(
+    "It has a drum made from a tree\n"
+    "stump. As its drumming speed\n"
+    "increases, so does its power.");
+const u8 gRILLABOOMPokedexTextUnused[] = _("");
+
+const u8 gSPRIGATITOPokedexText[] = _(
+    "Its fluffy fur is rich in nutrients.\n"
+    "If it is exposed to sunlight,\n"
+    "a sweet aroma is released.");
+const u8 gSPRIGATITOPokedexTextUnused[] = _("");
+
+const u8 gFLORAGATOPokedexText[] = _(
+    "It uses the scented oils it produces\n"
+    "to entrance opponents. The flower\n"
+    "on its head can fire seeds.");
+const u8 gFLORAGATOPokedexTextUnused[] = _("");
+
+const u8 gMEOWSCARADAPokedexText[] = _(
+    "It uses its long cape skillfully\n"
+    "in battle. It can disrupt an\n"
+    "opponent with illusions and swift\n"
+    "shadowy movements.");
+const u8 gMEOWSCARADAPokedexTextUnused[] = _("");
+
+const u8 gCRANIDOSPokedexText[] = _(
+    "A primeval Pokemon that has been\n"
+    "restored from a skull fossil. It is\n"
+    "known for its tough skull.");
+const u8 gCRANIDOSPokedexTextUnused[] = _("");
+
+const u8 gRAMPARDOSPokedexText[] = _(
+    "Its skull is more durable than any\n"
+    "metal. It used to fight by slamming\n"
+    "its head straight into prey.");
+const u8 gRAMPARDOSPokedexTextUnused[] = _("");
+
+const u8 gSHIELDONPokedexText[] = _(
+    "A Pokemon that lived in the jungle\n"
+    "about 100 million years ago. Its\n"
+    "face is like an iron shield.");
+const u8 gSHIELDONPokedexTextUnused[] = _("");
+
+const u8 gBASTIODONPokedexText[] = _(
+    "Its face is its most defensive asset.\n"
+    "Attackers will find that it is like\n"
+    "a wall that cannot be penetrated.");
+const u8 gBASTIODONPokedexTextUnused[] = _("");
+
+const u8 gTYRUNTPokedexText[] = _(
+    "Its jaws are so powerful, it can\n"
+    "crush any hard object. It became\n"
+    "extinct due to a change in climate.");
+const u8 gTYRUNTPokedexTextUnused[] = _("");
+
+const u8 gTYRANTRUMPokedexText[] = _(
+    "Thanks to its strong jaws, it could\n"
+    "bite apart thick iron beams. It\n"
+    "was at the top of the ancient food chain.");
+const u8 gTYRANTRUMPokedexTextUnused[] = _("");
+
+const u8 gAMAURAPokedexText[] = _(
+    "These gentle Pokemon have been\n"
+    "around since ancient times. They\n"
+    "emanate light from their crystals.");
+const u8 gAMAURAPokedexTextUnused[] = _("");
+
+const u8 gAURORUSPokedexText[] = _(
+    "Shining particles of light chilled\n"
+    "the air around it, and its skin\n"
+    "illuminated the night sky.");
+const u8 gAURORUSPokedexTextUnused[] = _("");
