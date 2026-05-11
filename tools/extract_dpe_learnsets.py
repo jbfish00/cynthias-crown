@@ -377,9 +377,18 @@ def parse_fr_learnset(content, array_name):
     return [(int(mm.group(1)), mm.group(2)) for mm in move_pattern.finditer(m.group(1))]
 
 
+# DPE move names that normalize differently from their FR equivalents
+_DPE_ALIASES = {
+    "MOVEHIGHJUMPKICK": "MOVE_HI_JUMP_KICK",  # DPE: MOVE_HIGHJUMPKICK  FR: MOVE_HI_JUMP_KICK
+    "MOVEFEINTATTACK":  "MOVE_FAINT_ATTACK",   # DPE: MOVE_FEINTATTACK   FR: MOVE_FAINT_ATTACK
+}
+
+
 def translate_move(dpe_move, fr_move_set):
     """Translate DPE move name to FR move name, or None if not in FR."""
     normalized = dpe_move.replace("_", "").upper()
+    if normalized in _DPE_ALIASES:
+        return _DPE_ALIASES[normalized]
     return fr_move_set.get(normalized)
 
 

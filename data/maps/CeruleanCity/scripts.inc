@@ -66,15 +66,59 @@ CeruleanCity_EventScript_Rival::
 	end
 
 CeruleanCity_EventScript_RivalSquirtle::
+CeruleanCity_EventScript_RivalBulbasaur::
+CeruleanCity_EventScript_RivalCharmander::
+	goto CeruleanCity_Battle_RivalByType
+
+CeruleanCity_Battle_RivalByType::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   CeruleanCity_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     CeruleanCity_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, CeruleanCity_Battle_Rival_Pidgey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   CeruleanCity_Battle_Rival_Omanyte
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   CeruleanCity_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, CeruleanCity_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   CeruleanCity_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     CeruleanCity_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     CeruleanCity_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      CeruleanCity_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    CeruleanCity_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    CeruleanCity_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      CeruleanCity_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    CeruleanCity_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  CeruleanCity_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    CeruleanCity_Battle_Rival_Bulbasaur
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   CeruleanCity_Battle_Rival_Swinub
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    CeruleanCity_Battle_Rival_Honedge
+
+CeruleanCity_Battle_Rival_Mankey::
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_COUNTER_MANKEY, CeruleanCity_Text_RivalDefeat
+	return
+CeruleanCity_Battle_Rival_Pidgey::
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_COUNTER_PIDGEY, CeruleanCity_Text_RivalDefeat
+	return
+CeruleanCity_Battle_Rival_Omanyte::
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_COUNTER_OMANYTE, CeruleanCity_Text_RivalDefeat
+	return
+CeruleanCity_Battle_Rival_Trapinch::
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_COUNTER_TRAPINCH, CeruleanCity_Text_RivalDefeat
+	return
+CeruleanCity_Battle_Rival_Squirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_SQUIRTLE, CeruleanCity_Text_RivalDefeat
 	return
-
-CeruleanCity_EventScript_RivalBulbasaur::
+CeruleanCity_Battle_Rival_Charmander::
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_CHARMANDER, CeruleanCity_Text_RivalDefeat
+	return
+CeruleanCity_Battle_Rival_Zigzagoon::
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_COUNTER_ZIGZAGOON, CeruleanCity_Text_RivalDefeat
+	return
+CeruleanCity_Battle_Rival_Bulbasaur::
 	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_BULBASAUR, CeruleanCity_Text_RivalDefeat
 	return
-
-CeruleanCity_EventScript_RivalCharmander::
-	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_CHARMANDER, CeruleanCity_Text_RivalDefeat
+CeruleanCity_Battle_Rival_Swinub::
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_COUNTER_SWINUB, CeruleanCity_Text_RivalDefeat
+	return
+CeruleanCity_Battle_Rival_Honedge::
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_COUNTER_HONEDGE, CeruleanCity_Text_RivalDefeat
 	return
 
 CeruleanCity_EventScript_RivalStartExit::

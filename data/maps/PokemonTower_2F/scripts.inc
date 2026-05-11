@@ -57,15 +57,59 @@ PokemonTower_2F_EventScript_RivalFacePlayerDown::
 	return
 
 PokemonTower_2F_EventScript_RivalSquirtle::
+PokemonTower_2F_EventScript_RivalBulbasaur::
+PokemonTower_2F_EventScript_RivalCharmander::
+	goto PokemonTower_2F_Battle_RivalByType
+
+PokemonTower_2F_Battle_RivalByType::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   PokemonTower_2F_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     PokemonTower_2F_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, PokemonTower_2F_Battle_Rival_Pidgey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   PokemonTower_2F_Battle_Rival_Omanyte
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   PokemonTower_2F_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, PokemonTower_2F_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   PokemonTower_2F_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     PokemonTower_2F_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     PokemonTower_2F_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      PokemonTower_2F_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    PokemonTower_2F_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    PokemonTower_2F_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      PokemonTower_2F_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    PokemonTower_2F_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  PokemonTower_2F_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    PokemonTower_2F_Battle_Rival_Bulbasaur
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   PokemonTower_2F_Battle_Rival_Swinub
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    PokemonTower_2F_Battle_Rival_Honedge
+
+PokemonTower_2F_Battle_Rival_Mankey::
+	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_COUNTER_MANKEY, PokemonTower_2F_Text_RivalDefeat
+	return
+PokemonTower_2F_Battle_Rival_Pidgey::
+	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_COUNTER_PIDGEY, PokemonTower_2F_Text_RivalDefeat
+	return
+PokemonTower_2F_Battle_Rival_Omanyte::
+	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_COUNTER_OMANYTE, PokemonTower_2F_Text_RivalDefeat
+	return
+PokemonTower_2F_Battle_Rival_Trapinch::
+	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_COUNTER_TRAPINCH, PokemonTower_2F_Text_RivalDefeat
+	return
+PokemonTower_2F_Battle_Rival_Squirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE, PokemonTower_2F_Text_RivalDefeat
 	return
-
-PokemonTower_2F_EventScript_RivalBulbasaur::
+PokemonTower_2F_Battle_Rival_Charmander::
+	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER, PokemonTower_2F_Text_RivalDefeat
+	return
+PokemonTower_2F_Battle_Rival_Zigzagoon::
+	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_COUNTER_ZIGZAGOON, PokemonTower_2F_Text_RivalDefeat
+	return
+PokemonTower_2F_Battle_Rival_Bulbasaur::
 	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR, PokemonTower_2F_Text_RivalDefeat
 	return
-
-PokemonTower_2F_EventScript_RivalCharmander::
-	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER, PokemonTower_2F_Text_RivalDefeat
+PokemonTower_2F_Battle_Rival_Swinub::
+	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_COUNTER_SWINUB, PokemonTower_2F_Text_RivalDefeat
+	return
+PokemonTower_2F_Battle_Rival_Honedge::
+	trainerbattle_no_intro TRAINER_RIVAL_POKEMON_TOWER_COUNTER_HONEDGE, PokemonTower_2F_Text_RivalDefeat
 	return
 
 PokemonTower_2F_EventScript_RivalExitRight::

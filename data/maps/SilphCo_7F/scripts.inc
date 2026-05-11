@@ -68,15 +68,59 @@ SilphCo_7F_EventScript_RivalApproachBottom::
 	return
 
 SilphCo_7F_EventScript_RivalSquirtle::
+SilphCo_7F_EventScript_RivalBulbasaur::
+SilphCo_7F_EventScript_RivalCharmander::
+	goto SilphCo_7F_Battle_RivalByType
+
+SilphCo_7F_Battle_RivalByType::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   SilphCo_7F_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     SilphCo_7F_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, SilphCo_7F_Battle_Rival_Pidgey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   SilphCo_7F_Battle_Rival_Omanyte
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   SilphCo_7F_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, SilphCo_7F_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   SilphCo_7F_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     SilphCo_7F_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     SilphCo_7F_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      SilphCo_7F_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    SilphCo_7F_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    SilphCo_7F_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      SilphCo_7F_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    SilphCo_7F_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  SilphCo_7F_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    SilphCo_7F_Battle_Rival_Bulbasaur
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   SilphCo_7F_Battle_Rival_Swinub
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    SilphCo_7F_Battle_Rival_Honedge
+
+SilphCo_7F_Battle_Rival_Mankey::
+	trainerbattle_no_intro TRAINER_RIVAL_SILPH_COUNTER_MANKEY, SilphCo_7F_Text_RivalDefeat
+	return
+SilphCo_7F_Battle_Rival_Pidgey::
+	trainerbattle_no_intro TRAINER_RIVAL_SILPH_COUNTER_PIDGEY, SilphCo_7F_Text_RivalDefeat
+	return
+SilphCo_7F_Battle_Rival_Omanyte::
+	trainerbattle_no_intro TRAINER_RIVAL_SILPH_COUNTER_OMANYTE, SilphCo_7F_Text_RivalDefeat
+	return
+SilphCo_7F_Battle_Rival_Trapinch::
+	trainerbattle_no_intro TRAINER_RIVAL_SILPH_COUNTER_TRAPINCH, SilphCo_7F_Text_RivalDefeat
+	return
+SilphCo_7F_Battle_Rival_Squirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_SILPH_SQUIRTLE, SilphCo_7F_Text_RivalDefeat
 	return
-
-SilphCo_7F_EventScript_RivalBulbasaur::
+SilphCo_7F_Battle_Rival_Charmander::
+	trainerbattle_no_intro TRAINER_RIVAL_SILPH_CHARMANDER, SilphCo_7F_Text_RivalDefeat
+	return
+SilphCo_7F_Battle_Rival_Zigzagoon::
+	trainerbattle_no_intro TRAINER_RIVAL_SILPH_COUNTER_ZIGZAGOON, SilphCo_7F_Text_RivalDefeat
+	return
+SilphCo_7F_Battle_Rival_Bulbasaur::
 	trainerbattle_no_intro TRAINER_RIVAL_SILPH_BULBASAUR, SilphCo_7F_Text_RivalDefeat
 	return
-
-SilphCo_7F_EventScript_RivalCharmander::
-	trainerbattle_no_intro TRAINER_RIVAL_SILPH_CHARMANDER, SilphCo_7F_Text_RivalDefeat
+SilphCo_7F_Battle_Rival_Swinub::
+	trainerbattle_no_intro TRAINER_RIVAL_SILPH_COUNTER_SWINUB, SilphCo_7F_Text_RivalDefeat
+	return
+SilphCo_7F_Battle_Rival_Honedge::
+	trainerbattle_no_intro TRAINER_RIVAL_SILPH_COUNTER_HONEDGE, SilphCo_7F_Text_RivalDefeat
 	return
 
 SilphCo_7F_EventScript_RivalExitTop::

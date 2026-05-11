@@ -68,15 +68,59 @@ SSAnne_2F_Corridor_EventScript_RivalApproachRight::
 	return
 
 SSAnne_2F_Corridor_EventScript_RivalSquirtle::
+SSAnne_2F_Corridor_EventScript_RivalBulbasaur::
+SSAnne_2F_Corridor_EventScript_RivalCharmander::
+	goto SSAnne_2F_Corridor_Battle_RivalByType
+
+SSAnne_2F_Corridor_Battle_RivalByType::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   SSAnne_2F_Corridor_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     SSAnne_2F_Corridor_Battle_Rival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, SSAnne_2F_Corridor_Battle_Rival_Pidgey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   SSAnne_2F_Corridor_Battle_Rival_Omanyte
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   SSAnne_2F_Corridor_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, SSAnne_2F_Corridor_Battle_Rival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   SSAnne_2F_Corridor_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     SSAnne_2F_Corridor_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     SSAnne_2F_Corridor_Battle_Rival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      SSAnne_2F_Corridor_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    SSAnne_2F_Corridor_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    SSAnne_2F_Corridor_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      SSAnne_2F_Corridor_Battle_Rival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    SSAnne_2F_Corridor_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  SSAnne_2F_Corridor_Battle_Rival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    SSAnne_2F_Corridor_Battle_Rival_Bulbasaur
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   SSAnne_2F_Corridor_Battle_Rival_Swinub
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    SSAnne_2F_Corridor_Battle_Rival_Honedge
+
+SSAnne_2F_Corridor_Battle_Rival_Mankey::
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_COUNTER_MANKEY, SSAnne_2F_Corridor_Text_RivalDefeat
+	return
+SSAnne_2F_Corridor_Battle_Rival_Pidgey::
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_COUNTER_PIDGEY, SSAnne_2F_Corridor_Text_RivalDefeat
+	return
+SSAnne_2F_Corridor_Battle_Rival_Omanyte::
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_COUNTER_OMANYTE, SSAnne_2F_Corridor_Text_RivalDefeat
+	return
+SSAnne_2F_Corridor_Battle_Rival_Trapinch::
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_COUNTER_TRAPINCH, SSAnne_2F_Corridor_Text_RivalDefeat
+	return
+SSAnne_2F_Corridor_Battle_Rival_Squirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_SQUIRTLE, SSAnne_2F_Corridor_Text_RivalDefeat
 	return
-
-SSAnne_2F_Corridor_EventScript_RivalBulbasaur::
+SSAnne_2F_Corridor_Battle_Rival_Charmander::
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_CHARMANDER, SSAnne_2F_Corridor_Text_RivalDefeat
+	return
+SSAnne_2F_Corridor_Battle_Rival_Zigzagoon::
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_COUNTER_ZIGZAGOON, SSAnne_2F_Corridor_Text_RivalDefeat
+	return
+SSAnne_2F_Corridor_Battle_Rival_Bulbasaur::
 	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_BULBASAUR, SSAnne_2F_Corridor_Text_RivalDefeat
 	return
-
-SSAnne_2F_Corridor_EventScript_RivalCharmander::
-	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_CHARMANDER, SSAnne_2F_Corridor_Text_RivalDefeat
+SSAnne_2F_Corridor_Battle_Rival_Swinub::
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_COUNTER_SWINUB, SSAnne_2F_Corridor_Text_RivalDefeat
+	return
+SSAnne_2F_Corridor_Battle_Rival_Honedge::
+	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_COUNTER_HONEDGE, SSAnne_2F_Corridor_Text_RivalDefeat
 	return
 
 SSAnne_2F_Corridor_EventScript_RivalExitLeft::

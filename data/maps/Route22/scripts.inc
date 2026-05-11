@@ -58,15 +58,59 @@ Route22_EventScript_EarlyRivalApproachBottom::
 	return
 
 Route22_EventScript_EarlyRivalSquirtle::
+Route22_EventScript_EarlyRivalBulbasaur::
+Route22_EventScript_EarlyRivalCharmander::
+	goto Route22_Battle_EarlyRivalByType
+
+Route22_Battle_EarlyRivalByType::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   Route22_Battle_EarlyRival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     Route22_Battle_EarlyRival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, Route22_Battle_EarlyRival_Pidgey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   Route22_Battle_EarlyRival_Omanyte
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   Route22_Battle_EarlyRival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, Route22_Battle_EarlyRival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   Route22_Battle_EarlyRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     Route22_Battle_EarlyRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     Route22_Battle_EarlyRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      Route22_Battle_EarlyRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    Route22_Battle_EarlyRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    Route22_Battle_EarlyRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      Route22_Battle_EarlyRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    Route22_Battle_EarlyRival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  Route22_Battle_EarlyRival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    Route22_Battle_EarlyRival_Bulbasaur
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   Route22_Battle_EarlyRival_Swinub
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    Route22_Battle_EarlyRival_Honedge
+
+Route22_Battle_EarlyRival_Mankey::
+	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_COUNTER_MANKEY, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
+	return
+Route22_Battle_EarlyRival_Pidgey::
+	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_COUNTER_PIDGEY, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
+	return
+Route22_Battle_EarlyRival_Omanyte::
+	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_COUNTER_OMANYTE, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
+	return
+Route22_Battle_EarlyRival_Trapinch::
+	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_COUNTER_TRAPINCH, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
+	return
+Route22_Battle_EarlyRival_Squirtle::
 	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
 	return
-
-Route22_EventScript_EarlyRivalBulbasaur::
+Route22_Battle_EarlyRival_Charmander::
+	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
+	return
+Route22_Battle_EarlyRival_Zigzagoon::
+	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_COUNTER_ZIGZAGOON, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
+	return
+Route22_Battle_EarlyRival_Bulbasaur::
 	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
 	return
-
-Route22_EventScript_EarlyRivalCharmander::
-	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
+Route22_Battle_EarlyRival_Swinub::
+	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_COUNTER_SWINUB, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
+	return
+Route22_Battle_EarlyRival_Honedge::
+	trainerbattle_earlyrival TRAINER_RIVAL_ROUTE22_EARLY_COUNTER_HONEDGE, 0, Route22_Text_EarlyRivalDefeat, Text_RivalVictory
 	return
 
 Route22_EventScript_EarlyRivalExit::
@@ -208,15 +252,59 @@ Route22_EventScript_LateRivalApproachBottom::
 	return
 
 Route22_EventScript_LateRivalSquirtle::
+Route22_EventScript_LateRivalBulbasaur::
+Route22_EventScript_LateRivalCharmander::
+	goto Route22_Battle_LateRivalByType
+
+Route22_Battle_LateRivalByType::
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_NORMAL,   Route22_Battle_LateRival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DARK,     Route22_Battle_LateRival_Mankey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIGHTING, Route22_Battle_LateRival_Pidgey
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FLYING,   Route22_Battle_LateRival_Omanyte
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_POISON,   Route22_Battle_LateRival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ELECTRIC, Route22_Battle_LateRival_Trapinch
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GROUND,   Route22_Battle_LateRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ROCK,     Route22_Battle_LateRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FIRE,     Route22_Battle_LateRival_Squirtle
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_BUG,      Route22_Battle_LateRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_STEEL,    Route22_Battle_LateRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GRASS,    Route22_Battle_LateRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_ICE,      Route22_Battle_LateRival_Charmander
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_GHOST,    Route22_Battle_LateRival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_PSYCHIC,  Route22_Battle_LateRival_Zigzagoon
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_WATER,    Route22_Battle_LateRival_Bulbasaur
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_DRAGON,   Route22_Battle_LateRival_Swinub
+	goto_if_eq VAR_CHOSEN_TYPE, TYPE_FAIRY,    Route22_Battle_LateRival_Honedge
+
+Route22_Battle_LateRival_Mankey::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_COUNTER_MANKEY, Route22_Text_LateRivalDefeat
+	return
+Route22_Battle_LateRival_Pidgey::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_COUNTER_PIDGEY, Route22_Text_LateRivalDefeat
+	return
+Route22_Battle_LateRival_Omanyte::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_COUNTER_OMANYTE, Route22_Text_LateRivalDefeat
+	return
+Route22_Battle_LateRival_Trapinch::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_COUNTER_TRAPINCH, Route22_Text_LateRivalDefeat
+	return
+Route22_Battle_LateRival_Squirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE, Route22_Text_LateRivalDefeat
 	return
-
-Route22_EventScript_LateRivalBulbasaur::
+Route22_Battle_LateRival_Charmander::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER, Route22_Text_LateRivalDefeat
+	return
+Route22_Battle_LateRival_Zigzagoon::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_COUNTER_ZIGZAGOON, Route22_Text_LateRivalDefeat
+	return
+Route22_Battle_LateRival_Bulbasaur::
 	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR, Route22_Text_LateRivalDefeat
 	return
-
-Route22_EventScript_LateRivalCharmander::
-	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER, Route22_Text_LateRivalDefeat
+Route22_Battle_LateRival_Swinub::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_COUNTER_SWINUB, Route22_Text_LateRivalDefeat
+	return
+Route22_Battle_LateRival_Honedge::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_COUNTER_HONEDGE, Route22_Text_LateRivalDefeat
 	return
 
 Route22_Movement_LateRivalExit::
