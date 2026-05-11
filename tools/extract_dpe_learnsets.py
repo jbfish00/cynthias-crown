@@ -133,6 +133,12 @@ DECISIONS: dict[str, str] = {
     "AlolanExeggutor:MOVE_EGG_BOMB":         "D",   # FR=41, DPE=27
 }
 
+# Moves that must never be added to any species via DPE merge.
+# Signature moves whose learnability is intentionally restricted.
+BANNED_MOVES: set[str] = {
+    "MOVE_KINGS_SHIELD",  # Aegislash-exclusive signature move
+}
+
 FR_MOVES_H    = "include/constants/moves.h"
 DPE_LEARNSETS = "/dev/shm/dpe/src/Learnsets.c"
 FR_LEARNSETS  = "src/data/pokemon/level_up_learnsets.h"
@@ -422,6 +428,8 @@ def build_merged_body(fr_moves, dpe_moves, fr_move_set, species_name, dry_run):
     for dpe_level, dpe_move_raw in dpe_moves:
         fr_move = translate_move(dpe_move_raw, fr_move_set)
         if fr_move is None:
+            continue
+        if fr_move in BANNED_MOVES:
             continue
         if (dpe_level, fr_move) in fr_set:
             continue
