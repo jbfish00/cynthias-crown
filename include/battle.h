@@ -162,13 +162,14 @@ struct DisableStruct
     /*0x14*/ u8 battlerPreventingEscape;
     /*0x15*/ u8 battlerWithSureHit;
     /*0x16*/ u8 isFirstTurn;
-    /*0x17*/ u8 unk17;
+    /*0x17*/ u8 rageFistHitCount;
     /*0x18*/ u8 truantCounter : 1;
     /*0x18*/ u8 truantSwitchInHack : 1; // Unused here, but used in pokeemerald
     /*0x18*/ u8 unk18_a_2 : 2;
     /*0x18*/ u8 mimickedMoves : 4;
     /*0x19*/ u8 rechargeTimer;
-    /*0x1A*/ u8 unk1A[2];
+    /*0x1A*/ u8 usedMovesBitmask;
+    /*0x1B*/ u8 unk1B;
 };
 
 extern struct DisableStruct gDisableStructs[MAX_BATTLERS_COUNT];
@@ -474,6 +475,10 @@ extern struct BattleStruct *gBattleStruct;
 
 #define IS_TYPE_PHYSICAL(moveType)(moveType < TYPE_MYSTERY)
 #define IS_TYPE_SPECIAL(moveType)(moveType > TYPE_MYSTERY)
+
+#define SPLIT_PHYSICAL  0
+#define SPLIT_SPECIAL   1
+#define SPLIT_STATUS    2
 
 #define TARGET_TURN_DAMAGED ((gSpecialStatuses[gBattlerTarget].physicalDmg != 0 || gSpecialStatuses[gBattlerTarget].specialDmg != 0))
 

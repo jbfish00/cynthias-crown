@@ -47,3 +47,22 @@ LavenderTown_EventScript_VolunteerHouseSign::
 LavenderTown_EventScript_PokemonTowerSign::
 	msgbox LavenderTown_Text_PokemonTowerSign, MSGBOX_SIGN
 	end
+
+LavenderTown_EventScript_Cynthia::
+	lock
+	faceplayer
+	msgbox LavenderTown_Text_CynthiaDialogue, MSGBOX_DEFAULT
+	setflag FLAG_HIDE_CYNTHIA_AT_LAVENDER
+	releaseall
+	end
+
+LavenderTown_Text_CynthiaDialogue::
+	.string "This tower... it's just like the\n"
+	.string "legends I've studied. Pokémon Tower\n"
+	.string "holds Kanto's oldest mysteries.\p"
+	.string "I spent the night reading the stone\n"
+	.string "tablets here. The connection between\n"
+	.string "humans and Pokémon runs so deep.\p"
+	.string "I hope we meet again on your journey,\n"
+	.string "trainer. You remind me of myself\n"
+	.string "when I was starting out.$"

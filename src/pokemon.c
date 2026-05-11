@@ -2406,10 +2406,44 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     else
         type = typeOverride & DYNAMIC_TYPE_MASK;
 
+    // Power Trip / Stored Power: 20 + 20 per positive stat stage
+    if (move == MOVE_POWER_TRIP || move == MOVE_STORED_POWER)
+    {
+        u8 i, boosts = 0;
+        for (i = STAT_ATK; i <= STAT_EVASION; i++)
+            if (attacker->statStages[i] > DEFAULT_STAT_STAGE)
+                boosts += attacker->statStages[i] - DEFAULT_STAT_STAGE;
+        gBattleMovePower = 20 + 20 * boosts;
+        if (gBattleMovePower < 1) gBattleMovePower = 1;
+    }
+
+    // Lash Out: doubles to 150 if user had a stat lowered this turn
+    if (move == MOVE_LASH_OUT && gSpecialStatuses[battlerIdAtk].statLowered)
+        gBattleMovePower = 150;
+
+    // Rage Fist: 50 + 50 per hit taken this battle (max 6)
+    if (move == MOVE_RAGE_FIST)
+        gBattleMovePower = 50 + 50 * gDisableStructs[battlerIdAtk].rageFistHitCount;
+
     attack = attacker->attack;
     defense = defender->defense;
     spAttack = attacker->spAttack;
     spDefense = defender->spDefense;
+
+    // Stance Change (Aegislash): entering Blade Forme boosts Atk/SpAtk 3x; Blade Forme halves Def/SpDef
+    if (attacker->ability == ABILITY_STANCE_CHANGE && gBattleMoves[move].power > 0)
+    {
+        gStatuses3[battlerIdAtk] |= STATUS3_BLADE_FORM;
+        attack *= 3;    // Shield Forme base 50 → effective 150
+        spAttack *= 3;
+    }
+    if (defender->ability == ABILITY_STANCE_CHANGE && (gStatuses3[battlerIdDef] & STATUS3_BLADE_FORM))
+    {
+        defense = defense * 5 / 14;    // Blade Forme: 140 base → effective ~50
+        spDefense = spDefense * 5 / 14;
+        if (defense == 0) defense = 1;
+        if (spDefense == 0) spDefense = 1;
+    }
 
     // Get attacker hold item info
     if (attacker->item == ITEM_ENIGMA_BERRY)
@@ -2453,7 +2487,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if (attackerHoldEffect == sHoldEffectToType[i][0]
             && type == sHoldEffectToType[i][1])
         {
-            if (IS_TYPE_PHYSICAL(type))
+            if (gBattleMoves[move].split == SPLIT_PHYSICAL)
                 attack = (attack * (attackerHoldEffectParam + 100)) / 100;
             else
                 spAttack = (spAttack * (attackerHoldEffectParam + 100)) / 100;
@@ -2507,7 +2541,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION)
         defense /= 2;
 
-    if (IS_TYPE_PHYSICAL(type))
+    if (gBattleMoves[move].split == SPLIT_PHYSICAL)
     {
         if (gCritMultiplier == 2)
         {
@@ -2562,7 +2596,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (type == TYPE_MYSTERY)
         damage = 0; // is ??? type. does 0 damage.
 
-    if (IS_TYPE_SPECIAL(type))
+    if (gBattleMoves[move].split == SPLIT_SPECIAL)
     {
         if (gCritMultiplier == 2)
         {

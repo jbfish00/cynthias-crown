@@ -400,3 +400,29 @@ CeruleanCity_EventScript_GymSign::
 	msgbox CeruleanCity_Text_GymSign
 	releaseall
 	end
+
+CeruleanCity_EventScript_Cynthia::
+	lock
+	faceplayer
+	msgbox CeruleanCity_Text_CynthiaIntro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_CYNTHIA_CERULEAN, CeruleanCity_Text_CynthiaChallenge, CeruleanCity_Text_CynthiaDefeat
+	msgbox CeruleanCity_Text_CynthiaPostBattle, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_CYNTHIA_AT_CERULEAN
+	releaseall
+	end
+
+CeruleanCity_Text_CynthiaIntro::
+	.string "We meet again, trainer! I've been\n"
+	.string "catching new friends near Mt. Moon.\n"
+	.string "My team is growing. Ready for a battle?$"
+
+CeruleanCity_Text_CynthiaChallenge::
+	.string "Kanto's wild Pokémon are amazing!$"
+
+CeruleanCity_Text_CynthiaDefeat::
+	.string "You're still stronger than me.$"
+
+CeruleanCity_Text_CynthiaPostBattle::
+	.string "The stories of Cerulean Cave and\n"
+	.string "the Pokémon within fascinate me.\n"
+	.string "There's so much to discover here!$"

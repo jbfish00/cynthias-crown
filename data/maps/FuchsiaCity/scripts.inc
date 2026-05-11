@@ -138,3 +138,31 @@ FuchsiaCity_EventScript_OmanyteSign::
 	hidemonpic
 	releaseall
 	end
+
+FuchsiaCity_EventScript_Cynthia::
+	lock
+	faceplayer
+	msgbox FuchsiaCity_Text_CynthiaIntro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_CYNTHIA_FUCHSIA, FuchsiaCity_Text_CynthiaChallenge, FuchsiaCity_Text_CynthiaDefeat
+	msgbox FuchsiaCity_Text_CynthiaPostBattle, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_CYNTHIA_AT_FUCHSIA
+	releaseall
+	end
+
+FuchsiaCity_Text_CynthiaIntro::
+	.string "The Safari Zone has incredible\n"
+	.string "Pokémon! I found something special\n"
+	.string "in there. Want to battle?$"
+
+FuchsiaCity_Text_CynthiaChallenge::
+	.string "I found a DAWN STONE in the Safari\n"
+	.string "Zone. KIRLIA became GALLADE!$"
+
+FuchsiaCity_Text_CynthiaDefeat::
+	.string "Your bond with your Pokémon is\n"
+	.string "truly something.$"
+
+FuchsiaCity_Text_CynthiaPostBattle::
+	.string "The Safari Zone's ancient ecology\n"
+	.string "reminds me of the Pokémon Mansion.\n"
+	.string "I'm heading to CINNABAR next!$"

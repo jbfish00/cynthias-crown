@@ -14107,3 +14107,56 @@ static const struct TrainerMonNoItemCustomMoves sParty_NpcCinnabarOldman[] = {
     { .iv = 0, .lvl = 42, .species = SPECIES_ARCANINE, .moves = {MOVE_EMBER, MOVE_BITE, MOVE_ROAR, MOVE_ODOR_SLEUTH} },
     { .iv = 0, .lvl = 40, .species = SPECIES_MAGMAR, .moves = {MOVE_FIRE_PUNCH, MOVE_EMBER, MOVE_SMOG, MOVE_SUNNY_DAY} },
 };
+
+// Cynthia — parallel rival across 7 battles in Kanto
+static const struct TrainerMonNoItemCustomMoves sParty_CynthiaViridian[] = {
+    { .iv = 31, .lvl = 12, .species = SPECIES_EEVEE,  .moves = {MOVE_TACKLE, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK, MOVE_TAIL_WHIP} },
+    { .iv = 31, .lvl = 12, .species = SPECIES_PIDGEY, .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_SAND_ATTACK, MOVE_QUICK_ATTACK} },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_CynthiaCerulean[] = {
+    { .iv = 31, .lvl = 22, .species = SPECIES_EEVEE,   .moves = {MOVE_TAKE_DOWN, MOVE_BITE, MOVE_QUICK_ATTACK, MOVE_SWIFT} },
+    { .iv = 31, .lvl = 20, .species = SPECIES_CLEFAIRY, .moves = {MOVE_SING, MOVE_DOUBLE_SLAP, MOVE_METRONOME, MOVE_GROWL} },
+    { .iv = 31, .lvl = 21, .species = SPECIES_NIDORINA, .moves = {MOVE_BITE, MOVE_SCRATCH, MOVE_DOUBLE_KICK, MOVE_POISON_STING} },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_CynthiaVermilion[] = {
+    { .iv = 31, .lvl = 28, .species = SPECIES_EEVEE,    .moves = {MOVE_TAKE_DOWN, MOVE_BITE, MOVE_SWIFT, MOVE_QUICK_ATTACK} },
+    { .iv = 31, .lvl = 26, .species = SPECIES_CLEFAIRY, .moves = {MOVE_SING, MOVE_MINIMIZE, MOVE_METRONOME, MOVE_DOUBLE_SLAP} },
+    { .iv = 31, .lvl = 26, .species = SPECIES_NIDORINA, .moves = {MOVE_BITE, MOVE_BODY_SLAM, MOVE_DOUBLE_KICK, MOVE_SCRATCH} },
+    { .iv = 31, .lvl = 25, .species = SPECIES_KIRLIA,   .moves = {MOVE_CONFUSION, MOVE_DOUBLE_TEAM, MOVE_GROWL, MOVE_TELEPORT} },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_CynthiaCeladon[] = {
+    { .iv = 31, .lvl = 37, .species = SPECIES_GLACEON,  .moves = {MOVE_ICE_FANG, MOVE_ICY_WIND, MOVE_BITE, MOVE_QUICK_ATTACK} },
+    { .iv = 31, .lvl = 35, .species = SPECIES_CLEFABLE, .moves = {MOVE_MOONBLAST, MOVE_MINIMIZE, MOVE_METRONOME, MOVE_DOUBLE_SLAP} },
+    { .iv = 31, .lvl = 36, .species = SPECIES_NIDOQUEEN, .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_DOUBLE_KICK, MOVE_TOXIC} },
+    { .iv = 31, .lvl = 34, .species = SPECIES_KIRLIA,   .moves = {MOVE_CONFUSION, MOVE_PSYBEAM, MOVE_DOUBLE_TEAM, MOVE_DISARMING_VOICE} },
+    { .iv = 31, .lvl = 34, .species = SPECIES_HONEDGE,  .moves = {MOVE_TACKLE, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE, MOVE_AERIAL_ACE} },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_CynthiaFuchsia[] = {
+    { .iv = 31, .lvl = 45, .species = SPECIES_GLACEON,  .moves = {MOVE_ICE_FANG, MOVE_ICICLE_SPEAR, MOVE_BLIZZARD, MOVE_BITE} },
+    { .iv = 31, .lvl = 43, .species = SPECIES_CLEFABLE, .moves = {MOVE_MOONBLAST, MOVE_METRONOME, MOVE_MINIMIZE, MOVE_MOONLIGHT} },
+    { .iv = 31, .lvl = 44, .species = SPECIES_NIDOQUEEN, .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_DOUBLE_KICK, MOVE_THUNDERBOLT} },
+    { .iv = 31, .lvl = 43, .species = SPECIES_GALLADE,  .moves = {MOVE_PSYCHO_CUT, MOVE_DRAIN_PUNCH, MOVE_SWORDS_DANCE, MOVE_BULK_UP} },
+    { .iv = 31, .lvl = 42, .species = SPECIES_DOUBLADE, .moves = {MOVE_IRON_HEAD, MOVE_SHADOW_CLAW, MOVE_SWORDS_DANCE, MOVE_AERIAL_ACE} },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_CynthiaCinnabar[] = {
+    { .iv = 31, .lvl = 54, .species = SPECIES_GLACEON,   .heldItem = ITEM_NONE, .moves = {MOVE_ICE_FANG, MOVE_BLIZZARD, MOVE_ICICLE_CRASH, MOVE_BITE} },
+    { .iv = 31, .lvl = 52, .species = SPECIES_CLEFABLE,  .heldItem = ITEM_NONE, .moves = {MOVE_MOONBLAST, MOVE_METRONOME, MOVE_MINIMIZE, MOVE_MOONLIGHT} },
+    { .iv = 31, .lvl = 53, .species = SPECIES_NIDOQUEEN, .heldItem = ITEM_NONE, .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_FLAMETHROWER} },
+    { .iv = 31, .lvl = 52, .species = SPECIES_GALLADE,   .heldItem = ITEM_NONE, .moves = {MOVE_PSYCHO_CUT, MOVE_DRAIN_PUNCH, MOVE_CLOSE_COMBAT, MOVE_SWORDS_DANCE} },
+    { .iv = 31, .lvl = 52, .species = SPECIES_AEGISLASH, .heldItem = ITEM_NONE, .moves = {MOVE_IRON_HEAD, MOVE_SHADOW_BALL, MOVE_KINGS_SHIELD, MOVE_SWORDS_DANCE} },
+    { .iv = 31, .lvl = 54, .species = SPECIES_AERODACTYL, .heldItem = ITEM_NONE, .moves = {MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_STONE_EDGE, MOVE_ROCK_SLIDE} },
+};
+
+static const struct TrainerMonItemCustomMoves sParty_CynthiaVictoryRoad[] = {
+    { .iv = 31, .lvl = 63, .species = SPECIES_GLACEON,   .heldItem = ITEM_LUM_BERRY,    .moves = {MOVE_ICE_FANG, MOVE_BLIZZARD, MOVE_ICICLE_CRASH, MOVE_SHADOW_BALL} },
+    { .iv = 31, .lvl = 61, .species = SPECIES_CLEFABLE,  .heldItem = ITEM_LEFTOVERS,    .moves = {MOVE_MOONBLAST, MOVE_PSYCHIC, MOVE_MINIMIZE, MOVE_MOONLIGHT} },
+    { .iv = 31, .lvl = 62, .species = SPECIES_NIDOQUEEN, .heldItem = ITEM_NONE,         .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_FLAMETHROWER} },
+    { .iv = 31, .lvl = 61, .species = SPECIES_GALLADE,   .heldItem = ITEM_NONE,         .moves = {MOVE_PSYCHO_CUT, MOVE_CLOSE_COMBAT, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE} },
+    { .iv = 31, .lvl = 60, .species = SPECIES_AEGISLASH, .heldItem = ITEM_NONE,         .moves = {MOVE_IRON_HEAD, MOVE_SHADOW_BALL, MOVE_KINGS_SHIELD, MOVE_SACRED_SWORD} },
+    { .iv = 31, .lvl = 63, .species = SPECIES_AERODACTYL, .heldItem = ITEM_NONE,        .moves = {MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_ROCK_SLIDE, MOVE_HYPER_BEAM} },
+};

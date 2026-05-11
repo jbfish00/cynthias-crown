@@ -103,3 +103,31 @@ CeladonCity_EventScript_PrizeExchangeSign::
 CeladonCity_EventScript_GameCornerSign::
 	msgbox CeladonCity_Text_GameCornerSign, MSGBOX_SIGN
 	end
+
+CeladonCity_EventScript_Cynthia::
+	lock
+	faceplayer
+	msgbox CeladonCity_Text_CynthiaIntro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_CYNTHIA_CELADON, CeladonCity_Text_CynthiaChallenge, CeladonCity_Text_CynthiaDefeat
+	msgbox CeladonCity_Text_CynthiaPostBattle, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_CYNTHIA_AT_CELADON
+	releaseall
+	end
+
+CeladonCity_Text_CynthiaIntro::
+	.string "Ah, the Celadon Game Corner... it\n"
+	.string "reminds me that battles aren't the\n"
+	.string "only way to grow. Ready to face me?$"
+
+CeladonCity_Text_CynthiaChallenge::
+	.string "My Eevee evolved! Let's see what\n"
+	.string "GLACEON can do!$"
+
+CeladonCity_Text_CynthiaDefeat::
+	.string "GLACEON and I need more training\n"
+	.string "together still.$"
+
+CeladonCity_Text_CynthiaPostBattle::
+	.string "I found a HONEDGE near SILPH CO.\n"
+	.string "It's from a different era entirely.\n"
+	.string "Like a legend come to life!$"

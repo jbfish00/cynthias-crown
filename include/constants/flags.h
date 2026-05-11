@@ -1283,6 +1283,14 @@
 #define FLAG_0x4DD               0x4DD
 #define FLAG_0x4DE               0x4DE
 #define FLAG_0x4DF               0x4DF
+#define FLAG_HIDE_CYNTHIA_AT_VIRIDIAN      FLAG_0x4E0
+#define FLAG_HIDE_CYNTHIA_AT_CERULEAN      FLAG_0x4E1
+#define FLAG_HIDE_CYNTHIA_AT_VERMILION     FLAG_0x4E2
+#define FLAG_HIDE_CYNTHIA_AT_LAVENDER      FLAG_0x4E3
+#define FLAG_HIDE_CYNTHIA_AT_CELADON       FLAG_0x4E4
+#define FLAG_HIDE_CYNTHIA_AT_FUCHSIA       FLAG_0x4E5
+#define FLAG_HIDE_CYNTHIA_AT_CINNABAR      FLAG_0x4E6
+#define FLAG_HIDE_CYNTHIA_AT_VICTORY_ROAD  FLAG_0x4E7
 #define FLAG_0x4E0               0x4E0
 #define FLAG_0x4E1               0x4E1
 #define FLAG_0x4E2               0x4E2

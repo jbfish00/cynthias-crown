@@ -42,3 +42,33 @@ VictoryRoad_1F_EventScript_Rolando::
 	trainerbattle_single TRAINER_COOLTRAINER_ROLANDO, VictoryRoad_1F_Text_RolandoIntro, VictoryRoad_1F_Text_RolandoDefeat
 	msgbox VictoryRoad_1F_Text_RolandoPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+VictoryRoad_1F_EventScript_Cynthia::
+	lock
+	faceplayer
+	msgbox VictoryRoad_1F_Text_CynthiaIntro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_CYNTHIA_VICTORY_ROAD, VictoryRoad_1F_Text_CynthiaChallenge, VictoryRoad_1F_Text_CynthiaDefeat
+	msgbox VictoryRoad_1F_Text_CynthiaPostBattle, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_CYNTHIA_AT_VICTORY_ROAD
+	releaseall
+	end
+
+VictoryRoad_1F_Text_CynthiaIntro::
+	.string "So we meet again, here of all places.\n"
+	.string "Victory Road... even the name stirs\n"
+	.string "something in me. Shall we?$"
+
+VictoryRoad_1F_Text_CynthiaChallenge::
+	.string "Show me how far you've come. This\n"
+	.string "is the true test of a trainer!$"
+
+VictoryRoad_1F_Text_CynthiaDefeat::
+	.string "Magnificent. You've earned the right\n"
+	.string "to face the Elite Four.$"
+
+VictoryRoad_1F_Text_CynthiaPostBattle::
+	.string "I won't challenge the League myself.\n"
+	.string "I'm a researcher, not a Champion.\p"
+	.string "But I'll return to Sinnoh with\n"
+	.string "knowledge that will change how we\n"
+	.string "understand Pokémon. Thank you.$"

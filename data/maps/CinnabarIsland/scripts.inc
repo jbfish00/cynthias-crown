@@ -351,3 +351,30 @@ CinnabarIsland_EventScript_GymSign::
 	msgbox CinnabarIsland_Text_GymSign
 	releaseall
 	end
+
+CinnabarIsland_EventScript_Cynthia::
+	lock
+	faceplayer
+	msgbox CinnabarIsland_Text_CynthiaIntro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_CYNTHIA_CINNABAR, CinnabarIsland_Text_CynthiaChallenge, CinnabarIsland_Text_CynthiaDefeat
+	msgbox CinnabarIsland_Text_CynthiaPostBattle, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_CYNTHIA_AT_CINNABAR
+	releaseall
+	end
+
+CinnabarIsland_Text_CynthiaIntro::
+	.string "The Pokémon Mansion's logs about\n"
+	.string "MEW are extraordinary. And I revived\n"
+	.string "a fossil here! Battle me?$"
+
+CinnabarIsland_Text_CynthiaChallenge::
+	.string "I revived an AERODACTYL from the\n"
+	.string "OLD AMBER! An ancient Pokémon!$"
+
+CinnabarIsland_Text_CynthiaDefeat::
+	.string "Impressive strategy, trainer.$"
+
+CinnabarIsland_Text_CynthiaPostBattle::
+	.string "The knowledge I've gathered here\n"
+	.string "about MEWTWO rivals anything in\n"
+	.string "Sinnoh's legends. Remarkable.$"

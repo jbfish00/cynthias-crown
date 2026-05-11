@@ -266,3 +266,31 @@ VermilionCity_EventScript_GymSign::
 VermilionCity_EventScript_HarborSign::
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
 	end
+
+VermilionCity_EventScript_Cynthia::
+	lock
+	faceplayer
+	msgbox VermilionCity_Text_CynthiaIntro, MSGBOX_DEFAULT
+	trainerbattle_single TRAINER_CYNTHIA_VERMILION, VermilionCity_Text_CynthiaChallenge, VermilionCity_Text_CynthiaDefeat
+	msgbox VermilionCity_Text_CynthiaPostBattle, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_CYNTHIA_AT_VERMILION
+	releaseall
+	end
+
+VermilionCity_Text_CynthiaIntro::
+	.string "The S.S. Anne brought many trainers\n"
+	.string "here. I've been training along the\n"
+	.string "route. Want to see how I've grown?$"
+
+VermilionCity_Text_CynthiaChallenge::
+	.string "I've been reading about the Diglett's\n"
+	.string "Cave legends. Battling helps me focus!$"
+
+VermilionCity_Text_CynthiaDefeat::
+	.string "Still not there yet... I'll keep\n"
+	.string "training!$"
+
+VermilionCity_Text_CynthiaPostBattle::
+	.string "The Vermilion Gym leader's SURGE\n"
+	.string "reminds me of the Sinnoh Gym. I\n"
+	.string "see you're heading east as well!$"

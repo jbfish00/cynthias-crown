@@ -826,7 +826,15 @@
 #define TRAINER_RIVAL_ROUTE22_LATE_COUNTER_SWINUB       808
 #define TRAINER_RIVAL_ROUTE22_LATE_COUNTER_HONEDGE      809
 
-#define NUM_TRAINERS                             810
+#define TRAINER_CYNTHIA_VIRIDIAN         810
+#define TRAINER_CYNTHIA_CERULEAN         811
+#define TRAINER_CYNTHIA_VERMILION        812
+#define TRAINER_CYNTHIA_CELADON          813
+#define TRAINER_CYNTHIA_FUCHSIA          814
+#define TRAINER_CYNTHIA_CINNABAR         815
+#define TRAINER_CYNTHIA_VICTORY_ROAD     816
+
+#define NUM_TRAINERS                             817
 #define MAX_TRAINERS_COUNT                       896
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

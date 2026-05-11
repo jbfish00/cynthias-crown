@@ -308,6 +308,7 @@ static void Cmd_subattackerhpbydmg(void);
 static void Cmd_removeattackerstatus1(void);
 static void Cmd_finishaction(void);
 static void Cmd_finishturn(void);
+static void Cmd_lastresortcheck(void);
 
 void (* const gBattleScriptingCommandsTable[])(void) =
 {
@@ -559,6 +560,7 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_removeattackerstatus1,                   //0xF5
     Cmd_finishaction,                            //0xF6
     Cmd_finishturn,                              //0xF7
+    Cmd_lastresortcheck,                         //0xF8
 };
 
 struct StatFractions
@@ -902,6 +904,15 @@ static void Cmd_attackcanceler(void)
         gLastLandedMoves[gBattlerTarget] = 0;
         gLastHitByType[gBattlerTarget] = 0;
         gBattleCommunication[MISS_TYPE] = B_MSG_PROTECTED;
+        // King's Shield: contact moves lower attacker's Attack by 2 stages
+        if (gProtectStructs[gBattlerTarget].flag_x10
+         && (gBattleMoves[gCurrentMove].flags & FLAG_MAKES_CONTACT))
+        {
+            if (gBattleMons[gBattlerAttacker].statStages[STAT_ATK] >= 2)
+                gBattleMons[gBattlerAttacker].statStages[STAT_ATK] -= 2;
+            else
+                gBattleMons[gBattlerAttacker].statStages[STAT_ATK] = 0;
+        }
         gBattlescriptCurrInstr++;
     }
     else
@@ -1070,7 +1081,7 @@ static void Cmd_accuracycheck(void)
             calc = (calc * 130) / 100; // 1.3 compound eyes boost
         if (WEATHER_HAS_EFFECT && gBattleMons[gBattlerTarget].ability == ABILITY_SAND_VEIL && gBattleWeather & B_WEATHER_SANDSTORM)
             calc = (calc * 80) / 100; // 1.2 sand veil loss
-        if (gBattleMons[gBattlerAttacker].ability == ABILITY_HUSTLE && IS_TYPE_PHYSICAL(type))
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_HUSTLE && gBattleMoves[gCurrentMove].split == SPLIT_PHYSICAL)
             calc = (calc * 80) / 100; // 1.2 hustle loss
 
         if (gBattleMons[gBattlerTarget].item == ITEM_ENIGMA_BERRY)
@@ -1161,6 +1172,9 @@ static void Cmd_ppreduce(void)
                                          &gBattleMons[gBattlerAttacker].pp[gCurrMovePos]);
             MarkBattlerForControllerExec(gBattlerAttacker);
         }
+
+        // Track which moves have been used (for Last Resort)
+        gDisableStructs[gBattlerAttacker].usedMovesBitmask |= (1 << gCurrMovePos);
     }
 
     gHitMarker &= ~HITMARKER_NO_PPDEDUCT;
@@ -1822,7 +1836,11 @@ static void Cmd_datahpupdate(void)
                 if (!gSpecialStatuses[gActiveBattler].dmg && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE))
                     gSpecialStatuses[gActiveBattler].dmg = gHpDealt;
 
-                if (IS_TYPE_PHYSICAL(moveType) && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE) && gCurrentMove != MOVE_PAIN_SPLIT)
+                // Rage Fist: count times this battler was hit
+                if (!(gHitMarker & HITMARKER_PASSIVE_DAMAGE) && gDisableStructs[gActiveBattler].rageFistHitCount < 6)
+                    gDisableStructs[gActiveBattler].rageFistHitCount++;
+
+                if (gBattleMoves[gCurrentMove].split == SPLIT_PHYSICAL && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE) && gCurrentMove != MOVE_PAIN_SPLIT)
                 {
                     gProtectStructs[gActiveBattler].physicalDmg = gHpDealt;
                     gSpecialStatuses[gActiveBattler].physicalDmg = gHpDealt;
@@ -1837,7 +1855,7 @@ static void Cmd_datahpupdate(void)
                         gSpecialStatuses[gActiveBattler].physicalBattlerId = gBattlerTarget;
                     }
                 }
-                else if (!IS_TYPE_PHYSICAL(moveType) && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE))
+                else if (gBattleMoves[gCurrentMove].split == SPLIT_SPECIAL && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE))
                 {
                     gProtectStructs[gActiveBattler].specialDmg = gHpDealt;
                     gSpecialStatuses[gActiveBattler].specialDmg = gHpDealt;
@@ -6222,7 +6240,8 @@ static void Cmd_setprotectlike(void)
     bool8 notLastTurn = TRUE;
     u16 lastMove = gLastResultingMoves[gBattlerAttacker];
 
-    if (lastMove != MOVE_PROTECT && lastMove != MOVE_DETECT && lastMove != MOVE_ENDURE)
+    if (lastMove != MOVE_PROTECT && lastMove != MOVE_DETECT && lastMove != MOVE_ENDURE
+     && lastMove != MOVE_KINGS_SHIELD)
         gDisableStructs[gBattlerAttacker].protectUses = 0;
 
     if (gCurrentTurnActionNumber == (gBattlersCount - 1))
@@ -6239,6 +6258,13 @@ static void Cmd_setprotectlike(void)
         {
             gProtectStructs[gBattlerAttacker].endured = 1;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BRACED_ITSELF;
+        }
+        if (gBattleMoves[gCurrentMove].effect == EFFECT_KINGS_SHIELD)
+        {
+            gProtectStructs[gBattlerAttacker].protected = 1;
+            gProtectStructs[gBattlerAttacker].flag_x10 = 1; // King's Shield marker
+            gStatuses3[gBattlerAttacker] &= ~STATUS3_BLADE_FORM; // revert to Shield Forme
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PROTECTED_ITSELF;
         }
         gDisableStructs[gBattlerAttacker].protectUses++;
     }
@@ -9883,4 +9909,22 @@ static void Cmd_finishturn(void)
 {
     gCurrentActionFuncId = B_ACTION_FINISHED;
     gCurrentTurnActionNumber = gBattlersCount;
+}
+
+static void Cmd_lastresortcheck(void)
+{
+    const u8 *failPtr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
+    u8 i;
+    for (i = 0; i < MAX_MON_MOVES; i++)
+    {
+        u16 moveSlot = gBattleMons[gBattlerAttacker].moves[i];
+        if (moveSlot == MOVE_NONE || moveSlot == MOVE_LASTRESORT)
+            continue;
+        if (!(gDisableStructs[gBattlerAttacker].usedMovesBitmask & (1 << i)))
+        {
+            gBattlescriptCurrInstr = failPtr;
+            return;
+        }
+    }
+    gBattlescriptCurrInstr += 5;
 }
