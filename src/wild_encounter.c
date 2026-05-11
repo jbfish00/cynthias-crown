@@ -339,6 +339,7 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
             globalCount = 0;
             for (s = 1; s < NUM_SPECIES; s++)
             {
+                if (gSpeciesInfo[s].eggGroups[0] == EGG_GROUP_UNDISCOVERED) continue;
                 if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
                 {
                     if (GetMinWildLevel(s) <= info->wildPokemon[slot].maxLevel)
@@ -351,6 +352,7 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo * info, u8 area, u8
                 globalCount = 0;
                 for (s = 1; s < NUM_SPECIES; s++)
                 {
+                    if (gSpeciesInfo[s].eggGroups[0] == EGG_GROUP_UNDISCOVERED) continue;
                     if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
                     {
                         if (GetMinWildLevel(s) <= info->wildPokemon[slot].maxLevel)
@@ -417,6 +419,7 @@ static u16 GenerateFishingEncounter(const struct WildPokemonInfo * info, u8 rod)
             globalCount = 0;
             for (s = 1; s < NUM_SPECIES; s++)
             {
+                if (gSpeciesInfo[s].eggGroups[0] == EGG_GROUP_UNDISCOVERED) continue;
                 if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
                 {
                     if (GetMinWildLevel(s) <= info->wildPokemon[slot].maxLevel)
@@ -429,6 +432,7 @@ static u16 GenerateFishingEncounter(const struct WildPokemonInfo * info, u8 rod)
                 globalCount = 0;
                 for (s = 1; s < NUM_SPECIES; s++)
                 {
+                    if (gSpeciesInfo[s].eggGroups[0] == EGG_GROUP_UNDISCOVERED) continue;
                     if (gSpeciesInfo[s].types[0] == chosenType || gSpeciesInfo[s].types[1] == chosenType)
                     {
                         if (GetMinWildLevel(s) <= info->wildPokemon[slot].maxLevel)

@@ -452,6 +452,7 @@ EGG_GROUP_BY_TYPE = {
 }
 
 LEGENDARY_EXP = {261,270,302,306,324}  # exp yields that indicate legendary
+LEGENDARY_SPECIES_UNDISCOVERED = {"SPECIES_PHIONE"}  # mythicals not caught by exp heuristic
 
 def get_egg_groups(type1, exp_yield):
     if exp_yield in LEGENDARY_EXP or exp_yield >= 300:
@@ -639,9 +640,11 @@ def main():
             body_color = "BODY_COLOR_GRAY"
             ev_hp = ev_atk = ev_def = ev_spd = ev_spatk = ev_spdef = 0
 
-        exp = min(exp, 255)
-
         eg1, eg2 = get_egg_groups(t1, exp)
+        if macro in LEGENDARY_SPECIES_UNDISCOVERED:
+            eg1, eg2 = "EGG_GROUP_UNDISCOVERED", "EGG_GROUP_UNDISCOVERED"
+
+        exp = min(exp, 255)
 
         out.append(make_entry(macro, HP, Atk, Def, SpA, SpD, Spe,
             t1, t2, ab1, ab2, catch, exp, body_color, gender, friends, egg_cyc, growth,

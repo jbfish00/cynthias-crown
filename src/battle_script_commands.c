@@ -6240,6 +6240,16 @@ static void Cmd_setprotectlike(void)
     bool8 notLastTurn = TRUE;
     u16 lastMove = gLastResultingMoves[gBattlerAttacker];
 
+    if (gBattleMoves[gCurrentMove].effect == EFFECT_KINGS_SHIELD
+     && gBattleMons[gBattlerAttacker].species != SPECIES_AEGISLASH)
+    {
+        gDisableStructs[gBattlerAttacker].protectUses = 0;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PROTECT_FAILED;
+        gMoveResultFlags |= MOVE_RESULT_MISSED;
+        gBattlescriptCurrInstr++;
+        return;
+    }
+
     if (lastMove != MOVE_PROTECT && lastMove != MOVE_DETECT && lastMove != MOVE_ENDURE
      && lastMove != MOVE_KINGS_SHIELD)
         gDisableStructs[gBattlerAttacker].protectUses = 0;

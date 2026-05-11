@@ -67,8 +67,6 @@ VictoryRoad_1F_Text_CynthiaDefeat::
 	.string "to face the Elite Four.$"
 
 VictoryRoad_1F_Text_CynthiaPostBattle::
-	.string "I won't challenge the League myself.\n"
-	.string "I'm a researcher, not a Champion.\p"
-	.string "But I'll return to Sinnoh with\n"
-	.string "knowledge that will change how we\n"
-	.string "understand Pokémon. Thank you.$"
+	.string "You've earned this road. I'll head\n"
+	.string "back to Hoenn with a lot to think\n"
+	.string "about. Until we meet again.$"

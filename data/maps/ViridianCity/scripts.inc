@@ -238,28 +238,3 @@ ViridianCity_EventScript_DoTutorialBattle::
 	msgbox ViridianCity_Text_WatchThatToLearnBasics
 	return
 
-ViridianCity_EventScript_Cynthia::
-	lock
-	faceplayer
-	msgbox ViridianCity_Text_CynthiaIntro, MSGBOX_DEFAULT
-	trainerbattle_single TRAINER_CYNTHIA_VIRIDIAN, ViridianCity_Text_CynthiaChallenge, ViridianCity_Text_CynthiaDefeat
-	msgbox ViridianCity_Text_CynthiaPostBattle, MSGBOX_AUTOCLOSE
-	setflag FLAG_HIDE_CYNTHIA_AT_VIRIDIAN
-	releaseall
-	end
-
-ViridianCity_Text_CynthiaIntro::
-	.string "Ah, a trainer! I've just started\n"
-	.string "my Kanto journey. Care to test\n"
-	.string "what I've learned so far?$"
-
-ViridianCity_Text_CynthiaChallenge::
-	.string "Let's see what Kanto has taught me!$"
-
-ViridianCity_Text_CynthiaDefeat::
-	.string "Impressive! You're quite skilled.$"
-
-ViridianCity_Text_CynthiaPostBattle::
-	.string "My name is STEVEN. I'm a trainer\n"
-	.string "from Hoenn, traveling through Kanto.\n"
-	.string "Let's battle again someday!$"

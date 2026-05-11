@@ -1040,7 +1040,7 @@ void AnimatePartySlot(u8 slot, u8 animNum)
     ScheduleBgCopyTilemapToVram(1);
 }
 
-static bool8 SpeciesOrEvolutionMatchesType(u16 species, u8 chosenType)
+bool8 SpeciesOrEvolutionMatchesType(u16 species, u8 chosenType)
 {
     u8 j;
     u16 target;

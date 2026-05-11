@@ -375,6 +375,6 @@ CinnabarIsland_Text_CynthiaDefeat::
 	.string "Impressive strategy, trainer.$"
 
 CinnabarIsland_Text_CynthiaPostBattle::
-	.string "The knowledge I've gathered here\n"
-	.string "about MEWTWO rivals anything in\n"
-	.string "Sinnoh's legends. Remarkable.$"
+	.string "The fossil research here rivals\n"
+	.string "anything I've seen in Hoenn.\n"
+	.string "Remarkable work. Remarkable.$"

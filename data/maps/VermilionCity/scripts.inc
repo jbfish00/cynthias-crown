@@ -291,6 +291,6 @@ VermilionCity_Text_CynthiaDefeat::
 	.string "training!$"
 
 VermilionCity_Text_CynthiaPostBattle::
-	.string "The Vermilion Gym leader's SURGE\n"
-	.string "reminds me of the Sinnoh Gym. I\n"
-	.string "see you're heading east as well!$"
+	.string "SURGE's battlefield style reminds\n"
+	.string "me of home. You're skilled, trainer.\n"
+	.string "I'll be watching your progress!$"

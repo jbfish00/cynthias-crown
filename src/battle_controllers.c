@@ -1,5 +1,7 @@
 #include "global.h"
 #include "battle.h"
+#include "event_data.h"
+#include "party_menu.h"
 #include "battle_ai_script_commands.h"
 #include "battle_anim.h"
 #include "battle_controllers.h"
@@ -304,7 +306,11 @@ static void SetBattlePartyIds(void)
                         if (GetMonData(&gPlayerParty[j], MON_DATA_HP) != 0
                          && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE
                          && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
-                         && !GetMonData(&gPlayerParty[j], MON_DATA_IS_EGG))
+                         && !GetMonData(&gPlayerParty[j], MON_DATA_IS_EGG)
+                         && (!FlagGet(FLAG_CHOSE_PLAYER_TYPE)
+                             || SpeciesOrEvolutionMatchesType(
+                                    GetMonData(&gPlayerParty[j], MON_DATA_SPECIES),
+                                    (u8)VarGet(VAR_CHOSEN_TYPE))))
                         {
                             gBattlerPartyIndexes[i] = j;
                             break;
@@ -330,7 +336,11 @@ static void SetBattlePartyIds(void)
                          && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES) != SPECIES_NONE  // Probably a typo by Game Freak. The rest use SPECIES2.
                          && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
                          && !GetMonData(&gPlayerParty[j], MON_DATA_IS_EGG)
-                         && gBattlerPartyIndexes[i - 2] != j)
+                         && gBattlerPartyIndexes[i - 2] != j
+                         && (!FlagGet(FLAG_CHOSE_PLAYER_TYPE)
+                             || SpeciesOrEvolutionMatchesType(
+                                    GetMonData(&gPlayerParty[j], MON_DATA_SPECIES),
+                                    (u8)VarGet(VAR_CHOSEN_TYPE))))
                         {
                             gBattlerPartyIndexes[i] = j;
                             break;
