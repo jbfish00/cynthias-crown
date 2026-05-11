@@ -260,6 +260,6 @@ ViridianCity_Text_CynthiaDefeat::
 	.string "Impressive! You're quite skilled.$"
 
 ViridianCity_Text_CynthiaPostBattle::
-	.string "My name is CYNTHIA. I'm a researcher\n"
-	.string "from Sinnoh, studying Kanto's\n"
-	.string "ancient legends. Let's battle again!$"
+	.string "My name is STEVEN. I'm a trainer\n"
+	.string "from Hoenn, traveling through Kanto.\n"
+	.string "Let's battle again someday!$"
