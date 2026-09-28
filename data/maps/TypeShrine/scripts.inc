@@ -300,6 +300,7 @@ TypeShrine_EventScript_GiveChikorita::
 TypeShrine_EventScript_StarterGiven::
 	playfanfare MUS_LEVEL_UP
 	waitfanfare
+	giveitem ITEM_FLY_WING, 1
 	msgbox TypeShrine_Text_StarterGiven, MSGBOX_DEFAULT
 	msgbox TypeShrine_Text_YourJourneyBegins, MSGBOX_DEFAULT
 	setflag FLAG_CHOSE_PLAYER_TYPE
